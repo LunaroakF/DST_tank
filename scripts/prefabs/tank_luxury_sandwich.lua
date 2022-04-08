@@ -6,7 +6,6 @@ local assets =
 }
 
 
-
 local function fn()
     local inst = CreateEntity()
 
@@ -40,7 +39,6 @@ local function fn()
     else
         inst.components.edible.healthvalue = -101
     end
-
 
     inst.components.edible.sanityvalue = 2
     inst.components.edible.hungervalue = 66

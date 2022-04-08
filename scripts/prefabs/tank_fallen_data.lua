@@ -33,7 +33,6 @@ local function fn()
         return inst
     end
 
-
    -------
     local Periodic = inst:DoPeriodicTask(4,function()
         inst:Remove()
@@ -60,9 +59,6 @@ local function fn()
     inst.components.edible.sanityvalue = 0
     inst.components.edible.hungervalue = 0
     inst.components.edible:SetOnEatenFn(ItemEating)
-
-
-
 
     MakeHauntableLaunch(inst)
 

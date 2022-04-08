@@ -4,8 +4,6 @@ local function OnTaskTick(inst, self)
     local isbutterflywings = false
     local isstinger = false
 
-
-
     --靠近松树掉san
     local x,y,z = self.inst.Transform:GetWorldPosition() 
     local ents = TheSim:FindEntities(x,y,z, 1)
