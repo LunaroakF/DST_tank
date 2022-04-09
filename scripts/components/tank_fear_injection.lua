@@ -29,46 +29,23 @@ local function OnTaskTick(inst, self)
         sanitytotal=sanitytotal-(0.5/(TUNING.DAY_TIME_DEFAULT+TUNING.DUSK_TIME_DEFAULT+TUNING.NIGHT_TIME_DEFAULT))
         isbutterflywings = false
     end
-
+    --蜂针,荆棘外壳,蜜蜂地雷,蓝宝石,吹箭,尖刺灌木,仙人掌,羽毛笔,鱼,一角鲸的角,强心针,伏特羊角,弹簧秤,针线包,触手尖刺,刺耳三叉戟
     local fearinjectionitems={"stinger","armor_bramble","beemine","bluegem","blowdart","marsh_bush","cactus",
     "featherpencil","fish","gnarwail_horn","lifeinjector","lightninggoathorn","pocket_scale","sewingkit",
     "tentaclespike","trident"}
 
-    if 
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[1] end) or--蜂针
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[2] end) or--荆棘外壳
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[3] end) or--蜜蜂地雷
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[4] end) or--蓝宝石
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[5] end) or--吹箭
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[6] end) or--尖刺灌木
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[7] end) or--仙人掌
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[8] end) or--羽毛笔
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[9] end) or--鱼
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[10] end) or--一角鲸的角
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[11] end) or--强心针
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[12] end) or--伏特羊角
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[13] end) or--弹簧秤
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[14] end) or--针线包
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[15] end) or--触手尖刺
-    self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[16] end) --刺耳三叉戟
-    then
-        --local b=tostring(table.getn(fearinjectionitems))
-        
-        for i=1,table.getn(fearinjectionitems) do
-            if self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[i] end) then
-                self.inst.components.tank_fear_injection.hascurrentitem=self.inst.components.tank_fear_injection.hascurrentitem+1
-                --sanitytotal=sanitytotal-0.5
-            end
+    for i=1,table.getn(fearinjectionitems) do
+        if self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[i] end) then
+            self.inst.components.tank_fear_injection.hascurrentitem=self.inst.components.tank_fear_injection.hascurrentitem+1
+            --sanitytotal=sanitytotal-0.5
         end
-        
-        if self.inst.components.tank_fear_injection.oldhascurrentitem ~= self.inst.components.tank_fear_injection.hascurrentitem then
-            sanitytotal=sanitytotal+(0.5*self.inst.components.tank_fear_injection.oldhascurrentitem)
-            sanitytotal=sanitytotal-(0.5*self.inst.components.tank_fear_injection.hascurrentitem)
-            self.inst.components.tank_fear_injection.oldhascurrentitem = self.inst.components.tank_fear_injection.hascurrentitem
-        end
-
     end
-
+    
+    if self.inst.components.tank_fear_injection.oldhascurrentitem ~= self.inst.components.tank_fear_injection.hascurrentitem then
+        sanitytotal=sanitytotal+(0.5*self.inst.components.tank_fear_injection.oldhascurrentitem)
+        sanitytotal=sanitytotal-(0.5*self.inst.components.tank_fear_injection.hascurrentitem)
+        self.inst.components.tank_fear_injection.oldhascurrentitem = self.inst.components.tank_fear_injection.hascurrentitem
+    end
 
 
     --if not isbutterflywings and not isevergreens then
