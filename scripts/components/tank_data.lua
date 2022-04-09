@@ -85,5 +85,4 @@ function tank_data:GetPercent()
     return self.current / self.max
 end
 
-
 return tank_data

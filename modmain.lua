@@ -157,4 +157,3 @@ local skin_modes = {
 
 --将人物添加到Mod Character List性别可以是MALE, FEMALE, ROBOT, NEUTRAL, PLURAL.
 AddModCharacter("tank", "NEUTRAL", skin_modes)
-

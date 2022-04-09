@@ -13,7 +13,6 @@ local function ItemEating(inst, owner)
     end
 end
 
-
 local function fn()
     local inst = CreateEntity()
 
@@ -33,7 +32,6 @@ local function fn()
         return inst
     end
 
-   -------
     local Periodic = inst:DoPeriodicTask(4,function()
         inst:Remove()
     end)
