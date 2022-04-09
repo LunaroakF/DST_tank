@@ -17,7 +17,6 @@ for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
 end
 local prefabs = FlattenTree(start_inv, true)
 
-
 --当玩家变成复活或变成(人类？)时执行
 local function onbecamehuman(inst)
 	-- Set speed when not a ghost (optional)
