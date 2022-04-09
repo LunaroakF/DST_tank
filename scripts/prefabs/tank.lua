@@ -1,6 +1,5 @@
 local MakePlayerCharacter = require "prefabs/player_common"
 
-
 --资源引用
 local assets = {
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
