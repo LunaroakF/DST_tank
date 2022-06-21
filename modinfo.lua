@@ -10,10 +10,10 @@ forumthread = ""
 --Mod API版本
 api_version = 10
 
---是否兼容饥荒联机版
+--是否兼容饥荒联机版(true)
 dst_compatible = true
 
---是否兼容饥荒单机版
+--是否兼容饥荒单机版(false)
 dont_starve_compatible = false
 reign_of_giants_compatible = false
 shipwrecked_compatible = false
