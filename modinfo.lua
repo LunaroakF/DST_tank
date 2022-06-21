@@ -18,7 +18,7 @@ dont_starve_compatible = false
 reign_of_giants_compatible = false
 shipwrecked_compatible = false
 
---是否为服务器Mod(是)
+--是否为服务器Mod(true)
 all_clients_require_mod = true 
 
 --Mod图标
