@@ -12,8 +12,5 @@ local ACTIONS = _G.ACTIONS
 -- local ActionHandler = _G.ActionHandler
 local IsServer = _G.TheNet:GetIsServer() or _G.TheNet:IsDedicated()
 
-
-
-local tank_luxury_sandwich = AddRecipe2("tank_luxury_sandwich", {Ingredient("frogglebunwich", 1),Ingredient("spoiled_food", 4),Ingredient("stinger", 1),Ingredient("berries_juicy", 1)}, TECH.NONE, {builder_tag = "tank", atlas = "images/items/tank_luxury_sandwich.xml", image = "tank_luxury_sandwich.tex"}, {"CHARACTER"})
+local tank_luxury_sandwich = AddRecipe2("tank_luxury_sandwich", {Ingredient("frogglebunwich", 1),Ingredient("spoiled_food", 4),Ingredient("stinger", 1),Ingredient("berries_juicy", 1)}, TECH.NONE, {builder_tag = "tank", atlas = "images/items/tank_luxury_sandwich.xml", image = "tank_luxury_sandwich.tex"}, {"CHARACTER","COOKING"})
 --tank_luxury_sandwich.tagneeded = false
---tank_luxury_sandwich.builder_tag = "tank"
