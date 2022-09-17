@@ -43,8 +43,8 @@ end
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst:AddTag("tank")
-	inst:AddTag("plantkin")--采花不加san
-
+	--inst:AddTag("plantkin")--采花不加san
+	--
 	inst.tank_data = net_ushortint(inst.GUID, "tank_data", "tank_dataevent")
 	inst.MiniMapEntity:SetIcon( "tank.tex" )
 end
@@ -74,9 +74,9 @@ local master_postinit = function(inst)
 	inst.components.hunger.hungerrate = 1 * TUNING.WILSON_HUNGER_RATE
 	inst.OnLoad = onload
     inst.OnNewSpawn = onload
-	
 end
 
+--X键使用数据
 TheInput:AddKeyUpHandler(120, function()
 	SendModRPCToServer( MOD_RPC["tank"]["use_data"])
 end)

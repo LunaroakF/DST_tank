@@ -29,13 +29,9 @@ local function OnTaskTick(inst, self)
         sanitytotal=sanitytotal-(0.5/(TUNING.DAY_TIME_DEFAULT+TUNING.DUSK_TIME_DEFAULT+TUNING.NIGHT_TIME_DEFAULT))
         isbutterflywings = false
     end
-    --蜂针,荆棘外壳,蜜蜂地雷,蓝宝石,吹箭,尖刺灌木,仙人掌,羽毛笔,鱼,一角鲸的角,强心针,伏特羊角,弹簧秤,针线包,触手尖刺,刺耳三叉戟
-    local fearinjectionitems={"stinger","armor_bramble","beemine","bluegem","blowdart","marsh_bush","cactus",
-    "featherpencil","fish","gnarwail_horn","lifeinjector","lightninggoathorn","pocket_scale","sewingkit",
-    "tentaclespike","trident"}
 
-    for i=1,table.getn(fearinjectionitems) do
-        if self.inst.components.inventory:FindItem(function(item) return item.prefab == fearinjectionitems[i] end) then
+    for i=1,table.getn(self.fearinjectionitems) do
+        if self.inst.components.inventory:FindItem(function(item) return item.prefab == self.fearinjectionitems[i] end) then
             self.inst.components.tank_fear_injection.hascurrentitem=self.inst.components.tank_fear_injection.hascurrentitem+1
             --sanitytotal=sanitytotal-0.5
         end
@@ -46,11 +42,6 @@ local function OnTaskTick(inst, self)
         sanitytotal=sanitytotal-(0.5*self.inst.components.tank_fear_injection.hascurrentitem)
         self.inst.components.tank_fear_injection.oldhascurrentitem = self.inst.components.tank_fear_injection.hascurrentitem
     end
-
-
-    --if not isbutterflywings and not isevergreens then
-    --    sanitytotal=0
-    --end
 
     if sanitytotal ~= 0 then
         self.inst.components.sanity.rate_modifier = 1--解锁san
@@ -67,7 +58,10 @@ local tank_fear_injection = Class(function(self,inst)
     self.inst=inst
     self.oldhascurrentitem = 0
     self.hascurrentitem = 0
-
+    --蜂针,荆棘外壳,蜜蜂地雷,蓝宝石,吹箭,尖刺灌木,仙人掌,羽毛笔,鱼,一角鲸的角,强心针,伏特羊角,弹簧秤,针线包,触手尖刺,刺耳三叉戟
+    self.fearinjectionitems={"stinger","armor_bramble","beemine","bluegem","blowdart","marsh_bush","cactus",
+    "featherpencil","fish","gnarwail_horn","lifeinjector","lightninggoathorn","pocket_scale","sewingkit",
+    "tentaclespike","trident"}
     self.inst.components.sanity.night_drain_mult = 0 --晚上不掉san
     self.inst.components.sanity.rate_modifier = 0--锁定san
     self.inst:DoPeriodicTask(1, OnTaskTick, nil, self)

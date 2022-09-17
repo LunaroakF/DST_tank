@@ -120,6 +120,8 @@ import{
 	'tank_recipes',
 }
 
+RemoveRecipeFromFilter("reviver","RESTORATION")
+
 local function UseData(inst)
 	if inst:HasTag("tank") then
 		if inst.components.tank_data:GetCD()==0 then
@@ -139,7 +141,6 @@ local function UseData(inst)
 	end
 end
 AddModRPCHandler("tank", "use_data", UseData)
-
 
 --对话
 STRINGS.CHARACTERS.TANK = require "speech_tank"
