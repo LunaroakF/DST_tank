@@ -44,7 +44,6 @@ local common_postinit = function(inst)
 	-- Minimap icon
 	inst:AddTag("tank")
 	--inst:AddTag("plantkin")--采花不加san
-	--
 	inst.tank_data = net_ushortint(inst.GUID, "tank_data", "tank_dataevent")
 	inst.MiniMapEntity:SetIcon( "tank.tex" )
 end
