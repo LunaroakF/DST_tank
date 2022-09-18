@@ -32,15 +32,16 @@ local function fn()
         return inst
     end
 
-    local Periodic = inst:DoPeriodicTask(4,function()
-        inst:Remove()
-    end)
+    
     inst:AddTag("tank_fallen_data")
     inst:AddComponent("inspectable") --可检查组件
     inst:AddComponent("inventoryitem") --物品组件
     inst.components.inventoryitem.atlasname = "images/items/tank_fallen_data.xml" --物品贴图
     
     inst.components.inventoryitem:SetOnPickupFn(function(inst,owner)
+        local Periodic = inst:DoPeriodicTask(4,function()
+            inst:Remove()
+        end)
         if owner:HasTag("tank") then
             Periodic:Cancel()
         else
@@ -50,6 +51,12 @@ local function fn()
                 inst.tank_data_Periodic:Cancel()
             end)
         end
+    end)
+
+    inst.components.inventoryitem:SetOnDroppedFn(function(inst,owner)
+        local Periodic = inst:DoPeriodicTask(4,function()
+            inst:Remove()
+        end)
     end)
 
     inst:AddComponent("stackable")
