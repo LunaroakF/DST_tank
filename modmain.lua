@@ -120,8 +120,6 @@ import{
 	'tank_recipes',
 }
 
-RemoveRecipeFromFilter("reviver","RESTORATION")
-
 local function UseData(inst)
 	if inst:HasTag("tank") then
 		if inst.components.tank_data:GetCD()==0 then

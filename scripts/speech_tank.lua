@@ -23,6 +23,8 @@ STRINGS.NAMES.TANK_FALLEN_DATA = "数据块"
 
 STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS = "我抓不住这东西！"
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
+STRINGS.TANK_REVIVER_FEAR = "它在跳动！好可怕"
+STRINGS.TANK_CAN_NOT_USE_RESURRECTIONSTONE = "这个大石头可以做什么？"
 
 
 return {
@@ -228,16 +230,6 @@ return {
 	ANNOUNCE_ADVENTUREFAIL = "￥**……%啊啊啊呜！ 额这次不太顺利啊...",
     ANNOUNCE_MOUNT_LOWHEALTH = "吼吼 鲜血流出来了哦~？",
 
-    --waxwell and wickerbottom specific strings
-    ANNOUNCE_TOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-    ANNOUNCE_WAYTOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-
-    --wolfgang specific
-    ANNOUNCE_NORMALTOMIGHTY = "only_used_by_wolfang",
-    ANNOUNCE_NORMALTOWIMPY = "only_used_by_wolfang",
-    ANNOUNCE_WIMPYTONORMAL = "only_used_by_wolfang",
-    ANNOUNCE_MIGHTYTONORMAL = "only_used_by_wolfang",
-
 	ANNOUNCE_BEES = "蜂后",
 	ANNOUNCE_BOOMERANG = "为啥每次听到这声音我的胃都好难受...",
 	ANNOUNCE_CHARLIE = "妈的 又来！",
@@ -264,9 +256,6 @@ return {
 	ANNOUNCE_SACREDCHEST_NO = "...有够挑剔的",
     ANNOUNCE_DUSK = "额 天黑了 该休息下了 ",
     
-    --wx-78 specific
-    ANNOUNCE_CHARGE = "only_used_by_wx78",
-	ANNOUNCE_DISCHARGE = "only_used_by_wx78",
 
 	ANNOUNCE_EAT =
 	{
@@ -404,54 +393,6 @@ return {
     ANNOUNCE_FLARE_SEEN = "看样子..像是迷路了hh。",
     ANNOUNCE_OCEAN_SILHOUETTE_INCOMING = "海.海怪！",
 
-    --willow specific
-	ANNOUNCE_LIGHTFIRE =
-	{
-		"only_used_by_willow",
-    },
-
-    --winona specific
-    ANNOUNCE_HUNGRY_SLOWBUILD = 
-    {
-	    "only_used_by_winona",
-    },
-    ANNOUNCE_HUNGRY_FASTBUILD = 
-    {
-	    "only_used_by_winona",
-    },
-
-    --wormwood specific
-    ANNOUNCE_KILLEDPLANT = 
-    {
-        "only_used_by_wormwood",
-    },
-    ANNOUNCE_GROWPLANT = 
-    {
-        "only_used_by_wormwood",
-    },
-    ANNOUNCE_BLOOMING = 
-    {
-        "only_used_by_wormwood",
-    },
-
-    --wortox specfic
-    ANNOUNCE_SOUL_EMPTY =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_FEW =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_MANY =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_OVERLOAD =
-    {
-        "only_used_by_wortox",
-    },
-
     --quagmire event
     QUAGMIRE_ANNOUNCE_NOTRECIPE = "就这点食材还不如直接拿去烤了吃...",
     QUAGMIRE_ANNOUNCE_MEALBURNT = "烧太长时间了。",
@@ -563,15 +504,6 @@ return {
             REVIVER = "%s 鬼魂的朋友",
             GHOST = "你该让我怎么说啊...%s。",
             FIRESTARTER = "完美 %s。",
-        },
-        WILSON =
-        {
-            GENERIC = "嗯..我应该是有复制黏贴这一说的吧？",
-            ATTACKER = "我真的有那么吓人吗？",
-            MURDERER = "WOOOW!教教我可以吗！%s！",
-            REVIVER = "%s它已经专业到不像样了",
-            GHOST = "咱就说，我该咋帮你啊hhh。",
-            FIRESTARTER = "这是完美的艺术啊 %s。",
         },
         WOLFGANG =
         {

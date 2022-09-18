@@ -1,3 +1,5 @@
+--tank采花不加san
+
 local assets =
 {
     Asset("ANIM", "anim/flowers.zip"),

@@ -43,7 +43,6 @@ end
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst:AddTag("tank")
-	--inst:AddTag("plantkin")--采花不加san
 	inst.tank_data = net_ushortint(inst.GUID, "tank_data", "tank_dataevent")
 	inst.MiniMapEntity:SetIcon( "tank.tex" )
 end
@@ -66,6 +65,13 @@ local master_postinit = function(inst)
 		local pt = inst:GetPosition()
 		SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
 	end)
+
+	inst:ListenForEvent("onownerputininventory", function(inst,data)--受伤掉数据块
+		local pt = inst:GetPosition()
+		SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
+	end)
+	
+
 
 	--伤害倍率
     inst.components.combat.damagemultiplier = 1
