@@ -906,15 +906,15 @@ return {
         MUSHROOMHAT = "Makes the wearer look like a fun guy.",
         MUSHROOM_LIGHT2 =
         {
-            ON = "Blue is obviously the most scientific color.",
-            OFF = "We could make a prime light source with some primary colors.",
-            BURNT = "I didn't mildew it, I swear.",
+            ON = "wow 非常漂亮。",
+            OFF = "一个漂亮的蘑菇台灯。",
+            BURNT = "我没有让它发霉 我发誓。",
         },
         MUSHROOM_LIGHT =
         {
-            ON = "Science makes it light up.",
-            OFF = "It's a big, science-y 'shroom.",
-            BURNT = "Comboletely burnt.",
+            ON = "这台大蘑菇散发出了温柔的光。",
+            OFF = "一台大蘑菇灯。",
+            BURNT = "烧焦了 可惜。",
         },
         SLEEPBOMB = "It makes snooze circles when I throw it.",
         MUSHROOMBOMB = "A mushroom cloud in the making!",
@@ -1372,7 +1372,7 @@ return {
 			HAMMERED = "I don't think it's supposed to look like that.",
 			GENERIC = "Produces a lot of heat, but not much light.", --no gems
 			NORMAL = "Is it winking at me?", --one gem
-			HIGH = "It's scalding!", --two gems
+			HIGH = "永不灭的滚烫火炉。", --two gems
 		},
         
         HUTCH = "Hutch Danglefish, P.I.",
@@ -1496,20 +1496,20 @@ return {
 		FIREHOUND = "That one is glowy.",
 		FIREPIT =
 		{
-			EMBERS = "I should put something on the fire before it goes out.",
-			GENERIC = "Sure beats darkness.",
-			HIGH = "Good thing it's contained!",
-			LOW = "The fire's getting a bit low.",
-			NORMAL = "Nice and comfy.",
-			OUT = "火灭了。",
+			EMBERS = "..我希望在它灭了之前有人能添加下燃料。",
+			GENERIC = "驱走黑暗。",
+			HIGH = "这火焰大的快流出来了呢。",
+			LOW = "燃料快烧完了。",
+			NORMAL = "真舒服呢。",
+			OUT = "一个氛围感极好的石制营火",
 		},
 		COLDFIREPIT =
 		{
-			EMBERS = "I should put something on the fire before it goes out.",
-			GENERIC = "Sure beats darkness.",
-			HIGH = "Good thing it's contained!",
-			LOW = "The fire's getting a bit low.",
-			NORMAL = "Nice and comfy.",
+			EMBERS = "..我希望在它灭了之前有人能添加下燃料。",
+			GENERIC = "驱走黑暗。",
+			HIGH = "“节电”空调。",
+			LOW = "快没“电”了",
+			NORMAL = "真舒服呢。",
 			OUT = "冰火灭了。",
 		},
 		FIRESTAFF = "I don't want to set the world on fire.",
@@ -1772,7 +1772,7 @@ return {
             DUG = "He probably deserved it.",
             GENERIC = "I bet there's all sorts of good stuff down there!",
         },
-        NIGHTLIGHT = "It gives off a spooky light.",
+        NIGHTLIGHT = "用那些诡异的怪物来点燃 很奇妙呢。",
         NIGHTMAREFUEL = "黏黏的。",
         NIGHTSWORD = "Why would anyone make this? It's terrifying.",
         NITRE = "I'm not a geologist.",
