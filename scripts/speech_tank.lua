@@ -762,7 +762,7 @@ return {
 		MOLEHILL = "What a nice, homey hole in the ground!",
 		MOLEHAT = "A wretched stench, but excellent visibility.",
 
-		EEL = "This will make a delicious meal.",
+		EEL = "This will make a delicious meal. ",
 		EEL_COOKED = "Smells great!",
 		UNAGI = "I hope this doesn't make anyone eel!",
 		EYETURRET = "I hope it doesn't turn on me.",
