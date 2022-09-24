@@ -23,6 +23,8 @@ STRINGS.NAMES.TANK_FALLEN_DATA = "数据块"
 
 STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS = "我抓不住这东西！"
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
+STRINGS.TANK_REVIVER_FEAR = "它在跳动！好可怕"
+STRINGS.TANK_CAN_NOT_USE_RESURRECTIONSTONE = "这个大石头可以做什么？"
 
 
 return {
@@ -105,7 +107,7 @@ return {
 
         GIVE =
         {
-            GENERIC = "不是放在这哪里的东西",
+            GENERIC = "放在这里又有什么用 还不如不放。",
             DEAD = "留着吧 或许能帮上忙。",
             SLEEPING = "没意思。",
             BUSY = "等会我我马上在试试！",
@@ -228,16 +230,6 @@ return {
 	ANNOUNCE_ADVENTUREFAIL = "￥**……%啊啊啊呜！ 额这次不太顺利啊...",
     ANNOUNCE_MOUNT_LOWHEALTH = "吼吼 鲜血流出来了哦~？",
 
-    --waxwell and wickerbottom specific strings
-    ANNOUNCE_TOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-    ANNOUNCE_WAYTOOMANYBIRDS = "only_used_by_waxwell_and_wicker",
-
-    --wolfgang specific
-    ANNOUNCE_NORMALTOMIGHTY = "only_used_by_wolfang",
-    ANNOUNCE_NORMALTOWIMPY = "only_used_by_wolfang",
-    ANNOUNCE_WIMPYTONORMAL = "only_used_by_wolfang",
-    ANNOUNCE_MIGHTYTONORMAL = "only_used_by_wolfang",
-
 	ANNOUNCE_BEES = "蜂后",
 	ANNOUNCE_BOOMERANG = "为啥每次听到这声音我的胃都好难受...",
 	ANNOUNCE_CHARLIE = "妈的 又来！",
@@ -264,9 +256,6 @@ return {
 	ANNOUNCE_SACREDCHEST_NO = "...有够挑剔的",
     ANNOUNCE_DUSK = "额 天黑了 该休息下了 ",
     
-    --wx-78 specific
-    ANNOUNCE_CHARGE = "only_used_by_wx78",
-	ANNOUNCE_DISCHARGE = "only_used_by_wx78",
 
 	ANNOUNCE_EAT =
 	{
@@ -351,7 +340,7 @@ return {
     ANNOUNCE_COMPASS_OUT = "指南针坏了...",
 	ANNOUNCE_TRAP_WENT_OFF = "卧槽。",
 	ANNOUNCE_UNIMPLEMENTED = "哎！哎哎！应该还准备好吧！",
-	ANNOUNCE_WORMHOLE = "wow！ 这太刺激了！",
+	ANNOUNCE_WORMHOLE = "啊...双头虫？希望如此吧。",
 	ANNOUNCE_TOWNPORTALTELEPORT = "我不确定那玩意科学不 而且我也不喜欢。",
 	ANNOUNCE_CANFIX = "我应该能修好..吧？",
 	ANNOUNCE_ACCOMPLISHMENT = "喔喔！很有成就感呢！",
@@ -403,54 +392,6 @@ return {
 
     ANNOUNCE_FLARE_SEEN = "看样子..像是迷路了hh。",
     ANNOUNCE_OCEAN_SILHOUETTE_INCOMING = "海.海怪！",
-
-    --willow specific
-	ANNOUNCE_LIGHTFIRE =
-	{
-		"only_used_by_willow",
-    },
-
-    --winona specific
-    ANNOUNCE_HUNGRY_SLOWBUILD = 
-    {
-	    "only_used_by_winona",
-    },
-    ANNOUNCE_HUNGRY_FASTBUILD = 
-    {
-	    "only_used_by_winona",
-    },
-
-    --wormwood specific
-    ANNOUNCE_KILLEDPLANT = 
-    {
-        "only_used_by_wormwood",
-    },
-    ANNOUNCE_GROWPLANT = 
-    {
-        "only_used_by_wormwood",
-    },
-    ANNOUNCE_BLOOMING = 
-    {
-        "only_used_by_wormwood",
-    },
-
-    --wortox specfic
-    ANNOUNCE_SOUL_EMPTY =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_FEW =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_MANY =
-    {
-        "only_used_by_wortox",
-    },
-    ANNOUNCE_SOUL_OVERLOAD =
-    {
-        "only_used_by_wortox",
-    },
 
     --quagmire event
     QUAGMIRE_ANNOUNCE_NOTRECIPE = "就这点食材还不如直接拿去烤了吃...",
@@ -563,15 +504,6 @@ return {
             REVIVER = "%s 鬼魂的朋友",
             GHOST = "你该让我怎么说啊...%s。",
             FIRESTARTER = "完美 %s。",
-        },
-        WILSON =
-        {
-            GENERIC = "嗯..我应该是有复制黏贴这一说的吧？",
-            ATTACKER = "我真的有那么吓人吗？",
-            MURDERER = "WOOOW!教教我可以吗！%s！",
-            REVIVER = "%s它已经专业到不像样了",
-            GHOST = "咱就说，我该咋帮你啊hhh。",
-            FIRESTARTER = "这是完美的艺术啊 %s。",
         },
         WOLFGANG =
         {
@@ -762,7 +694,7 @@ return {
 		MOLEHILL = "What a nice, homey hole in the ground!",
 		MOLEHAT = "A wretched stench, but excellent visibility.",
 
-		EEL = "This will make a delicious meal.",
+		EEL = "This will make a delicious meal. ",
 		EEL_COOKED = "Smells great!",
 		UNAGI = "I hope this doesn't make anyone eel!",
 		EYETURRET = "I hope it doesn't turn on me.",
@@ -774,8 +706,8 @@ return {
 		GREENSTAFF = "This will come in handy.",
 		GIFT = "Is that for me?",
         GIFTWRAP = "That's a wrap!",
-		POTTEDFERN = "A fern in a pot.",
-        SUCCULENT_POTTED = "A succulent in a pot.",
+		POTTEDFERN = "一款洞穴里的小草。",
+        SUCCULENT_POTTED = "盆栽里的多肉。",
 		SUCCULENT_PLANT = "Aloe there.",
 		SUCCULENT_PICKED = "I could eat that, but I'd rather not.",
 		SENTRYWARD = "That's an entirely scientific mapping tool.",
@@ -1077,7 +1009,7 @@ return {
         MINISIGN =
         {
             GENERIC = "I could draw better than that!",
-            UNDRAWN = "We should draw something on there.",
+            UNDRAWN = "应该画一点有意思的艺术品吧。,
         },
         MINISIGN_ITEM = "It's not much use like this. We should place it.",
 		BEE =
@@ -1212,21 +1144,21 @@ return {
 
 		COLDFIRE =
 		{
-			EMBERS = "That fire needs more fuel or it's going to go out.",
-			GENERIC = "Sure beats darkness.",
-			HIGH = "That fire is getting out of hand!",
-			LOW = "The fire's getting a bit low.",
-			NORMAL = "Nice and comfy.",
-			OUT = "Well, that's over.",
+			EMBERS = "得加燃料了，不然火就要灭了。",
+			GENERIC = "能驱走黑暗。",
+			HIGH = "我操！行了这火够大了。",
+			LOW = "火变得有点小了。",
+			NORMAL = "真舒服 比当时的实验室舒服多了。",
+			OUT = "得，结束了。",
 		},
 		CAMPFIRE =
 		{
-			EMBERS = "That fire needs more fuel or it's going to go out.",
-			GENERIC = "Sure beats darkness.",
-			HIGH = "That fire is getting out of hand!",
-			LOW = "The fire's getting a bit low.",
-			NORMAL = "Nice and comfy.",
-			OUT = "Well, that's over.",
+			EMBERS = "得加燃料了，不然火就要灭了",
+			GENERIC = "能驱走黑暗。",
+			HIGH = "够了傻逼！太冷了。",
+			LOW = "冰快烧化了。",
+			NORMAL = "冰凉的火在夏天很舒服。",
+			OUT = "得，结束了。",
 		},
 		CANE = "Technically walking is just controlled falling.",
 		CATCOON = "A playful little thing.",
@@ -1322,7 +1254,7 @@ return {
 
 		CROW =
 		{
-			GENERIC = "我不知道为什么大家都讨厌乌鸦 反正我是蛮喜欢的。",
+			GENERIC = "我不知道为什么大家都挺讨厌讨厌乌鸦 反正我是蛮喜欢的。",
 			HELD = "He's not very happy in there.",
 		},
 		CUTGRASS = "一把草。",
@@ -1428,25 +1360,25 @@ return {
 		
 		ENDTABLE = 
 		{
-			BURNT = "A burnt vase on a burnt table.",
-			GENERIC = "A flower in a vase on a table.",
-			EMPTY = "I should put something in there.",
-			WILTED = "Not looking too fresh.",
-			FRESHLIGHT = "It's nice to have a little light.",
-			OLDLIGHT = "Did we remember to pick up new bulbs?", -- will be wilted soon, light radius will be very small at this point
+			BURNT = "哈...我还以为和那个桌子一样呢。",
+			GENERIC = "花瓶它终于也有属于它的装饰物了。",
+			EMPTY = "插上玫瑰那可就真的完美了。",
+			WILTED = "枯萎了。",
+			FRESHLIGHT = "有一点亮光也很不错。",
+			OLDLIGHT = "我们没忘记拿新灯泡吧？", -- will be wilted soon, light radius will be very small at this point
 		},
 		DECIDUOUSTREE = 
 		{
-			BURNING = "What a waste of wood.",
-			BURNT = "I feel like I could have prevented that.",
+			BURNING = "挺浪费的。",
+			BURNT = "我觉得我本可以阻止这种事情发生的。",
 			CHOPPED = "树 倒了。",
-			POISON = "It looks unhappy about me stealing those birchnuts!",
+			POISON = "一颗漂亮温柔的树变成了个疯子。",
 			GENERIC = "很美丽 温柔 至少现在是。",
 		},
-		ACORN = "There's definitely something inside there.",
-        ACORN_SAPLING = "It'll be a tree soon!",
-		ACORN_COOKED = "Roasted to perfection.",
-		BIRCHNUTDRAKE = "A mad little nut.",
+		ACORN = "一种可以烤着吃的果种。",
+        ACORN_SAPLING = "它很快就会生长成年的。",
+		ACORN_COOKED = "烤得很完美。",
+		BIRCHNUTDRAKE = "这是它的宝宝？",
 		EVERGREEN =
 		{
 			BURNING = "这该死的东西终于要没了是么？",
@@ -1605,7 +1537,7 @@ return {
 		HOMESIGN =
 		{
 			GENERIC = "It says \"You are here\".",
-            UNWRITTEN = "The sign is currently blank.",
+            UNWRITTEN = "一块空白的木板牌子",
 			BURNT = "\"Don't play with matches.\"",
 		},
 		ARROWSIGN_POST =
@@ -1689,7 +1621,7 @@ return {
         MANDRAKESOUP = "Well, he won't be waking up again.",
         MANDRAKE_COOKED = "It doesn't seem so strange anymore.",
         MAPSCROLL = "A blank map. Doesn't seem very useful.",
-        MARBLE = "Fancy!",
+        MARBLE = "漂亮的花纹。",
         MARBLEBEAN = "I traded the old family cow for it.",
         MARBLEBEAN_SAPLING = "It looks carved.",
         MARBLESHRUB = "Makes sense to me.",
@@ -1723,7 +1655,7 @@ return {
             DONE = "Jerky time!",
             DRYING = "Meat takes a while to dry.",
             DRYINGINRAIN = "Meat takes even longer to dry in rain.",
-            GENERIC = "I should dry some meats.",
+            GENERIC = "暴晒 脱水 说句实话我真的很不喜欢这个。",
             BURNT = "The rack got dried.",
             DONE_NOTMEAT = "In laboratory terms, we would call that \"dry\".",
             DRYING_NOTMEAT = "Drying things is not an exact science.",
@@ -1878,7 +1810,7 @@ return {
             GENERIC = "It's a clump of reeds.",
             PICKED = "All the useful reeds have already been picked.",
         },
-        RELIC = "Ancient household goods.",
+        RELIC = "一些古老的家具",
         RUINS_RUBBLE = "This can be fixed.",
         RUBBLE = "Just bits and pieces of rock.",
         RESEARCHLAB =
@@ -1906,7 +1838,7 @@ return {
             GENERIC = "What a handsome devil!",
             BURNT = "Not much use anymore.",
         },
-        RESURRECTIONSTONE = "It's always a good idea to touch base.",
+        RESURRECTIONSTONE = "诡异的石台 救活那些奇怪的朋友。",
         ROBIN =
         {
             GENERIC = "Does that mean winter is gone?",
@@ -1941,7 +1873,7 @@ return {
         },
         ROCK_ICE_MELTED = "Won't be useful until it freezes again.",
         ICE = "Ice to meet you.",
-        ROCKS = "We could make stuff with these.",
+        ROCKS = "一些小石头块。",
         ROOK = "Storm the castle!",
         ROPE = "Some short lengths of rope.",
         ROTTENEGG = "Ew! It stinks!",
@@ -2224,7 +2156,7 @@ return {
         PERDSHRINE =
         {
             GENERIC = "I feel like it wants something.",
-            EMPTY = "I've got to plant something there.",
+            EMPTY = "放点浆果？ 那些火鸡看起来挺喜欢的呢。",
             BURNT = "That won't do at all.",
         },
         REDLANTERN = "This lantern feels more special than the others.",
@@ -2235,7 +2167,7 @@ return {
         WARGSHRINE = 
         {
             GENERIC = "I should make something fun.",
-            EMPTY = "I need to put a torch in it.",
+            EMPTY = "我猜它需要叼一个骨头？还是火把。",
             BURNING = "I should make something fun.", --for willow to override
             BURNT = "It burned down.",
         },
@@ -2256,7 +2188,7 @@ return {
 		PIGSHRINE =
 		{
             GENERIC = "More stuff to make.",
-            EMPTY = "It's hungry for meat.",
+            EMPTY = "猪 也是能吃肉食的。",
             BURNT = "Burnt out.",
 		},
 		PIG_TOKEN = "This looks important.",
@@ -2320,7 +2252,7 @@ return {
 		WALRUS_TUSK = "I'm sure I'll find a use for it eventually.",
 		WARDROBE = 
 		{
-			GENERIC = "It holds dark, forbidden secrets...",
+			GENERIC = "里面装满了我的衣服 以及一些回忆。",
             BURNING = "That's burning fast!",
 			BURNT = "It's out of style now.",
 		},
@@ -2344,12 +2276,12 @@ return {
         {
             BURNT = "That puts a damper on the festivities.",
             BURNING = "That was a mistake, I think.",
-            CANDECORATE = "Happy Winter's Feast!",
-            YOUNG = "It's almost Winter's Feast!",
+            CANDECORATE = "如果不看那些恶心的针 一定会很好看的。",
+            YOUNG = "一颗小树。",
         },
 		WINTER_TREESTAND = 
 		{
-			GENERIC = "I need a pine cone for that.",
+			GENERIC = "这盆栽看起来蛮适合种圣诞树的。",
             BURNT = "That puts a damper on the festivities.",
 		},
         WINTER_ORNAMENT = "Every scientist appreciates a good bauble.",
@@ -2373,10 +2305,10 @@ return {
 		KLAUSSACKKEY = "It's really fancy for a deer antler.",
 		WORMHOLE =
 		{
-			GENERIC = "Soft and undulating.",
-			OPEN = "Science compels me to jump in.",
+			GENERIC = "挺恶心的。",
+			OPEN = "哈 挺佩服敢跳进这虫子嘴里的家伙。",
 		},
-		WORMHOLE_LIMITED = "Guh, that thing looks worse off than usual.",
+		WORMHOLE_LIMITED = "这死虫子生病了？",
 		ACCOMPLISHMENT_SHRINE = "I want to use it, and I want the world to know that I did.",        
 		LIVINGTREE = "Is it watching me?",
 		ICESTAFF = "It's cold to the touch.",
