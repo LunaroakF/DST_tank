@@ -120,6 +120,7 @@ import{
 	'tank_recipes',
 }
 
+--数据
 local function UseData(inst)
 	if inst:HasTag("tank") then
 		if inst.components.tank_data:GetCD()==0 then
@@ -130,15 +131,35 @@ local function UseData(inst)
 			if  inst.components.tank_data.current>=8 and defaultscreen then
 				inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.6)
 				inst.components.health:DoDelta(5,false,inst.health)
-				inst.components.health:SetAbsorptionAmount(1)
+				--inst.components.health:SetAbsorptionAmount(1)无敌
+				inst.DontTouchMeTimes = inst.DontTouchMeTimes + 2
+				if inst.DontTouchMeTimes >= 3 then
+					inst.DontTouchMeTimes = 3
+				end
+				inst:PushEvent("DontTouchMeTimesChanged")
 				inst.components.talker:Say("你是想和我比寿命吗？")
 				inst.components.tank_data.current=inst.components.tank_data.current-8
-				inst.components.tank_data:SetCD(10)
+				inst.components.tank_data:SetCD(14)
 			end
 		end
 	end
 end
 AddModRPCHandler("tank", "use_data", UseData)
+
+--免疫硬直，from myth
+AddStategraphPostInit("wilson", function(sg)
+    local old_onattacked = sg.events['attacked'].fn
+    sg.events['attacked'] = EventHandler('attacked', function(inst,data,...)
+        if inst:HasTag("tank") and inst.DontTouchMeTimes > 0 then
+            inst.DontTouchMeTimes = inst.DontTouchMeTimes - 1
+			inst:PushEvent("DontTouchMeTimesChanged")
+            if not inst.sg:HasStateTag('frozen') and not inst.sg:HasStateTag('sleeping') then
+                return
+            end
+        end     
+        return old_onattacked(inst,data,...)
+    end)
+end)
 
 --对话
 STRINGS.CHARACTERS.TANK = require "speech_tank"

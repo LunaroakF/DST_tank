@@ -19,9 +19,9 @@ local function OnTaskTick(inst, self)
         if self.cd < 8 then
             self.inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1)
         end
-        if self.cd < 5 then
-            self.inst.components.health:SetAbsorptionAmount(0)
-        end
+        --if self.cd < 5 then
+            --self.inst.components.health:SetAbsorptionAmount(0)
+        --end
     end
     self:cdDoDelta(-1)
 end

@@ -39,10 +39,21 @@ local function onload(inst)
     end
 end
 
+local function SomeBodyTouchMe(inst,data)
+    if inst and data then
+        if inst.DontTouchMeTimes > 0 then
+            inst.components.health:SetAbsorptionAmount(1)
+          	local fx = SpawnPrefab("shadow_shield"..tostring(math.random(1,3)))
+            fx.entity:SetParent(inst.entity)
+		end
+    end
+end
+
 --服务器和客户端初始化的时候，推荐在这里加一系列Tags
 local common_postinit = function(inst) 
 	-- Minimap icon
 	inst:AddTag("tank")
+	inst:AddTag("nowormholesanityloss")
 	inst.tank_data = net_ushortint(inst.GUID, "tank_data", "tank_dataevent")
 	inst.MiniMapEntity:SetIcon( "tank.tex" )
 end
@@ -62,16 +73,30 @@ local master_postinit = function(inst)
 	inst.components.sanity:SetMax(TUNING.TANK_SANITY)
 	inst.components.tank_data:SetMax(60)
     inst:ListenForEvent("attacked", function(inst,data)--受伤掉数据块
-		local pt = inst:GetPosition()
-		SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
+		if inst.DontTouchMeTimes == 0 then
+			local pt = inst:GetPosition()
+			SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
+		end
 	end)
 
 	inst:ListenForEvent("onownerputininventory", function(inst,data)--受伤掉数据块
-		local pt = inst:GetPosition()
-		SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
+		if inst.DontTouchMeTimes == 0 then
+			local pt = inst:GetPosition()
+			SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
+		end
 	end)
 	
+	inst:ListenForEvent("DontTouchMeTimesChanged",function(inst)
+		if inst.DontTouchMeTimes > 0 then
+			inst.components.health:SetAbsorptionAmount(1)
+		else
+			inst.components.health:SetAbsorptionAmount(0)
+		end
+	end)
 
+	--免伤
+	inst.DontTouchMeTimes = 0
+	inst:ListenForEvent("attacked", SomeBodyTouchMe)
 
 	--伤害倍率
     inst.components.combat.damagemultiplier = 1

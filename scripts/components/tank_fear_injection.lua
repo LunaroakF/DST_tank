@@ -6,7 +6,7 @@ local function OnTaskTick(inst, self)
 
     --靠近松树掉san
     local x,y,z = self.inst.Transform:GetWorldPosition() 
-    local ents = TheSim:FindEntities(x,y,z, 1)
+    local ents = TheSim:FindEntities(x,y,z, 2)
     for k,v in pairs(ents) do
         if v:HasTag("evergreens") and v:HasTag("shelter") and not self.inst:HasTag("sanityaura") then
             if not isevergreens then
