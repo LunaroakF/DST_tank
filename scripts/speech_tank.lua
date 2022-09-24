@@ -1116,10 +1116,10 @@ return {
 			INGROUND = "It's sleeping.",
 			PICKED = "I wonder if it will come back?",
 		},
-		BOARDS = "Boards.",
-		BONESHARD = "Bits of bone.",
+		BOARDS = "一些加工好的木板。",
+		BONESHARD = "哇哦~来猜猜这是谁的碎骨头片？",
 		BONESTEW = "A stew to put some meat on your bones.",
-		BUGNET = "For catching bugs.",
+		BUGNET = "并不是抓鱼的网呢。",
 		BUSHHAT = "It's kind of scratchy.",
 		BUTTER = "黄油嗯..嗯！？？？？",
 		BUTTERFLY =
@@ -2060,8 +2060,8 @@ return {
 		TRAP_TEETH_MAXWELL = "I'll want to avoid stepping on that!",
 		TREASURECHEST = 
 		{
-			GENERIC = "It's a tickle trunk!",
-			BURNT = "That trunk was truncated.",
+			GENERIC = "一款可以储存一些破东西或者破回忆的箱子。",
+			BURNT = "烧的脆脆的储存不了东西了。",
 		},
 		TREASURECHEST_TRAP = "How convenient!",
 		SACRED_CHEST = 
@@ -2621,14 +2621,14 @@ return {
         WINONA_CATAPULT = 
         {
         	GENERIC = "She's made a sort of automatic defense system.",
-        	OFF = "It needs some electricity.",
+        	OFF = "一款巧妙的投石机缺失了他的命根子。",
         	BURNING = "It's on fire!",
         	BURNT = "Science couldn't save it.",
         },
         WINONA_SPOTLIGHT = 
         {
         	GENERIC = "What an ingenious idea!",
-        	OFF = "It needs some electricity.",
+        	OFF = "没有电 它该如何照亮别人",
         	BURNING = "It's on fire!",
         	BURNT = "Science couldn't save it.",
         },
@@ -2636,7 +2636,7 @@ return {
         {
         	GENERIC = "Looks science-y. How does it work?",
         	LOWPOWER = "It's getting low on power.",
-        	OFF = "I could get it working, if Winona's busy.",
+        	OFF = "罢工了 也或许是生命走到了尽头。",
         	BURNING = "It's on fire!",
         	BURNT = "Science couldn't save it.",
         },
@@ -2644,7 +2644,7 @@ return {
         {
         	GENERIC = "Hey! That's not science!",
         	LOWPOWER = "It'll turn off soon.",
-        	OFF = "Science beats magic, every time.",
+        	OFF = "用宝石获取电的其妙机器 所以请给它添加漂亮的宝石吧。",
         	BURNING = "It's on fire!",
         	BURNT = "Science couldn't save it.",
         },
