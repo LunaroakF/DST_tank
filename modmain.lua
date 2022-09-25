@@ -122,7 +122,7 @@ import{
 
 --数据
 local function UseData(inst)
-	if inst:HasTag("tank") then
+	if inst:HasTag("tank") and not inst:HasTag("playerghost") then
 		if inst.components.tank_data:GetCD()==0 then
 			local defaultscreen = false
 			if TheFrontEnd:GetActiveScreen() and TheFrontEnd:GetActiveScreen().name and type(TheFrontEnd:GetActiveScreen().name) == "string" and TheFrontEnd:GetActiveScreen().name == "HUD" then
