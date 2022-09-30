@@ -152,7 +152,7 @@ return {
         },
         DRAW =
         {
-            NOIMAGE = "我希望有个参照物在旁边 因为这样会好画一些。,
+            NOIMAGE = "我希望有个参照物在旁边 因为这样会好画一些。",
         },
         CHANGEIN =
         {
@@ -167,7 +167,7 @@ return {
         MOUNT =
         {
             TARGETINCOMBAT = "拜托老子还没笨到想去惹它！这家伙有够疯的你自己看看",
-            INUSE = "有狗先抢先骑上去了！！！",
+            INUSE = "蛮希望你下来呢。",
         },
         SADDLE =
         {
@@ -1425,7 +1425,7 @@ return {
 			GENERIC = "If only I could catch them!",
 			HELD = "They make my pocket glow!",
 		},
-		FIREHOUND = "烈狗。",
+		FIREHOUND = "性感火辣的疯狗。",
 		FIREPIT =
 		{
 			EMBERS = "..我希望在它灭了之前有人能添加下燃料。",
@@ -1566,9 +1566,9 @@ return {
 		},
 		HOUNDBONE = "Creepy.",
 		HOUNDMOUND = "I've got no bones to pick with the owner. Really.",
-		ICEBOX = "I have harnessed the power of cold!",
+		ICEBOX = "能有一款不需要电的冰箱简直再好不过了。",
 		ICEHAT = "Stay cool, boy.",
-		ICEHOUND = "这只疯狗在极寒的天气发生了变化。",
+		ICEHOUND = "在饥饿和寒冷的天气里它经历了一次蜕化。",
 		INSANITYROCK =
 		{
 			ACTIVE = "TAKE THAT, SANE SELF!",
@@ -1593,7 +1593,7 @@ return {
 		LIGHTNING_ROD =
 		{
 			CHARGED = "是谁发誓了呢？",
-			GENERIC = "有这个 发誓被雷劈好像就没用了吧hhh。",
+			GENERIC = "有了这个 发誓被雷劈好像就没用了吧hhh。",
 		},
 		LIGHTNINGGOAT = 
 		{
