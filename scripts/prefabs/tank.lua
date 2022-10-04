@@ -43,8 +43,9 @@ local function SomeBodyTouchMe(inst,data)
     if inst and data then
         if inst.DontTouchMeTimes > 0 then
             inst.components.health:SetAbsorptionAmount(1)
-          	local fx = SpawnPrefab("shadow_shield"..tostring(math.random(1,3)))
+          	local fx = SpawnPrefab("alterguardian_lasertrail")
             fx.entity:SetParent(inst.entity)
+			fx.entity:
 		end
     end
 end
@@ -72,6 +73,7 @@ local master_postinit = function(inst)
 	inst.components.hunger:SetMax(TUNING.TANK_HUNGER)
 	inst.components.sanity:SetMax(TUNING.TANK_SANITY)
 	inst.components.tank_data:SetMax(60)
+	
     inst:ListenForEvent("attacked", function(inst,data)--受伤掉数据块
 		if inst.DontTouchMeTimes == 0 then
 			local pt = inst:GetPosition()
@@ -79,13 +81,6 @@ local master_postinit = function(inst)
 		end
 	end)
 
-	inst:ListenForEvent("onownerputininventory", function(inst,data)--受伤掉数据块
-		if inst.DontTouchMeTimes == 0 then
-			local pt = inst:GetPosition()
-			SpawnPrefab("tank_fallen_data").Transform:SetPosition(pt.x, pt.y, pt.z)
-		end
-	end)
-	
 	inst:ListenForEvent("DontTouchMeTimesChanged",function(inst)
 		if inst.DontTouchMeTimes > 0 then
 			inst.components.health:SetAbsorptionAmount(1)
