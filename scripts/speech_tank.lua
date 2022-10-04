@@ -23,8 +23,8 @@ STRINGS.NAMES.TANK_FALLEN_DATA = "数据块"
 
 STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS = "我抓不住这东西！"
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
-STRINGS.TANK_REVIVER_FEAR = "它在跳动！好可怕"
-STRINGS.TANK_CAN_NOT_USE_RESURRECTIONSTONE = "这个大石头可以做什么？"
+STRINGS.TANK_REVIVER_FEAR = "够了...这次我不想再拿着了"
+STRINGS.TANK_CAN_NOT_USE_RESURRECTIONSTONE = "▓░ ▓▓▓ ░▓ ▓░▓░ ▓░▓░ ░ ░░░ ░░░ ▓░▓░▓▓"
 
 
 return {
@@ -152,7 +152,7 @@ return {
         },
         DRAW =
         {
-            NOIMAGE = "要是我前面有着玩意 那就比较方便了。",
+            NOIMAGE = "我希望有个参照物在旁边 因为这样会好画一些。",
         },
         CHANGEIN =
         {
@@ -167,7 +167,7 @@ return {
         MOUNT =
         {
             TARGETINCOMBAT = "拜托老子还没笨到想去惹它！这家伙有够疯的你自己看看",
-            INUSE = "有狗先抢先骑上去了！！！",
+            INUSE = "蛮希望你下来呢。",
         },
         SADDLE =
         {
@@ -223,14 +223,14 @@ return {
         },
 	},
 	ACTIONFAIL_GENERIC = "不想这么做 白痴。",
-	ANNOUNCE_BOAT_LEAK = "这水怎么越来越多了啊啊啊啊啊！？？！？！！",
-	ANNOUNCE_BOAT_SINK = "会游泳可tm不是这么游啊！要淹死个屁啦！！",
+	ANNOUNCE_BOAT_LEAK = "这水怎么越来越多了啊！？？！？！！",
+	ANNOUNCE_BOAT_SINK = "你妈！！ 船要裂开了！",
 	ANNOUNCE_DIG_DISEASE_WARNING = "现在看起来好多了。",
 	ANNOUNCE_PICK_DISEASE_WARNING = "嗯哼~就是这个味吗？",
-	ANNOUNCE_ADVENTUREFAIL = "￥**……%啊啊啊呜！ 额这次不太顺利啊...",
+	ANNOUNCE_ADVENTUREFAIL = "额这次不太顺利啊...",
     ANNOUNCE_MOUNT_LOWHEALTH = "吼吼 鲜血流出来了哦~？",
 
-	ANNOUNCE_BEES = "蜂后",
+	ANNOUNCE_BEES = "哦 草！",
 	ANNOUNCE_BOOMERANG = "为啥每次听到这声音我的胃都好难受...",
 	ANNOUNCE_CHARLIE = "妈的 又来！",
 	ANNOUNCE_CHARLIE_ATTACK = "呜啊！ 妈的疼死了。",
@@ -318,12 +318,12 @@ return {
     ANNOUNCE_NODANGERGIFT = "额..我想把那些怪物解决了才能安全的拆我的礼物..",
     ANNOUNCE_NOMOUNTEDGIFT = "我得先从这头蠢牛身上下来。",
 	ANNOUNCE_NODANGERSLEEP = "在这样睡下去这块就是我的墓碑了好吧...",
-	ANNOUNCE_NODAYSLEEP = "这光线太亮了！",
+	ANNOUNCE_NODAYSLEEP = "大白天的光晃的我眼睛疼。",
 	ANNOUNCE_NODAYSLEEP_CAVE = "咱没必要这么闲 更何况我还不困。",
 	ANNOUNCE_NOHUNGERSLEEP = "我想吃点东西 这样根本睡不着。",
 	ANNOUNCE_NOSLEEPONFIRE = "我没有那种强烈的困意。",
 	ANNOUNCE_NODANGERSIESTA = "现在睡着太过危险了！",
-	ANNOUNCE_NONIGHTSIESTA = "晚上睡。",
+	ANNOUNCE_NONIGHTSIESTA = "建议不要晚上睡 蛮冷的。",
 	ANNOUNCE_NONIGHTSIESTA_CAVE = "在这根本放松不了把",
 	ANNOUNCE_NOHUNGERSIESTA = "太饿了！！！！",
 	ANNOUNCE_NODANGERAFK = "Now's not the time to flee this fight!",
@@ -713,8 +713,8 @@ return {
 		SENTRYWARD = "That's an entirely scientific mapping tool.",
         TOWNPORTAL =
         {
-			GENERIC = "This pyramid controls the sands.",
-			ACTIVE = "Ready for departiculation.",
+			GENERIC = "它们正在等待着生命触摸。",
+			ACTIVE = "我感觉我的身体正在分离。",
 		},
         TOWNPORTALTALISMAN = 
         {
@@ -734,12 +734,12 @@ return {
         },
         MOONDIAL = 
         {
-			GENERIC = "Water amplifies the science, allowing us to measure the moon.",
-			NIGHT_NEW = "It's a new moon.",
-			NIGHT_WAX = "The moon is waxing.",
-			NIGHT_FULL = "It's a full moon.",
-			NIGHT_WANE = "The moon is waning.",
-			CAVE = "There's no moon down here to measure.",
+			GENERIC = "更加贴心的欣赏月亮。",
+			NIGHT_NEW = "是新月",
+			NIGHT_WAX = "开始变圆了。",
+			NIGHT_FULL = "水池中的月亮把水给挤出来了。",
+			NIGHT_WANE = "开始慢慢变小了。",
+			CAVE = "已经看不见月亮了。",
 			WEREBEAVER = "only_used_by_woodie", --woodie specific
         },
 		THULECITE = "I wonder where this is from?",
@@ -830,7 +830,7 @@ return {
         BATCAVE = "I don't want to wake them.",
         BEDROLL_FURRY = "It's so warm and comfy.",
         BUNNYMAN = "I am filled with an irresistible urge to do science.",
-        FLOWER_CAVE = "Science makes it glow.",
+        FLOWER_CAVE = "这植物散发出来了奇妙的光。",
         GUANO = "Another flavor of poop.",
         LANTERN = "A more civilized light.",
         LIGHTBULB = "It's strangely tasty looking.",
@@ -1008,7 +1008,7 @@ return {
         HIVEHAT = "The world seems less a little crazy when I wear it.",
         MINISIGN =
         {
-            GENERIC = "I could draw better than that!",
+            GENERIC = "蛮像的 应该吧...",
             UNDRAWN = "应该画一点有意思的艺术品吧。",
         },
         MINISIGN_ITEM = "It's not much use like this. We should place it.",
@@ -1028,13 +1028,13 @@ return {
 		},
 		MUSHROOM_FARM =
 		{
-			STUFFED = "That's a lot of mushrooms!",
-			LOTS = "The mushrooms have really taken to the log.",
-			SOME = "It should keep growing now.",
-			EMPTY = "It could use a spore. Or a mushroom transplant.",
-			ROTTEN = "The log is dead. We should replace it with a live one.",
-			BURNT = "The power of science compelled it.",
-			SNOWCOVERED = "I don't think it can grow in this cold.",
+			STUFFED = "这些蘑菇是真的多。",
+			LOTS = "种的还不赖嘛。",
+			SOME = "等待一会吧 它还得需要一些时间。",
+			EMPTY = "这块木头非常适合洒下一些孢子 或者蘑菇。",
+			ROTTEN = "该换一个木头了。                                                  .",
+			BURNT = "蛮不错的。",
+			SNOWCOVERED = "我认为它在这种寒冷的天气里没办法生长。",
 		},
 		BEEFALO =
 		{
@@ -1083,13 +1083,13 @@ return {
 		BIGFOOT = "That is one biiig foot.",
 		BIRDCAGE =
 		{
-			GENERIC = "Now it just needs a bird.",
-			OCCUPIED = "Who's a good bird?",
-			SLEEPING = "Awwww, he's asleep.",
-			HUNGRY = "He's looking a bit peckish.",
-			STARVING = "Has no one fed you in awhile?",
-			DEAD = "Maybe he's just resting?",
-			SKELETON = "That bird is definitely deceased.",
+			GENERIC = "虽然是空的 但是还是照样的恶心啊...",
+			OCCUPIED = "为了好看而囚禁了它的自由 真的是恶心啊。",
+			SLEEPING = "它在这该死的牢笼中睡着了。",
+			HUNGRY = "它饿了。",
+			STARVING = "渴望食物 渴望自由。",
+			DEAD = "也许只是在休息 但是我不这么认为。",
+			SKELETON = "在这牢笼中离开了这个世界。",
 		},
 		BIRDTRAP = "Gives me a net advantage!",
 		CAVE_BANANA_BURNT = "Not my fault!",
@@ -1227,11 +1227,11 @@ return {
 		COOKEDSMALLMEAT = "Now there's no reason to worry about getting worms!",
 		COOKPOT =
 		{
-			COOKING_LONG = "This is going to take a while.",
-			COOKING_SHORT = "It's almost done!",
-			DONE = "Mmmmm! It's ready to eat!",
-			EMPTY = "It makes me hungry just to look at it.",
-			BURNT = "The pot got cooked.",
+			COOKING_LONG = "完美是美食总是要等待的。",
+			COOKING_SHORT = "快了 别急。",
+			DONE = "成品出锅！",
+			EMPTY = "额..以前看过23本食谱书 应该可行吧？",
+			BURNT = "别看我 真的不是我烧的。",
 		},
 		CORN = "High in fructose!",
 		CORN_COOKED = "Cooked and high in fructose!",
@@ -1298,7 +1298,7 @@ return {
 		DRAGONFLY = "That's one fly dragon!",
 		ARMORDRAGONFLY = "Hot mail!",
 		DRAGON_SCALES = "They're still warm.",
-		DRAGONFLYCHEST = "Next best thing to a lockbox!",
+		DRAGONFLYCHEST = "像是最终奖励一样豪华。",
 		DRAGONFLYFURNACE = 
 		{
 			HAMMERED = "I don't think it's supposed to look like that.",
@@ -1361,11 +1361,11 @@ return {
 		ENDTABLE = 
 		{
 			BURNT = "哈...我还以为和那个桌子一样呢。",
-			GENERIC = "花瓶它终于也有属于它的装饰物了。",
+			GENERIC = "花瓶它终于也有属于它的装饰了。",
 			EMPTY = "插上玫瑰那可就真的完美了。",
-			WILTED = "枯萎了。",
+			WILTED = "这它绽放的很完美 但最终还是走向了生命的尽头。",
 			FRESHLIGHT = "有一点亮光也很不错。",
-			OLDLIGHT = "我们没忘记拿新灯泡吧？", -- will be wilted soon, light radius will be very small at this point
+			OLDLIGHT = "快枯萎了。", -- will be wilted soon, light radius will be very small at this point
 		},
 		DECIDUOUSTREE = 
 		{
@@ -1425,7 +1425,7 @@ return {
 			GENERIC = "If only I could catch them!",
 			HELD = "They make my pocket glow!",
 		},
-		FIREHOUND = "That one is glowy.",
+		FIREHOUND = "性感火辣的疯狗。",
 		FIREPIT =
 		{
 			EMBERS = "..我希望在它灭了之前有人能添加下燃料。",
@@ -1447,9 +1447,9 @@ return {
 		FIRESTAFF = "I don't want to set the world on fire.",
 		FIRESUPPRESSOR = 
 		{	
-			ON = "Fling on!",
-			OFF = "All quiet on the flinging front.",
-			LOWFUEL = "The fuel tank is getting a bit low.",
+			ON = "全自动灭火器已准备就绪。",
+			OFF = "一切都平息了",
+			LOWFUEL = "得需要一些燃料才能让这台机器恢复正常。",
 		},
 
 		FISH = "Now I shall eat for a day.",
@@ -1566,9 +1566,9 @@ return {
 		},
 		HOUNDBONE = "Creepy.",
 		HOUNDMOUND = "I've got no bones to pick with the owner. Really.",
-		ICEBOX = "I have harnessed the power of cold!",
+		ICEBOX = "能有一款不需要电的冰箱简直再好不过了。",
 		ICEHAT = "Stay cool, boy.",
-		ICEHOUND = "Are there hounds for every season?",
+		ICEHOUND = "在饥饿和寒冷的天气里它经历了一次蜕化。",
 		INSANITYROCK =
 		{
 			ACTIVE = "TAKE THAT, SANE SELF!",
@@ -1592,8 +1592,8 @@ return {
 		LIGHTER  = "It's her lucky lighter.",
 		LIGHTNING_ROD =
 		{
-			CHARGED = "The power is mine!",
-			GENERIC = "To harness the heavens!",
+			CHARGED = "是谁发誓了呢？",
+			GENERIC = "有了这个 发誓被雷劈好像就没用了吧hhh。",
 		},
 		LIGHTNINGGOAT = 
 		{
@@ -1788,8 +1788,8 @@ return {
         },
         RAINOMETER =
         {
-            GENERIC = "It measures cloudiness.",
-            BURNT = "The measuring parts went up in a cloud of smoke.",
+            GENERIC = "我觉得这玩意没必要吧。",
+            BURNT = "正好 腾出地方来了。",
         },
         RAINCOAT = "Keeps the rain where it ought to be. Outside your body.",
         RAINHAT = "Messy hair... the terrible price of dryness.",
@@ -1810,7 +1810,7 @@ return {
             GENERIC = "It's a clump of reeds.",
             PICKED = "All the useful reeds have already been picked.",
         },
-        RELIC = "一些古老的家具",
+        RELIC = "一些经历过时间摧残的家具",
         RUINS_RUBBLE = "This can be fixed.",
         RUBBLE = "Just bits and pieces of rock.",
         RESEARCHLAB =
@@ -1835,8 +1835,8 @@ return {
         },
         RESURRECTIONSTATUE =
         {
-            GENERIC = "What a handsome devil!",
-            BURNT = "Not much use anymore.",
+            GENERIC = "将一点肉体和灵魂寄托在另一个复制体上 想想就非常兴奋啊！",
+            BURNT = "我缺失的应该能回来吧。",
         },
         RESURRECTIONSTONE = "诡异的石台 救活那些奇怪的朋友。",
         ROBIN =
@@ -1883,7 +1883,7 @@ return {
         SADDLE_RACE = "This saddle really flies!",
         SADDLE_WAR = "The only problem is the saddle sores.",
         SADDLEHORN = "This could take a saddle off.",
-        SALTLICK = "How many licks does it take to get to the center?",
+        SALTLICK = "大多数牛儿们很喜欢舔这个方块。",
         BRUSH = "I bet the beefalo really like this.",
 		SANITYROCK =
 		{
@@ -1901,9 +1901,9 @@ return {
 		},
    		SCARECROW = 
    		{
-			GENERIC = "All dressed up and no where to crow.",
-			BURNING = "Someone made that strawman eat crow.",
-			BURNT = "Someone MURDERed that scarecrow!",
+			GENERIC = "这稻草人好像原来不长这样吧？",
+			BURNING = "有人让那个稻草人吃乌鸦。",
+			BURNT = "看来有人谋杀了它。",
    		},
    		SCULPTINGTABLE=
    		{
@@ -2037,12 +2037,12 @@ return {
 		TELESTAFF = "That could reveal the world.",
 		TENT = 
 		{
-			GENERIC = "I get sort of crazy when I don't sleep.",
-			BURNT = "Nothing left to sleep in.",
+			GENERIC = "就算是疯子也是得睡觉的。",
+			BURNT = "已经烧灰了 还不如在地上睡呢。",
 		},
 		SIESTAHUT = 
 		{
-			GENERIC = "A nice place for an afternoon rest, safely out of the heat.",
+			GENERIC = "在里面小睡一会真的很舒服呢。",
 			BURNT = "It won't provide much shade now.",
 		},
 		TENTACLE = "That looks dangerous.",
@@ -2268,8 +2268,8 @@ return {
 		WINTERHAT = "It'll be good for when winter comes.",
 		WINTEROMETER = 
 		{
-			GENERIC = "Mercurial.",
-			BURNT = "Its measuring days are over.",
+			GENERIC = "大型水银温度计 额还是酒精的？",
+			BURNT = "烧毁了...应该是酒精温度计吧？",
 		},
 
         WINTER_TREE =
@@ -2654,11 +2654,11 @@ return {
         ARMOR_BRAMBLE = "The best offense is a good defense.",
         TRAP_BRAMBLE = "It'd really poke whoever stepped on it.",
 
-        BOATFRAGMENT03 = "Not much left of it.",
-        BOATFRAGMENT04 = "Not much left of it.",
-        BOATFRAGMENT05 = "Not much left of it.",
+        BOATFRAGMENT03 = "请问 这是谁的船？",
+        BOATFRAGMENT04 = "已经快要泡烂了。",
+        BOATFRAGMENT05 = "一些破碎的船板。",
 		BOAT_LEAK = "I should patch that up before we sink.",
-        MAST = "Avast! A mast!",
+        MAST = "有了这个大风就可以带船前进了。",
         SEASTACK = "It's a rock.",
         FISHINGNET = "Nothing but net.",
         ANTCHOVIES = "Yeesh. Can I toss it back?",
@@ -2785,7 +2785,7 @@ return {
         MUTATEDHOUND = 
         {
         	DEAD = "Now I can breathe easy.",
-        	GENERIC = "Science save us!",
+        	GENERIC = "蛮露骨的。",
         	SLEEPING = "I have a very strong desire to run.",
         },
 
@@ -2826,13 +2826,13 @@ return {
 			GROWING = "I guess it just grows like that.",
 		},
 		SALTROCK = "Science compels me to lick it.",
-		SALTBOX = "Just the cure for spoiling food!",
+		SALTBOX = "感觉 比冰箱差点。",
 
         MALBATROSS = "A fowl beast indeed!",
         MALBATROSS_FEATHER = "Plucked from a fine feathered fiend.",
         MALBATROSS_BEAK = "Smells fishy.",
         MAST_MALBATROSS_ITEM = "It's lighter than it looks.",
-        MAST_MALBATROSS = "Spread my wings and sail away!",
+        MAST_MALBATROSS = "那只大鸟的羽毛能祝我一帆风顺！",
 		MALBATROSS_FEATHERED_WEAVE = "I'm making a quill-t!",
 
         WALKINGPLANK = "Couldn't we have just made a lifeboat?",
