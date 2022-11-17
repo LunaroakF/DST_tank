@@ -5,7 +5,8 @@ PrefabFiles = {
     "tank_useless_scarf",
     "tank_fire_axe",
 	"tank_luxury_sandwich",
-	"tank_fallen_data"
+	"tank_fallen_data",
+	"tank_chain_noactived"
 }
 
 --资源引用
@@ -74,10 +75,18 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_luxury_sandwich"] = {
 	image = "tank_luxury_sandwich.tex",
 }
 
+--数据块
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_fallen_data"] = {
 	name = STRINGS.NAMES.TANK_FALLEN_DATA,
 	atlas = "images/items/tank_fallen_data.xml",
 	image = "tank_fallen_data.tex",
+}
+
+--未激活的锁链
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_noactived"] = {
+	name = STRINGS.NAMES.TANK_CHAIN_NOACTIVED,
+	atlas = "images/items/tank_chain_noactived.xml",
+	image = "tank_chain_noactived.tex",
 }
 
 --数据GUI

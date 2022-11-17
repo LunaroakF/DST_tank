@@ -45,7 +45,7 @@ local function SomeBodyTouchMe(inst,data)
             inst.components.health:SetAbsorptionAmount(1)
           	local fx = SpawnPrefab("alterguardian_lasertrail")
             fx.entity:SetParent(inst.entity)
-			fx.entity:
+			--fx.entity:
 		end
     end
 end
