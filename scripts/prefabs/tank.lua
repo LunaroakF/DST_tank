@@ -102,7 +102,7 @@ local master_postinit = function(inst)
 end
 
 --X键使用数据
-TheInput:AddKeyUpHandler(120, function()
+TheInput:AddKeyUpHandler(KEY_X, function()
 	SendModRPCToServer( MOD_RPC["tank"]["use_data"])
 end)
 
