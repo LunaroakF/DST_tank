@@ -15,19 +15,19 @@ local start_inv = {}
 for k, v in pairs(TUNING.GAMEMODE_STARTING_ITEMS) do
     start_inv[string.lower(k)] = v.TANK
 end
-local prefabs = FlattenTree(start_inv, true)
+prefabs = FlattenTree(start_inv, true)
 
 --当玩家变成复活或变成(人类？)时执行
 local function onbecamehuman(inst)
 	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1)
 end
+
 --当玩家死亡或变成鬼魂时执行
 local function onbecameghost(inst)
 	-- 死亡后生成锁链
-
 	local x,y,z = inst.Transform:GetWorldPosition() 
 	SpawnPrefab("tank_chain_noactived").Transform:SetPosition(x, y, z)
-	--靠近松树掉san
+	--删除生成的骷髅
 	local ents = TheSim:FindEntities(x,y,z, 1)--检索距离为1
 	for k,v in pairs(ents) do
 		if v:HasTag("playerskeleton")then
