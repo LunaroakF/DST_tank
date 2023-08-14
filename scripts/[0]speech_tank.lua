@@ -12,14 +12,15 @@ STRINGS.SKIN_NAMES.tank_none = "铽安克"
 
 STRINGS.CHARACTER_TITLES.tank = "铽安克"
 STRINGS.CHARACTER_NAMES.tank = "铽安克"
-STRINGS.CHARACTER_DESCRIPTIONS.tank = "*似乎在畏惧这什么？\n*疯子\n░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*曾经的折磨……如今还能和你们一样吗？\n*被赋予生命的枷锁"
-STRINGS.CHARACTER_QUOTES.tank = "\"我恨不得把自己忘掉!!\n但是...忘掉了又有什么意思呢？..哈哈....\""
+STRINGS.CHARACTER_DESCRIPTIONS.tank = "*畏惧实验？\n*疯子\n*░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*曾经的折磨……还能和你们一样吗？\n*被赋予生命的锁链"
+STRINGS.CHARACTER_QUOTES.tank = "\"我恨不得把自己忘掉!!\n但是...忘掉了又有什么意思呢..哈哈....\""
 STRINGS.CHARACTER_SURVIVABILITY.tank = "数据崩坏"
 
 STRINGS.NAMES.TANK_USELESS_SCARF = "无用围巾"
 STRINGS.NAMES.TANK_FIRE_AXE = "制 0-2型消防斧"
 STRINGS.NAMES.TANK_LUXURY_SANDWICH = "豪华三明治套餐"
 STRINGS.NAMES.TANK_FALLEN_DATA = "数据块"
+STRINGS.NAMES.TANK_CHAIN_NOACTIVED = "锁链"
 
 STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS = "我抓不住这东西！"
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
@@ -242,9 +243,9 @@ return {
 	ANNOUNCE_CAVEIN = "呃！哦哦嗷这是要地震了吗？！！",
 	ANNOUNCE_ANTLION_SINKHOLE = 
 	{
-		"是不是..地震了？！",
-		"喂！ 跑啊！！白痴！",
-		"是不是...该跑了啊！",
+		"我 能 感！受! 到地板在震动！！！",
+		"跑啊！！白痴！",
+		"啊...这地震..",
 	},
 	ANNOUNCE_ANTLION_TRIBUTE =
 	{
@@ -300,7 +301,7 @@ return {
     ANNOUNCE_RUINS_RESET = "哦~ 又回来了呢~~",
     ANNOUNCE_SNARED = "啊......我不吃别这样看着我。",
     ANNOUNCE_REPELLED = "额？",
-	ANNOUNCE_ENTER_DARK = "虽然我习惯暗点的环境了...但是这已经完全看不见了啊。",
+	ANNOUNCE_ENTER_DARK = "虽然我喜欢暗点..但是这完全看不见了啊。",
 	ANNOUNCE_ENTER_LIGHT = "哦~好多了。",
 	ANNOUNCE_FREEDOM = "自由咯~哈哈。",
 	ANNOUNCE_HIGHRESEARCH = "emm哈不愧是我。",
@@ -369,15 +370,15 @@ return {
 
 	ANNOUNCE_MOONALTAR_MINE =
 	{
-		GLASS_MED = "11",
-		GLASS_LOW = "22",
-		GLASS_REVEAL = "33",
-		IDOL_MED = "44",
-		IDOL_LOW = "55",
-		IDOL_REVEAL = "66",
-		SEED_MED = "77",
-		SEED_LOW = "88",
-		SEED_REVEAL = "99",
+		GLASS_MED = "里面有东西 让我看看。",
+		GLASS_LOW = "额..",
+		GLASS_REVEAL = "你自由咯。",
+		IDOL_MED = "里面有东西。",
+		IDOL_LOW = "要出来了。",
+		IDOL_REVEAL = "你自由了。",
+		SEED_MED = "里面有东西。",
+		SEED_LOW = "快挖出来了！",
+		SEED_REVEAL = "自由了你。",
 	},
 
     --hallowed nights
@@ -401,8 +402,8 @@ return {
 
     ANNOUNCE_ROYALTY =
     {
-        "该如何称呼您~？",
-        "出来散散心了吗 嗯哼？",
+        "毙下。",
+        "癫下。",
         "我的主！",
     },
 
@@ -697,7 +698,7 @@ return {
 		EEL = "This will make a delicious meal. ",
 		EEL_COOKED = "Smells great!",
 		UNAGI = "I hope this doesn't make anyone eel!",
-		EYETURRET = "嗯..这大家伙一直看着我挺不舒服的。",
+		EYETURRET = "I hope it doesn't turn on me.",
 		EYETURRET_ITEM = "I think it's sleeping.",
 		MINOTAURHORN = "Wow! I'm glad that didn't gore me!",
 		MINOTAURCHEST = "It may contain a bigger something fantastic! Or horrible.",
@@ -710,7 +711,7 @@ return {
         SUCCULENT_POTTED = "盆栽里的多肉。",
 		SUCCULENT_PLANT = "Aloe there.",
 		SUCCULENT_PICKED = "I could eat that, but I'd rather not.",
-		SENTRYWARD = "额...说起功能的话 还是别让我看见这个了。",
+		SENTRYWARD = "That's an entirely scientific mapping tool.",
         TOWNPORTAL =
         {
 			GENERIC = "它们正在等待着生命触摸。",
@@ -723,7 +724,7 @@ return {
 		},
         WETPAPER = "I hope it dries off soon.",
         WETPOUCH = "This package is barely holding together.",
-        MOONROCK_PIECES = "变得像是瓦罐一样脆了。",
+        MOONROCK_PIECES = "I could probably break that.",
         MOONBASE =
         {
             GENERIC = "There's a hole in the middle for something to go in.",
@@ -745,7 +746,7 @@ return {
 		THULECITE = "I wonder where this is from?",
 		ARMORRUINS = "It's oddly light.",
 		ARMORSKELETON = "No bones about it.",
-		SKELETONHAT = "这东西似乎对我没用呢...管它呢~。",
+		SKELETONHAT = "It gives me terrible visions.",
 		RUINS_BAT = "It has quite a heft to it.",
 		RUINSHAT = "How's my hair?",
 		NIGHTMARE_TIMEPIECE =
@@ -783,13 +784,13 @@ return {
         OPALPRECIOUSGEM = "This gem seems special.",
         TELEBASE = 
 		{
-			VALID = "哈！ 好了！...所以这玩意该咋用？？",
-			GEMS = "得需要更多的宝石。",
+			VALID = "It's ready to go.",
+			GEMS = "It needs more purple gems.",
 		},
 		GEMSOCKET = 
 		{
-			VALID = "喔吼 看样子是对了。",
-			GEMS = "听说这个东西需要放上某个宝石。",
+			VALID = "Looks ready.",
+			GEMS = "It needs a gem.",
 		},
 		STAFFLIGHT = "That seems really dangerous.",
         STAFFCOLDLIGHT = "Brr! Chilling.",
@@ -911,10 +912,10 @@ return {
         SNURTLE = "He's less gross, but still gross.",
         SPIDER_HIDER = "Gah! More spiders!",
         SPIDER_SPITTER = "I hate spiders!",
-        SPIDERHOLE = "地下蜘蛛的巢。",
-        SPIDERHOLE_ROCK = "地下蜘蛛的巢。",
-        STALAGMITE = "一堆岩石。",
-        STALAGMITE_TALL = "有啥好看的？ 不如看我。",
+        SPIDERHOLE = "It's encrusted with old webbing.",
+        SPIDERHOLE_ROCK = "It's encrusted with old webbing.",
+        STALAGMITE = "Looks like a rock to me.",
+        STALAGMITE_TALL = "Rocks, rocks, rocks, rocks...",
         TREASURECHEST_TRAP = "How convenient!",
 
         TURF_CARPETFLOOR = "It's surprisingly scratchy.",
@@ -992,10 +993,10 @@ return {
 		BANDAGE = "Seems sterile enough.",
 		BASALT = "That's too strong to break through!",
 		BEARDHAIR = "It's only gross when they're not your own.",
-		BEARGER = "我操 好大只。",
-		BEARGERVEST = "嘿嘿 熊皮大衣。",
+		BEARGER = "What a bear of a badger.",
+		BEARGERVEST = "Welcome to the hibernation station!",
 		ICEPACK = "The fur keeps the temperature inside stable.",
-		BEARGER_FUR = "一大块毛皮 用来保暖应该很不错。",
+		BEARGER_FUR = "A mat of thick fur.",
 		BEDROLL_STRAW = "Looks comfy, but it smells like mildew.",
 		BEEQUEEN = "Keep that stinger away from me!",
 		BEEQUEENHIVE = 
@@ -1032,7 +1033,7 @@ return {
 			LOTS = "种的还不赖嘛。",
 			SOME = "等待一会吧 它还得需要一些时间。",
 			EMPTY = "这块木头非常适合洒下一些孢子 或者蘑菇。",
-			ROTTEN = "该换一个木头了。",
+			ROTTEN = "该换一个木头了。                                                  .",
 			BURNT = "蛮不错的。",
 			SNOWCOVERED = "我认为它在这种寒冷的天气里没办法生长。",
 		},
@@ -1135,8 +1136,8 @@ return {
 
 		CACTUS = 
 		{
-			GENERIC = "可以的话麻烦滚开 真的。",
-			PICKED = "舒服了。",
+			GENERIC = "Sharp but delicious.",
+			PICKED = "Deflated, but still spiny.",
 		},
 		CACTUS_MEAT_COOKED = "Grilled fruit of the desert.",
 		CACTUS_MEAT = "There are still some spines between me and a tasty meal.",
@@ -1170,8 +1171,8 @@ return {
 		CATCOONHAT = "Ears hat!",
 		COONTAIL = "I think it's still swishing.",
 		CARROT = "Yuck. This vegetable came out of the dirt.",
-		CARROT_COOKED = "味道不错~",
-		CARROT_PLANTED = "一种营养价值很高的蔬菜，含有多种人体所需的维生素，如维生素A、B1、B2、C等。",
+		CARROT_COOKED = "Mushy.",
+		CARROT_PLANTED = "The earth is making plantbabies.",
 		CARROT_SEEDS = "It's a carrot seed.",
 		CARTOGRAPHYDESK =
 		{
@@ -1218,13 +1219,13 @@ return {
 		CHESTER = "Otto von Chesterfield, Esq.",
 		CHESTER_EYEBONE =
 		{
-			GENERIC = "怪可爱的。",
-			WAITING = "可能它只是想小睡一会。",
+			GENERIC = "It's looking at me.",
+			WAITING = "It went to sleep.",
 		},
 		COOKEDMANDRAKE = "Poor little guy.",
-		COOKEDMEAT = "真希望能永远待在这里啊。",
+		COOKEDMEAT = "Charbroiled to perfection.",
 		COOKEDMONSTERMEAT = "相比以前的那些...这次起码熟了。",
-		COOKEDSMALLMEAT = "拜托 这点那够啊！",
+		COOKEDSMALLMEAT = "Now there's no reason to worry about getting worms!",
 		COOKPOT =
 		{
 			COOKING_LONG = "完美是美食总是要等待的。",
@@ -1343,8 +1344,8 @@ return {
 		DRAGONFRUIT_COOKED = "The fruit's still weird.",
 		DRAGONFRUIT_SEEDS = "It's a weird fruit seed.",
 		DRAGONPIE = "The dragonfruit is very filling.",
-		DRUMSTICK = "真是一块好肉呢。",
-		DRUMSTICK_COOKED = "嘿！还真挺好吃的~",
+		DRUMSTICK = "Ready for gobbling.",
+		DRUMSTICK_COOKED = "Even better for gobbling!",
 		DUG_BERRYBUSH = "Now it can be taken anywhere.",
 		DUG_BERRYBUSH_JUICY = "This could be replanted closer to home.",
 		DUG_GRASS = "It can be planted anywhere now.",
@@ -1422,7 +1423,7 @@ return {
 		FEM_PUPPET = "She's trapped!",
 		FIREFLIES =
 		{
-			GENERIC = "一只只微弱的光犹如星河一般。",
+			GENERIC = "If only I could catch them!",
 			HELD = "They make my pocket glow!",
 		},
 		FIREHOUND = "性感火辣的疯狗。",
@@ -1452,11 +1453,11 @@ return {
 			LOWFUEL = "得需要一些燃料才能让这台机器恢复正常。",
 		},
 
-		FISH = "要是还活着就好了。",
-		FISHINGROD = "说实话 我想让别人拿去钓。",
-		FISHSTICKS = "可以填饱肚子 不错。",
-		FISHTACOS = "松脆而美味！",
-		FISH_COOKED = "如果不考虑给它钓出来的话还不错呢。",
+		FISH = "Now I shall eat for a day.",
+		FISHINGROD = "Hook, line and stick!",
+		FISHSTICKS = "Sticks to your ribs.",
+		FISHTACOS = "Crunchy and delicious!",
+		FISH_COOKED = "Grilled to perfection.",
 		FLINT = "燧石..想想能干点啥吧。",
 		FLOWER = 
 		{
@@ -1466,7 +1467,7 @@ return {
         FLOWER_WITHERED = "再美丽的生命终究还是会衰落。",
 		FLOWERHAT = "鲜艳的像是沾满了鲜血。",
 		FLOWER_EVIL = "也很美丽哦。",
-		FOLIAGE = "一些多叶植物。",
+		FOLIAGE = "Some leafy greens.",
 		FOOTBALLHAT = "I don't like sports.",
         FOSSIL_PIECE = "Science bones! We should put them back together.",
         FOSSIL_STALKER =
@@ -1490,17 +1491,17 @@ return {
 		FROGLEGS = "I've heard it's a delicacy.",
 		FROGLEGS_COOKED = "Tastes like chicken.",
 		FRUITMEDLEY = "Fruity.",
-		FURTUFT = "一小团毛 不是我的。", 
-		GEARS = "一些还可以用的齿轮。",
+		FURTUFT = "Black and white fur.", 
+		GEARS = "A pile of mechanical parts.",
 		GHOST = "This offends me as a scientist.",
 		GOLDENAXE = "That's one fancy axe.",
 		GOLDENPICKAXE = "Hey, isn't gold really soft?",
 		GOLDENPITCHFORK = "Why did I even make a pitchfork this fancy?",
 		GOLDENSHOVEL = "I can't wait to dig holes.",
-		GOLDNUGGET = "不知道在这地方还会不会有人为了这一块金子而展示内心的丑陋呢手哈哈。",
+		GOLDNUGGET = "I can't eat it, but it sure is shiny.",
 		GRASS =
 		{
-			BARREN = "枯萎了 可能再也醒不过来了。",
+			BARREN = "枯萎了 就跟你一样hh。",
 			WITHERED = "在不浇水就被晒死了这植物。",
 			BURNING = "赶紧灭火吧不然烧到别的就不好。",
 			GENERIC = "一从草 有什么好看的。",
@@ -1564,8 +1565,8 @@ return {
 			BURNING = "I think we're safe now.",
 			REVIVING = "Science save us!",
 		},
-		HOUNDBONE = "额...哎..别这么看着我 我不吃的。",
-		HOUNDMOUND = "嘿！ 你们还过得好么？！ 哈哈！",
+		HOUNDBONE = "Creepy.",
+		HOUNDMOUND = "I've got no bones to pick with the owner. Really.",
 		ICEBOX = "能有一款不需要电的冰箱简直再好不过了。",
 		ICEHAT = "Stay cool, boy.",
 		ICEHOUND = "在饥饿和寒冷的天气里它经历了一次蜕化。",
@@ -1623,15 +1624,15 @@ return {
         MAPSCROLL = "A blank map. Doesn't seem very useful.",
         MARBLE = "漂亮的花纹。",
         MARBLEBEAN = "I traded the old family cow for it.",
-        MARBLEBEAN_SAPLING = "搞不懂....这石头是怎么长成树的。",
-        MARBLESHRUB = "呃..真搞不懂不懂。",
+        MARBLEBEAN_SAPLING = "It looks carved.",
+        MARBLESHRUB = "Makes sense to me.",
         MARBLEPILLAR = "I think I could use that.",
-        MARBLETREE = "艺术品？ 看不懂。",
+        MARBLETREE = "I don't think an axe will cut it.",
         MARSH_BUSH =
         {
 			BURNT = "One less thorn patch to worry about.",
             BURNING = "That's burning fast!",
-            GENERIC = "嘶...啊你妈的离我远点啊！！！",
+            GENERIC = "It looks thorny.",
             PICKED = "Ouch.",
         },
         BURNT_MARSH_BUSH = "It's all burnt up.",
@@ -1648,21 +1649,21 @@ return {
         MAXWELLLIGHT = "I wonder how they work.",
         MAXWELLLOCK = "Looks almost like a key hole.",
         MAXWELLTHRONE = "That doesn't look very comfortable.",
-        MEAT = "还是这个符合我胃口啊~",
-        MEATBALLS = "吼 还蛮大的。",
+        MEAT = "It's a bit gamey, but it'll do.",
+        MEATBALLS = "It's just a big wad of meat.",
         MEATRACK =
         {
-            DONE = "总算是好了。",
-            DRYING = "啥时候能好啊...",
-            DRYINGINRAIN = "先摘下来吧 都快淋软了。",
-            GENERIC = "暴晒 脱水 说实话我不是很喜欢这个。",
-            BURNT = "把自己给晒没了吧哈。",
-            DONE_NOTMEAT = "额 这等的还蛮久的。",
-            DRYING_NOTMEAT = ".",
-            DRYINGINRAIN_NOTMEAT = "草！！你妈的啥时候下不好啊有病吧！",
+            DONE = "Jerky time!",
+            DRYING = "Meat takes a while to dry.",
+            DRYINGINRAIN = "Meat takes even longer to dry in rain.",
+            GENERIC = "暴晒 脱水 说句实话我真的很不喜欢这个。",
+            BURNT = "The rack got dried.",
+            DONE_NOTMEAT = "In laboratory terms, we would call that \"dry\".",
+            DRYING_NOTMEAT = "Drying things is not an exact science.",
+            DRYINGINRAIN_NOTMEAT = "Rain, rain, go away. Be wet again another day.",
         },
-        MEAT_DRIED = "干尸块。",
-        MERM = "这味多少有点熏脑子了。",
+        MEAT_DRIED = "Just jerky enough.",
+        MERM = "Smells fishy!",
         MERMHEAD =
         {
             GENERIC = "The stinkiest thing I'll smell all day.",
@@ -1684,7 +1685,7 @@ return {
         HOTCHILI = "Five alarm!",
         GUACAMOLE = "Avogadro's favorite dish.",
         MONSTERMEAT = "生的 但...和那一帮畜生一样恶心。",
-        MONSTERMEAT_DRIED = "我当时怎么没想到这种折磨方式啊...",
+        MONSTERMEAT_DRIED = "Strange-smelling jerky.",
         MOOSE = "I don't exactly know what that thing is.",
         MOOSE_NESTING_GROUND = "It puts its babies there.",
         MOOSEEGG = "The babies are like excited electrons trying to escape.",
@@ -1718,10 +1719,10 @@ return {
         PANFLUTE = "To serenade the animals.",
         PAPYRUS = "Some sheets of paper.",
         WAXPAPER = "Some sheets of wax paper.",
-        PENGUIN = "看起来它心情挺不错的 不过企鹅不是在南极么？",
+        PENGUIN = "Must be breeding season.",
         PERD = "Stupid bird! Stay away from those berries!",
         PEROGIES = "These turned out pretty good.",
-        PETALS = "...额我要这些花瓣干啥。",
+        PETALS = "制作一顶温柔的花帽子 不过我不喜欢。",
         PETALS_EVIL = "I'm not sure I want to hold those.",
         PHLEGM = "It's thick and pliable. And salty.",
         PICKAXE = "Iconic, isn't it?",
@@ -1775,7 +1776,7 @@ return {
         PUMPKIN_LANTERN = "Spooky!",
         PUMPKIN_SEEDS = "It's a pumpkin seed.",
         PURPLEAMULET = "It's whispering to me.",
-        PURPLEGEM = "漂亮 总感觉很像我呢。",
+        PURPLEGEM = "It contains the mysteries of the universe.",
         RABBIT =
         {
             GENERIC = "He's looking for carrots.",
@@ -1838,7 +1839,7 @@ return {
             GENERIC = "将一点肉体和灵魂寄托在另一个复制体上 想想就非常兴奋啊！",
             BURNT = "我缺失的应该能回来吧。",
         },
-        RESURRECTIONSTONE = "诡异的石台 似乎可以救活那些奇怪的朋友。",
+        RESURRECTIONSTONE = "诡异的石台 救活那些奇怪的朋友。",
         ROBIN =
         {
             GENERIC = "Does that mean winter is gone?",
@@ -1862,17 +1863,17 @@ return {
             GENERIC = "I think I can lift this one.",
             RAISED = "It's out of reach.",
         },
-        ROCK = "看来得需要一把稿子了。",
-        PETRIFIED_TREE = "嗯......这种情况书上没写啊。",
-        ROCK_PETRIFIED_TREE = "嗯......这种情况书上没写啊。",
-        ROCK_PETRIFIED_TREE_OLD = "嗯......这种情况书上没写啊。",
+        ROCK = "It wouldn't fit in my pocket.",
+        PETRIFIED_TREE = "It looks scared stiff.",
+        ROCK_PETRIFIED_TREE = "It looks scared stiff.",
+        ROCK_PETRIFIED_TREE_OLD = "It looks scared stiff.",
         ROCK_ICE =
         {
-            GENERIC = "喔~冰山！在地面上应该不会有船在撞上去了吧。",
-            MELTED = "化掉了 等到冬天在见吧。",
+            GENERIC = "Ice to meet you.",
+            MELTED = "Won't be useful until it freezes again.",
         },
         ROCK_ICE_MELTED = "Won't be useful until it freezes again.",
-        ICE = "嗷喔 还真挺凉的。",
+        ICE = "Ice to meet you.",
         ROCKS = "一些小石头块。",
         ROOK = "Storm the castle!",
         ROPE = "Some short lengths of rope.",
@@ -1936,9 +1937,9 @@ return {
 			FINISHED = "All patched up.",
 			READY = "Something's moving inside.",
 		},
-        GARGOYLE_HOUND = "内脏看起来好像都变成这样了。",
-        GARGOYLE_WEREPIG = "症状像是美杜莎搞的鬼。",
-		SEEDS = "这一颗...又是什么品种的呢？",
+        GARGOYLE_HOUND = "I don't like how it's looking at me.",
+        GARGOYLE_WEREPIG = "It looks very lifelike.",
+		SEEDS = "这一颗又是什么品种的呢？",
 		SEEDS_COOKED = "That cooked the life right out of 'em!",
 		SEWING_KIT = "Darn it! Darn it all to heck!",
 		SEWING_TAPE = "Good for mending.",
@@ -1954,8 +1955,8 @@ return {
 			STARVING = "It must be starving.",
 			SLEEPING = "It's barely making a peep.",
 		},
-		SMALLMEAT = "就这点儿？啧 真不过瘾呐...",
-		SMALLMEAT_DRIED = "这一小块还挺上瘾的。",
+		SMALLMEAT = "A tiny chunk of dead animal.",
+		SMALLMEAT_DRIED = "A little jerky.",
 		SPAT = "What a crusty looking animal.",
 		SPEAR = "That's one pointy stick.",
 		SPEAR_WATHGRITHR = "It feels very stabby.",
@@ -2228,7 +2229,7 @@ return {
 		WALL_HAY_ITEM = "This seems like a bad idea.",
 		WALL_STONE = "That's a nice wall.",
 		WALL_STONE_ITEM = "They make me feel so safe.",
-		WALL_RUINS = "还蛮古老的。",
+		WALL_RUINS = "An ancient piece of wall.",
 		WALL_RUINS_ITEM = "A solid piece of history.",
 		WALL_WOOD = 
 		{
@@ -2236,7 +2237,7 @@ return {
 			BURNT = "Burnt!",
 		},
 		WALL_WOOD_ITEM = "Pickets!",
-		WALL_MOONROCK = "挺光滑的呢。",
+		WALL_MOONROCK = "Spacey and smooth!",
 		WALL_MOONROCK_ITEM = "Very light, but surprisingly tough.",
 		FENCE = "It's just a wood fence.",
         FENCE_ITEM = "All we need to build a nice, sturdy fence.",
@@ -2293,7 +2294,7 @@ return {
         WINTER_FOOD1 = "The anatomy's not right, but I'll overlook it.", --gingerbread cookie
         WINTER_FOOD2 = "I'm going to eat forty. For science.", --sugar cookie
         WINTER_FOOD3 = "A Yuletide toothache waiting to happen.", --candy cane
-        WINTER_FOOD4 = "....看着就没胃口", --fruitcake
+        WINTER_FOOD4 = "That experiment may have been a tiny bit unethical.", --fruitcake
         WINTER_FOOD5 = "It's nice to eat something other than berries for once.", --yule log cake
         WINTER_FOOD6 = "I'm puddin' that straight in my mouth!", --plum pudding
         WINTER_FOOD7 = "It's a hollowed apple filled with yummy juice.", --apple cider
@@ -2348,8 +2349,8 @@ return {
 		HUMANMEAT = "Flesh is flesh. Where do I draw the line?",
 		HUMANMEAT_COOKED = "Cooked nice and pink, but still morally gray.",
 		HUMANMEAT_DRIED = "Letting it dry makes it not come from a human, right?",
-		ROCK_MOON = "陨石 看样子应该是从月球过来的。",
-		MOONROCKNUGGET = "陨石 看样子应该是从月球过来的。1",
+		ROCK_MOON = "That rock came from the moon.",
+		MOONROCKNUGGET = "That rock came from the moon.",
 		MOONROCKCRATER = "I should stick something shiny in it. For research.",
 		MOONROCKSEED = "There's science inside!",
 
@@ -2620,33 +2621,33 @@ return {
         --v2 Winona
         WINONA_CATAPULT = 
         {
-        	GENERIC = "还蛮吓人的。",
-        	OFF = "一巧妙的投石机缺失了他的心脏。",
-        	BURNING = "火有够大的。",
-        	BURNT = "可惜了。",
+        	GENERIC = "She's made a sort of automatic defense system.",
+        	OFF = "一款巧妙的投石机缺失了他的命根子。",
+        	BURNING = "It's on fire!",
+        	BURNT = "Science couldn't save it.",
         },
         WINONA_SPOTLIGHT = 
         {
-        	GENERIC = "总算是体验到站在舞台上是什么感觉了。",
+        	GENERIC = "What an ingenious idea!",
         	OFF = "没有电 它该如何照亮别人",
-        	BURNING = "火有够大的。",
-        	BURNT = "可惜了。",
+        	BURNING = "It's on fire!",
+        	BURNT = "Science couldn't save it.",
         },
         WINONA_BATTERY_LOW = 
         {
-        	GENERIC = "它正在努力的干活中。",
-        	LOWPOWER = "电量正在下降。",
+        	GENERIC = "Looks science-y. How does it work?",
+        	LOWPOWER = "It's getting low on power.",
         	OFF = "罢工了 也或许是生命走到了尽头。",
-        	BURNING = "火有够大的。",
-        	BURNT = "可惜了。",
+        	BURNING = "It's on fire!",
+        	BURNT = "Science couldn't save it.",
         },
         WINONA_BATTERY_HIGH = 
         {
-        	GENERIC = "蛮神奇的。",
-        	LOWPOWER = "嗯...快没电了。",
-        	OFF = "用宝石获取电的奇妙机器 不错。",
-        	BURNING = "火有够大的。",
-        	BURNT = "哎 可惜了。",
+        	GENERIC = "Hey! That's not science!",
+        	LOWPOWER = "It'll turn off soon.",
+        	OFF = "用宝石获取电的其妙机器 所以请给它添加漂亮的宝石吧。",
+        	BURNING = "It's on fire!",
+        	BURNT = "Science couldn't save it.",
         },
 
         --Wormwood
@@ -2657,14 +2658,14 @@ return {
         BOATFRAGMENT03 = "请问 这是谁的船？",
         BOATFRAGMENT04 = "已经快要泡烂了。",
         BOATFRAGMENT05 = "一些破碎的船板。",
-		BOAT_LEAK = "所以就看着这洞直冒水吗？",
+		BOAT_LEAK = "I should patch that up before we sink.",
         MAST = "有了这个大风就可以带船前进了。",
         SEASTACK = "It's a rock.",
         FISHINGNET = "Nothing but net.",
         ANTCHOVIES = "Yeesh. Can I toss it back?",
-        STEERINGWHEEL = "这个应该跟开车一样吧？",
-        ANCHOR = "这钩子还挺沉的。",
-        BOATPATCH = "以防万一的补丁。",
+        STEERINGWHEEL = "I could have been a sailor in another life.",
+        ANCHOR = "I wouldn't want my boat to float away.",
+        BOATPATCH = "Just in case of disaster.",
         DRIFTWOOD_TREE = 
         {
             BURNING = "That driftwood's burning!",
@@ -2705,7 +2706,7 @@ return {
             DISEASING = "Err, something's not right.",
 			BURNING = "It's burning!",
 		},
-        DEAD_SEA_BONES = "让我看看那个倒霉蛋子死在这了？",
+        DEAD_SEA_BONES = "That's what they get for coming up on land.",
         HOTSPRING = 
         {
         	GENERIC = "If only I could soak my weary bones.",
@@ -2714,7 +2715,7 @@ return {
 			EMPTY = "I'll just have to wait for it to fill up again.",
         },
         MOONGLASS = "It's very sharp.",
-        MOONGLASS_ROCK = "越漂亮的玻璃 越是得小心被划伤呢。",
+        MOONGLASS_ROCK = "I can practically see my reflection in it.",
         BATHBOMB = "It's just textbook chemistry.",
         TRAP_STARFISH =
         {
@@ -2761,22 +2762,22 @@ return {
 		},
         MOON_ALTAR =
         {
-            MOON_ALTAR_WIP = "看样子就感觉这不完整吧。",
-            GENERIC = "啧...好吵...",
+            MOON_ALTAR_WIP = "It wants to be finished.",
+            GENERIC = "Hm? What did you say?",
         },
 
-        MOON_ALTAR_IDOL = "蛮大的还。",
-        MOON_ALTAR_GLASS = "嗯...这块像一个底座。",
-        MOON_ALTAR_SEED = "嗯...我好像在那个书上看过...",
+        MOON_ALTAR_IDOL = "I feel compelled to carry it somewhere.",
+        MOON_ALTAR_GLASS = "It doesn't want to be on the ground.",
+        MOON_ALTAR_SEED = "It wants me to give it a home.",
 
-        MOON_ALTAR_ROCK_IDOL = "或许得凿开这块石头咱才知道这到底是是啥。",
-        MOON_ALTAR_ROCK_GLASS = "或许得凿开这块石头咱才知道这到底是是啥。",
-        MOON_ALTAR_ROCK_SEED = "或许得凿开这块石头咱才知道这到底是是啥。",
+        MOON_ALTAR_ROCK_IDOL = "There's something trapped inside.",
+        MOON_ALTAR_ROCK_GLASS = "There's something trapped inside.",
+        MOON_ALTAR_ROCK_SEED = "There's something trapped inside.",
 
         SEAFARING_PROTOTYPER =
         {
             GENERIC = "海上生存指南机。",
-            BURNT = "已经废了  看啥我可没碰啊。",
+            BURNT = "The science has been lost to sea.",
         },
         BOAT_ITEM = "It would be nice to do some experiments on the water.",
         STEERINGWHEEL_ITEM = "That's going to be the steering wheel.",
@@ -2798,7 +2799,7 @@ return {
         CARRAT = 
         {
         	DEAD = "That's the end of that.",
-        	GENERIC = "老鼠！？ 哈？？",
+        	GENERIC = "Are carrots supposed to have legs?",
         	HELD = "You're kind of ugly up close.",
         	SLEEPING = "It's almost cute.",
         },
@@ -2832,7 +2833,7 @@ return {
         MALBATROSS_FEATHER = "Plucked from a fine feathered fiend.",
         MALBATROSS_BEAK = "Smells fishy.",
         MAST_MALBATROSS_ITEM = "It's lighter than it looks.",
-        MAST_MALBATROSS = "额..嘿嘿 这羽毛是那只鸟借我的你信吗？嘿嘿。",
+        MAST_MALBATROSS = "那只大鸟的羽毛能祝我一帆风顺！",
 		MALBATROSS_FEATHERED_WEAVE = "I'm making a quill-t!",
 
         WALKINGPLANK = "Couldn't we have just made a lifeboat?",

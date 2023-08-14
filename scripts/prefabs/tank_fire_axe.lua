@@ -99,7 +99,7 @@ local function fn()
     inst.components.tool:SetAction(ACTIONS.CHOP)--允许砍树
     
     inst:AddComponent("projectile")
-    inst.components.projectile:SetSpeed(10)
+    inst.components.projectile:SetSpeed(15)
     inst.components.projectile:SetCanCatch(true)
     inst.components.projectile:SetOnThrownFn(OnThrown)
     inst.components.projectile:SetOnHitFn(OnHit)

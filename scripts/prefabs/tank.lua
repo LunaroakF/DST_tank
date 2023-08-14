@@ -2,6 +2,7 @@ local MakePlayerCharacter = require "prefabs/player_common"
 
 --资源引用
 local assets = {
+	Asset("ANIM", "anim/tank.zip"),
     Asset("SCRIPT", "scripts/prefabs/player_common.lua"),
 }
 
@@ -18,13 +19,22 @@ local prefabs = FlattenTree(start_inv, true)
 
 --当玩家变成复活或变成(人类？)时执行
 local function onbecamehuman(inst)
-	-- Set speed when not a ghost (optional)
 	inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1)
 end
 --当玩家死亡或变成鬼魂时执行
 local function onbecameghost(inst)
-	-- Remove speed modifier when becoming a ghost
-   inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "tank_speed_mod")
+	-- 死亡后生成锁链
+
+	local x,y,z = inst.Transform:GetWorldPosition() 
+	SpawnPrefab("tank_chain_noactived").Transform:SetPosition(x, y, z)
+	--靠近松树掉san
+	local ents = TheSim:FindEntities(x,y,z, 1)--检索距离为1
+	for k,v in pairs(ents) do
+		if v:HasTag("playerskeleton")then
+			v:Remove()
+		end
+	end
+   	inst.components.locomotor:RemoveExternalSpeedMultiplier(inst, "tank_speed_mod")
 end
 
 --当玩家被加载时执行
@@ -34,7 +44,7 @@ local function onload(inst)
 
     if inst:HasTag("playerghost") then
         onbecameghost(inst)
-    else
+    else 
         onbecamehuman(inst)
     end
 end
@@ -43,9 +53,17 @@ local function SomeBodyTouchMe(inst,data)
     if inst and data then
         if inst.DontTouchMeTimes > 0 then
             inst.components.health:SetAbsorptionAmount(1)
-          	local fx = SpawnPrefab("alterguardian_lasertrail")
-            fx.entity:SetParent(inst.entity)
+          	--local fx = SpawnPrefab("alterguardian_lasertrail")
+			local fx1 = SpawnPrefab("wanda_attack_pocketwatch_old_fx")
+			local fx2 = SpawnPrefab("wanda_attack_shadowweapon_old_fx")
+			
+			local a = math.random(0,100)
+			if a < 50 then
+            	fx1.entity:SetParent(inst.entity)
+			else
+				fx2.entity:SetParent(inst.entity)
 			--fx.entity:
+			end
 		end
     end
 end
@@ -82,6 +100,7 @@ local master_postinit = function(inst)
 	end)
 
 	inst:ListenForEvent("DontTouchMeTimesChanged",function(inst)
+		--CustomSetSkinMode(inst, "dash")
 		if inst.DontTouchMeTimes > 0 then
 			inst.components.health:SetAbsorptionAmount(1)
 		else

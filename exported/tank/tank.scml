@@ -195,8 +195,85 @@
     <folder id="19" name="face_sail">
         <file id="0" name="face_sail/face_sail-0.png" width="200" height="200" pivot_x="0.622747" pivot_y="0.570002"/>
     </folder>
+    <folder id="20" name="img">
+        <file id="0" name="img/01.png" width="240" height="280" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="img/02.png" width="240" height="280" pivot_x="0" pivot_y="1"/>
+        <file id="2" name="img/03.png" width="240" height="280" pivot_x="0" pivot_y="1"/>
+    </folder>
     <entity id="0" name="template">
-        <animation id="0" name="BUILD_PLAYER" length="1000">
+        <animation id="0" name="dash" length="1000">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" name="01" folder="20" file="0" abs_x="-123" abs_y="143" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="294">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="2" time="344">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="0" z_index="2"/>
+                </key>
+                <key id="3" time="747">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="1" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="0" z_index="3"/>
+                </key>
+                <key id="4" time="769">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                    <object_ref id="2" timeline="2" key="2" z_index="2"/>
+                    <object_ref id="3" timeline="3" key="1" z_index="3"/>
+                    <object_ref id="4" timeline="4" key="0" z_index="4"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="01">
+                <key id="0" spin="0">
+                    <object folder="20" file="0" x="-123" y="143"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="02">
+                <key id="0" time="294" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+                <key id="1" time="344" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+                <key id="2" time="747" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+                <key id="3" time="769" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="03">
+                <key id="0" time="344" spin="0">
+                    <object folder="20" file="2" x="-123" y="144"/>
+                </key>
+                <key id="1" time="747" spin="0">
+                    <object folder="20" file="2" x="-123" y="144"/>
+                </key>
+                <key id="2" time="769" spin="0">
+                    <object folder="20" file="2" x="-123" y="144"/>
+                </key>
+            </timeline>
+            <timeline id="3" name="02_000">
+                <key id="0" time="747" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+                <key id="1" time="769" spin="0">
+                    <object folder="20" file="1" x="-123" y="145"/>
+                </key>
+            </timeline>
+            <timeline id="4" name="01_000">
+                <key id="0" time="769" spin="0">
+                    <object folder="20" file="0" x="-123" y="144"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="BUILD_PLAYER" length="1000">
             <mainline>
                 <key id="0">
                     <object_ref id="0" name="tail_5_71" folder="14" file="0" abs_x="-323.3115" abs_y="47.199" abs_pivot_x="0.628" abs_pivot_y="0.5" abs_angle="17.582015" abs_scale_x="1.02776" abs_scale_y="1.01232" abs_a="1" timeline="71" key="0" z_index="0"/>
