@@ -108,6 +108,13 @@ local master_postinit = function(inst)
 		end
 	end)
 
+	local axe = nil
+	inst:ListenForEvent("ChangeWeapon",function(inst)
+	    if not axe == nil then
+			inst.components.talker:Say("害怕")
+		end
+    end)
+
 	--免伤
 	inst.DontTouchMeTimes = 0
 	inst:ListenForEvent("attacked", SomeBodyTouchMe)
@@ -123,6 +130,11 @@ end
 --X键使用数据
 TheInput:AddKeyUpHandler(KEY_X, function()
 	SendModRPCToServer( MOD_RPC["tank"]["use_data"])
+end)
+
+--Z键切换斧子
+TheInput:AddKeyUpHandler(KEY_Z, function()
+	SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
 end)
 
 return MakePlayerCharacter("tank", prefabs, assets, common_postinit, master_postinit, prefabs)

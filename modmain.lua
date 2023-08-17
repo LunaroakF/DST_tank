@@ -155,6 +155,12 @@ local function UseData(inst)
 end
 AddModRPCHandler("tank", "use_data", UseData)
 
+local function SwitchAxe(inst)
+	inst:PushEvent("ChangeWeapon")
+end
+AddModRPCHandler("tank", "switch_axe", SwitchAxe)
+
+
 --免疫硬直，from myth
 AddStategraphPostInit("wilson", function(sg)
     local old_onattacked = sg.events['attacked'].fn

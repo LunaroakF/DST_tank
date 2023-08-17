@@ -17,11 +17,17 @@ local function onequip(inst, owner) --装备
 								--替换的动画部件	使用的动画	替换的文件夹（注意这里也是文件夹的名字）
     owner.AnimState:Show("ARM_carry")
     owner.AnimState:Hide("ARM_normal")
+    if owner:HasTag("tank")then
+        owner.axe = inst
+    end
 end
 
 local function onunequip(inst, owner) --解除装备
     owner.AnimState:Hide("ARM_carry")
     owner.AnimState:Show("ARM_normal")
+    if owner:HasTag("tank")then
+        owner.axe = nil
+    end
 end
 
 local function OnThrown(inst, owner, target)
@@ -60,13 +66,16 @@ local function OnCaught(inst, catcher)
         catcher:PushEvent("catch")
     end
 end
+   
 
 local function fn()
     local inst = CreateEntity()
+    local mode = "weapon" --or projectile
 
     inst.entity:AddTransform()
     inst.entity:AddAnimState()
     inst.entity:AddNetwork()
+    inst:AddTag("tank_fire_axe")
 
     MakeInventoryPhysics(inst)
     RemovePhysicsColliders(inst)
@@ -75,11 +84,9 @@ local function fn()
     inst.AnimState:SetBuild("tank_fire_axe")
     inst.AnimState:PlayAnimation("idle")
 
-    inst:AddTag("weapon")
     --inst:AddTag("sharp") --武器的标签跟攻击方式跟攻击音效有关 没有特殊的话就用这两个
     --inst:AddTag("pointy")
-    inst:AddTag("thrown")
-    inst:AddTag("projectile")
+    
 
     local swap_data = {sym_build = "swap_boomerang"}
     MakeInventoryFloatable(inst, "small", 0.18, {0.8, 0.9, 0.8}, true, -6, swap_data)
@@ -97,14 +104,17 @@ local function fn()
     --inst.components.weapon:SetRange(1,2)    
     inst:AddComponent("tool")
     inst.components.tool:SetAction(ACTIONS.CHOP)--允许砍树
-    
-    inst:AddComponent("projectile")
-    inst.components.projectile:SetSpeed(15)
-    inst.components.projectile:SetCanCatch(true)
-    inst.components.projectile:SetOnThrownFn(OnThrown)
-    inst.components.projectile:SetOnHitFn(OnHit)
-    inst.components.projectile:SetOnMissFn(OnMiss)
-    inst.components.projectile:SetOnCaughtFn(OnCaught)
+
+    inst:AddTag("thrown")
+        inst:AddTag("projectile")
+        inst:AddComponent("projectile")
+        inst.components.projectile:SetSpeed(15)
+        inst.components.projectile:SetCanCatch(true)
+        inst.components.projectile:SetOnThrownFn(OnThrown)
+        inst.components.projectile:SetOnHitFn(OnHit)
+        inst.components.projectile:SetOnMissFn(OnMiss)
+        inst.components.projectile:SetOnCaughtFn(OnCaught)
+ 
     -------
     
     --inst:AddComponent("finiteuses") --使用次数（叫耐久也可以）
@@ -122,9 +132,14 @@ local function fn()
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
 
+
+
+
     MakeHauntableLaunch(inst)
 
     return inst
 end
+
+
 
 return Prefab("tank_fire_axe", fn, assets)
