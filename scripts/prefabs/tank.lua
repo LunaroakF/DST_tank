@@ -108,11 +108,10 @@ local master_postinit = function(inst)
 		end
 	end)
 
-	local axe = nil
+
 	inst:ListenForEvent("ChangeWeapon",function(inst)
-	    if not axe == nil then
-			inst.components.talker:Say("害怕")
-		end
+		inst.components.talker:Say("害怕")
+		inst.components.inventory:RemoveItemBySlot(16)
     end)
 
 	--免伤
