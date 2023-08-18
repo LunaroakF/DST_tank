@@ -146,7 +146,7 @@ local function UseData(inst)
 					inst.DontTouchMeTimes = 3
 				end
 				inst:PushEvent("DontTouchMeTimesChanged")
-				inst.components.talker:Say("你是想和我比寿命吗？")
+				inst.components.talker:Say(STRINGS.TANK_USE_DATA)
 				inst.components.tank_data.current=inst.components.tank_data.current-8
 				inst.components.tank_data:SetCD(14)
 			end

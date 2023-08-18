@@ -1,3 +1,5 @@
+--ThePlayer.components.tank_data:DoDelta(60)
+
 local function oncurrent(self, current)
     if self.inst.tank_data then 
         self.inst.tank_data:set(current)
