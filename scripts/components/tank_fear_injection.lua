@@ -21,7 +21,7 @@ local function OnTaskTick(inst, self)
 
     --包里有蝴蝶加san
     if self.inst.components.inventory:FindItem(function(item) return item.prefab == "butterflywings" end) then
-        if not isbutterflywings then--一天+0.5
+        if not isbutterflywings then--一天+0.5,无法叠加
             sanitytotal=sanitytotal+(0.5/(TUNING.DAY_TIME_DEFAULT+TUNING.DUSK_TIME_DEFAULT+TUNING.NIGHT_TIME_DEFAULT))
             isbutterflywings = true
         end

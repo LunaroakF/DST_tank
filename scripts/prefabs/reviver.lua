@@ -53,6 +53,8 @@ local function fn()
     inst.entity:AddSoundEmitter()
     inst.entity:AddNetwork()
 
+    inst:AddTag("reviverheart")
+
     MakeInventoryPhysics(inst)
 
     inst.AnimState:SetBank("bloodpump")
@@ -69,6 +71,18 @@ local function fn()
     inst.components.inventoryitem:SetOnDroppedFn(ondropped)
     inst.components.inventoryitem:SetOnPutInInventoryFn(onpickup)
     inst.components.inventoryitem:SetSinks(true)
+
+    inst.components.inventoryitem:SetOnPickupFn(function(inst,owner)
+        if not owner:HasTag("tank") then
+            Periodic:Cancel()
+        else
+            inst.tank_data_Periodic = owner:DoPeriodicTask(.25,function()
+                owner.components.inventory:DropEverythingWithTag("reviverheart")
+                owner.components.talker:Say(STRINGS.TANK_FEAR_THE_HEART)
+                inst.tank_data_Periodic:Cancel()
+            end)
+        end
+    end)
 
     inst:AddComponent("inspectable")
     inst:AddComponent("tradable")
