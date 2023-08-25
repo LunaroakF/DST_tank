@@ -72,7 +72,9 @@ local function AttackOther(inst, data)
 	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒
     local target = data.target
 	if target.components.inventory ~= nil and target.components.inventory:HasItemWithTag("earmuffshat",0) then
-		--inst.components.talker:Say("他有帽子")
+		if inst.components.tank_fear_injection.PHrefill == 0 then
+			inst.components.talker:Say(STRINGS.TANK_FIRST_GET_BLOOD)
+		end
 		inst.components.tank_fear_injection:PHrefillDoDelta(5)
 	end
 end

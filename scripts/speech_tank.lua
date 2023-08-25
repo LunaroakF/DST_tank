@@ -27,6 +27,7 @@ STRINGS.TANK_FEAR_THE_HEART="蹦蹦跳跳的好恐怖"
 STRINGS.TANK_USE_DATA = "你是想和我比寿命吗？"
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
 STRINGS.TANK_REVIVER_FEAR = "够了...这次我不想再拿着了"
+STRINGS.TANK_FIRST_GET_BLOOD = "温暖的血液！"
 STRINGS.TANK_CAN_NOT_USE_MULTIPLAYER_PORTAL = "▓░ ▓▓▓ ░▓ ▓░▓░ ▓░▓░ ░ ░░░ ░░░ ▓░▓░▓▓"
 
 
