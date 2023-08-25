@@ -68,6 +68,15 @@ local function SomeBodyTouchMe(inst,data)
     end
 end
 
+local function AttackOther(inst, data)
+	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒
+    local target = data.target
+	if target.components.inventory ~= nil and target.components.inventory:HasItemWithTag("earmuffshat",0) then
+		--inst.components.talker:Say("他有帽子")
+		inst.components.tank_fear_injection:PHrefillDoDelta(5)
+	end
+end
+
 --服务器和客户端初始化的时候，推荐在这里加一系列Tags
 local common_postinit = function(inst) 
 	-- Minimap icon
@@ -82,10 +91,14 @@ local master_postinit = function(inst)
 	--设置初始物品
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
 	
+	
+
 	--人物的声音
 	inst.soundsname = "willow"
 	inst:AddComponent("tank_data")
 	inst:AddComponent("tank_fear_injection")
+	--inst:AddComponent("combat")
+	--inst.components.combat.onhitotherfn = OnHitOther
 
 	inst.components.health:SetMaxHealth(TUNING.TANK_HEALTH)
 	inst.components.hunger:SetMax(TUNING.TANK_HUNGER)
@@ -108,6 +121,7 @@ local master_postinit = function(inst)
 		end
 	end)
 
+	inst:ListenForEvent("onhitother",AttackOther)
 
 	inst:ListenForEvent("ChangeWeapon",function(inst)
 		inst.components.talker:Say("害怕")

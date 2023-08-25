@@ -51,11 +51,17 @@ local function OnTaskTick(inst, self)
         self.inst.components.sanity.rate_modifier = 0--锁定san
     end
 
+    if self.PHrefill ~= 0 then
+        self.PHrefill = self.PHrefill - 1
+        self.inst.components.health:DoDelta(1)
+    end
+
 end
 
 
 local tank_fear_injection = Class(function(self,inst)
     self.inst=inst
+    self.PHrefill = 0
     self.oldhascurrentitem = 0
     self.hascurrentitem = 0
     --蜂针,荆棘外壳,蜜蜂地雷,蓝宝石,吹箭,尖刺灌木,仙人掌,羽毛笔,鱼,一角鲸的角,强心针,伏特羊角,弹簧秤,针线包,触手尖刺,刺耳三叉戟
@@ -71,5 +77,10 @@ local tank_fear_injection = Class(function(self,inst)
 		inst.components.hunger:DoDelta(10)
 	end)
 end)
+
+function tank_fear_injection:PHrefillDoDelta(delta)
+	local old = self.PHrefill
+	self.PHrefill = old + delta
+end
 
 return tank_fear_injection
