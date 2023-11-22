@@ -69,7 +69,7 @@ local function SomeBodyTouchMe(inst,data)
 end
 
 local function AttackOther(inst, data)
-	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒
+	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒,有大问题
     local target = data.target
 	if target.components.inventory ~= nil and target.components.inventory:HasItemWithTag("earmuffshat",0) then
 		if inst.components.tank_fear_injection.PHrefill == 0 then
@@ -148,8 +148,10 @@ TheInput:AddKeyUpHandler(KEY_X, function()
 end)
 
 --Z键切换斧子
-TheInput:AddKeyUpHandler(KEY_Z, function()
-	SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
+TheInput:AddMouseButtonHandler( function()
+	if clickMouse(right) then
+		SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
+	end
 end)
 
 return MakePlayerCharacter("tank", prefabs, assets, common_postinit, master_postinit, prefabs)
