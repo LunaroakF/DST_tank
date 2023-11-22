@@ -156,6 +156,7 @@ end
 AddModRPCHandler("tank", "use_data", UseData)
 
 local function SwitchAxe(inst)
+	
 	inst:PushEvent("ChangeWeapon")
 end
 AddModRPCHandler("tank", "switch_axe", SwitchAxe)
