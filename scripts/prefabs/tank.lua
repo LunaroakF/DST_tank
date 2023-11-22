@@ -148,8 +148,8 @@ TheInput:AddKeyUpHandler(KEY_X, function()
 end)
 
 --Z键切换斧子
-TheInput:AddMouseButtonHandler( function()
-	if TheInput:IsMouseDown(right) then
+TheInput:AddMouseButtonHandler(function()
+	if TheInput:IsMouseDown(MOUSEBUTTON_RIGHT) then
 		SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
 	end
 end)
