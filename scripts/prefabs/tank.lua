@@ -149,7 +149,7 @@ end)
 
 --Z键切换斧子
 TheInput:AddMouseButtonHandler( function()
-	if clickMouse(right) then
+	if TheInput:IsMouseDown(right) then
 		SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
 	end
 end)
