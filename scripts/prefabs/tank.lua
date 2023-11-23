@@ -126,10 +126,17 @@ local master_postinit = function(inst)
 	inst:ListenForEvent("onhitother",AttackOther)
 
 	inst:ListenForEvent("ChangeWeapon",function(inst)
-		--inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE)
-		a = inst.components.inventory:GetEquippedItem(0)
-		inst.components.talker:Say(a)
-		--inst.components.inventory:RemoveItem(inst.components.inventory:GetEquippedItem(1))
+		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE)
+		--inst.components.talker:Say(inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HEAD))
+		local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+		local ForwardItem = nil
+		if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
+			ForwardItem = SpawnPrefab("tank_fire_axe")
+		else
+			ForwardItem = SpawnPrefab("tank_fire_axe_speed")
+		end
+		inst.components.inventory:RemoveItem(ExistItem)
+		inst.components.inventory:Equip(ForwardItem)
     end)
 
 	--免伤

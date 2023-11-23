@@ -78,6 +78,7 @@ local function fn1()
     inst.entity:AddAnimState()
     inst.entity:AddNetwork()
     inst:AddTag("tank_fire_axe")
+    inst:AddTag("tank_fire_axe_speed")
 
     MakeInventoryPhysics(inst)
     RemovePhysicsColliders(inst)
