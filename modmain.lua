@@ -68,6 +68,12 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_fire_axe"] = {
 	image = "tank_fire_axe.tex",
 }
 
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_fire_axe_speed"] = {
+	name = STRINGS.NAMES.TANK_FIRE_AXE,
+	atlas = "images/items/tank_fire_axe_speed.xml",
+	image = "tank_fire_axe_speed.tex",
+}
+
 --三明治
 TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_luxury_sandwich"] = {
 	name = STRINGS.NAMES.TANK_LUXURY_SANDWICH,

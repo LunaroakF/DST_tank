@@ -126,14 +126,15 @@ local master_postinit = function(inst)
 	inst:ListenForEvent("onhitother",AttackOther)
 
 	inst:ListenForEvent("ChangeWeapon",function(inst)
-		inst.components.talker:Say("害怕")
-		inst.components.inventory:RemoveItemBySlot(16)
+		--inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE)
+		a = inst.components.inventory:GetEquippedItem(0)
+		inst.components.talker:Say(a)
+		--inst.components.inventory:RemoveItem(inst.components.inventory:GetEquippedItem(1))
     end)
 
 	--免伤
 	inst.DontTouchMeTimes = 0
 	inst:ListenForEvent("attacked", SomeBodyTouchMe)
-
 	--伤害倍率
     inst.components.combat.damagemultiplier = 1
 	--饥饿倍率
@@ -148,9 +149,14 @@ TheInput:AddKeyUpHandler(KEY_X, function()
 end)
 
 --Z键切换斧子
-TheInput:AddMouseButtonHandler(function()
-	if TheInput:IsMouseDown(MOUSEBUTTON_RIGHT) then
-		SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
+--TheInput:AddMouseButtonHandler(function()
+--	if TheInput:IsMouseDown(MOUSEBUTTON_RIGHT) and ThePlayer.components.inventory:EquipHasTag("tank_fire_axe") then
+--		SendModRPCToServer( MOD_RPC["tank"]["switch_axe"])
+--	end
+--end)
+TheInput:AddKeyUpHandler(KEY_Z, function()
+	if ThePlayer.components.inventory:EquipHasTag("tank_fire_axe") then
+		SendModRPCToServer(MOD_RPC["tank"]["switch_axe"])
 	end
 end)
 
