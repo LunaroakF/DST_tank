@@ -79,6 +79,21 @@ local function AttackOther(inst, data)
 	end
 end
 
+local function ChangeWeapon(inst)
+	--切换斧子
+	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+	local ForwardItem = nil
+	if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
+		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_NORMAL)
+		ForwardItem = SpawnPrefab("tank_fire_axe")
+	else
+		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_SPEED)
+		ForwardItem = SpawnPrefab("tank_fire_axe_speed")
+	end
+	inst.components.inventory:RemoveItem(ExistItem)
+	inst.components.inventory:Equip(ForwardItem)
+end
+
 --服务器和客户端初始化的时候，推荐在这里加一系列Tags
 local common_postinit = function(inst) 
 	-- Minimap icon
@@ -125,19 +140,7 @@ local master_postinit = function(inst)
 
 	inst:ListenForEvent("onhitother",AttackOther)
 
-	inst:ListenForEvent("ChangeWeapon",function(inst)
-		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE)
-		--inst.components.talker:Say(inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HEAD))
-		local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
-		local ForwardItem = nil
-		if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
-			ForwardItem = SpawnPrefab("tank_fire_axe")
-		else
-			ForwardItem = SpawnPrefab("tank_fire_axe_speed")
-		end
-		inst.components.inventory:RemoveItem(ExistItem)
-		inst.components.inventory:Equip(ForwardItem)
-    end)
+	inst:ListenForEvent("ChangeWeapon",ChangeWeapon)
 
 	--免伤
 	inst.DontTouchMeTimes = 0
