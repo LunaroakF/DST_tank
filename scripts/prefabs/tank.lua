@@ -136,6 +136,21 @@ local master_postinit = function(inst)
 		end
 	end)
 
+	
+	inst:ListenForEvent("equip",function(inst)
+
+		local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+		if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
+			inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.2)
+		else
+			inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.0)
+		end
+	end)
+
+	inst:ListenForEvent("unequip",function(inst)
+		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.0)
+	end)
+
 	inst:ListenForEvent("DontTouchMeTimesChanged",function(inst)
 		--CustomSetSkinMode(inst, "dash")
 		if inst.DontTouchMeTimes > 0 then
