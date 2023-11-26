@@ -70,7 +70,7 @@ local function fn()
     inst.components.hauntable:SetOnHauntFn(OnHaunt)
 
     inst.components.workable:SetWorkAction(ACTIONS.HAMMER)--用锤子
-    inst.components.workable:SetWorkLeft(3)--敲3下
+    inst.components.workable:SetWorkLeft(1)--敲1下
     inst.components.workable:SetOnFinishCallback(onhammered)
 
     -- MakeHauntableLaunch(inst)
