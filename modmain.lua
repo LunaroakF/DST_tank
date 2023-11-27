@@ -6,7 +6,8 @@ PrefabFiles = {
     "tank_fire_axe",
 	"tank_luxury_sandwich",
 	"tank_fallen_data",
-	"tank_chain"
+	"tank_chain",
+
 }
 
 --资源引用
@@ -94,6 +95,13 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_noactived"] = {
 	name = STRINGS.NAMES.TANK_CHAIN_NOACTIVED,
 	atlas = "images/items/tank_chain_noactived.xml",
 	image = "tank_chain_noactived.tex",
+}
+
+--激活的锁链
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_actived"] = {
+	name = STRINGS.NAMES.TANK_CHAIN_ACTIVED,
+	atlas = "images/items/tank_chain_actived.xml",
+	image = "tank_chain_actived.tex",
 }
 
 --数据GUI

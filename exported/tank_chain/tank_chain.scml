@@ -261,14 +261,24 @@
     <entity id="1" name="tank_chain_actived">
         <animation id="0" name="idle" length="1000">
             <mainline>
-                <key id="0"/>
+                <key id="0">
+                    <object_ref id="0" name="image-1_000" folder="0" file="1" abs_x="-281" abs_y="371.333333" abs_pivot_x="0" abs_pivot_y="1" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="0"/>
+                </key>
                 <key id="1" time="507">
                     <object_ref id="0" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="image-1">
                 <key id="0" time="507" spin="0">
-                    <object folder="0" file="1" x="-280.589286" y="370.875"/>
+                    <object folder="0" file="1" x="-280.589286" y="370.875" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="image-1_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="-281" y="371.333333"/>
+                </key>
+                <key id="1" time="507" spin="0">
+                    <object folder="0" file="1" x="-281" y="371.333333"/>
                 </key>
             </timeline>
         </animation>
