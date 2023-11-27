@@ -1,6 +1,6 @@
 local assets =
 {
-    Asset("ANIM", "anim/tank_chain_noactived.zip"),  --地上的动画
+    Asset("ANIM", "anim/tank_chain.zip"),  --地上的动画
 }
 
 SetSharedLootTable('chain',--掉落物组"chain"

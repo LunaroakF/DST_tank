@@ -6,7 +6,7 @@ PrefabFiles = {
     "tank_fire_axe",
 	"tank_luxury_sandwich",
 	"tank_fallen_data",
-	"tank_chain_noactived"
+	"tank_chain"
 }
 
 --资源引用

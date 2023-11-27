@@ -2,6 +2,7 @@
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
     <folder id="0" name="image">
         <file id="0" name="image/image-0.png" width="500" height="500" pivot_x="0.557769" pivot_y="0.262948"/>
+        <file id="1" name="image/image-1.png" width="500" height="500" pivot_x="0" pivot_y="1"/>
     </folder>
     <entity id="0" name="tank_chain_noactived">
         <animation id="0" name="idle" length="1000">
@@ -253,6 +254,21 @@
                 </key>
                 <key id="40" time="1001" spin="0">
                     <object folder="0" file="0" x="-2" y="3" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="1" name="tank_chain_actived">
+        <animation id="0" name="idle" length="1000">
+            <mainline>
+                <key id="0"/>
+                <key id="1" time="507">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="image-1">
+                <key id="0" time="507" spin="0">
+                    <object folder="0" file="1" x="-280.589286" y="370.875"/>
                 </key>
             </timeline>
         </animation>
