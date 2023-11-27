@@ -31,7 +31,7 @@ local function HasPhysics(obj)
     return obj.Physics ~= nil
 end
 
-local function fn()
+local function fn__noactived()
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -78,4 +78,4 @@ local function fn()
     return inst
 end
 
-return Prefab("tank_chain_noactived", fn, assets)
+return Prefab("tank_chain_noactived", fn_noactived, assets)
