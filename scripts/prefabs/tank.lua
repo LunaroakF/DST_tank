@@ -140,7 +140,7 @@ local master_postinit = function(inst)
 	inst:ListenForEvent("equip",function(inst)
 
 		local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
-		if ExistItem = nil then
+		if ExistItem == nil then
 			return 
 		end
 		if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then

@@ -22,9 +22,10 @@ local function onhammered(inst)--被挖了后
     inst:Remove()
 end
 
-local function BeActived(inst)
+local function BeActived(inst,haunter)
     local x,y,z = inst.Transform:GetWorldPosition() 
     SpawnPrefab("tank_chain_actived").Transform:SetPosition(x, y, z)
+    haunter.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
     inst:Remove()
 end
 
@@ -38,7 +39,7 @@ local function OnHaunt(inst, haunter)--作祟后
         end
         if inst:HasTag("tank_chain_noactived") and haunter.components.tank_data.current>=45 then
             haunter.components.tank_data.current = haunter.components.tank_data.current-45
-            BeActived(inst)
+            BeActived(inst,haunter)
         end
     end
 end
