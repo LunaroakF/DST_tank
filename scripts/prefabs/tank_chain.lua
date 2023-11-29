@@ -24,10 +24,11 @@ end
 
 local function BeActived(inst,haunter)
     local x,y,z = inst.Transform:GetWorldPosition() 
-    SpawnPrefab("tank_chain_actived").Transform:SetPosition(x, y, z)
+    local older = SpawnPrefab("tank_chain_actived")
+    older.Transform:SetPosition(x, y, z)
     haunter.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
     local fx = SpawnPrefab("alterguardian_lasertrail")
-    fx.entity:SetParent(inst.entity)
+    fx.entity:SetParent(older.entity)
     inst:Remove()
 end
 
