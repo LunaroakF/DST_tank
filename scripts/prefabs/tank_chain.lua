@@ -35,13 +35,12 @@ end
 local function OnHaunt(inst, haunter)--作祟后
     if haunter:HasTag("tank") then
         if inst:HasTag("tank_chain_actived")then
-            haunter.components.tank_data.current = haunter.components.tank_data.current-45
             haunter:PushEvent("respawnfromghost", { source = inst })
             onhammered(inst)
             return true
         end
         if inst:HasTag("tank_chain_noactived") and haunter.components.tank_data.current>=45 then
-            haunter.components.tank_data.current = haunter.components.tank_data.current-45
+            haunter.components.tank_data:DoDelta(-45)
             BeActived(inst,haunter)
         end
     end

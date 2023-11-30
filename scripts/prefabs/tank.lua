@@ -121,8 +121,10 @@ local master_postinit = function(inst)
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
 	
 	local IsAxeCanShoot = false
+	local AxeTargetPostion = nil
 	inst:ListenForEvent("TargetRan", function(inst,data)--不允许玩家继续传送
 		inst.IsAxeCanShoot = false
+		AxeTargetPostion = nil
 	end)
 
 	inst:ListenForEvent("AxeThrown", function(inst,data)--允许玩家传送
