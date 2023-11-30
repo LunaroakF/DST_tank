@@ -35,6 +35,7 @@ end
 local function OnThrown(inst, owner, target)
     if target ~= owner then
         owner.SoundEmitter:PlaySound("dontstarve/wilson/boomerang_throw")
+        owner.PushEvent("AxeThrown")
     end
     inst.AnimState:PlayAnimation("spin_loop", true)
     inst.components.inventoryitem.pushlandedevents = false
@@ -42,6 +43,7 @@ end
 
 local function OnHit(inst, owner, target)
     OnDropped(inst)
+    owner.PushEvent("TargetRan")
     if target ~= nil and target:IsValid() and target.components.combat then
         local impactfx = SpawnPrefab("impact")
         if impactfx ~= nil then
@@ -54,6 +56,7 @@ end
 
 local function OnMiss(inst, owner, target)
     if owner == target then
+        owner.PushEvent("TargetRan")
         OnDropped(inst)
     end
 end

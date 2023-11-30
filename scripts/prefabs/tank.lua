@@ -85,6 +85,11 @@ local function AttackOther(inst, data)
 end
 
 local function ChangeFireAxe(inst)
+	--传送
+	if inst.IsAxeCanShoot then
+		
+	end
+
 	--切换斧子
 	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
 	local ForwardItem = nil
@@ -115,7 +120,14 @@ local master_postinit = function(inst)
 	--设置初始物品
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
 	
-	
+	local IsAxeCanShoot = false
+	inst:ListenForEvent("TargetRan", function(inst,data)--不允许玩家继续传送
+		inst.IsAxeCanShoot = false
+	end)
+
+	inst:ListenForEvent("AxeThrown", function(inst,data)--允许玩家传送
+		inst.IsAxeCanShoot = true
+	end)
 
 	--人物的声音
 	inst.soundsname = "willow"
