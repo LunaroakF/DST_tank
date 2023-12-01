@@ -8,9 +8,12 @@ local assets =
     Asset("IMAGE", "images/items/tank_fire_axe_speed.tex"),
 }
 
-local function OnDropped(inst)
+local function OnDropped(inst, owner)
     inst.AnimState:PlayAnimation("idle")
     inst.components.inventoryitem.pushlandedevents = true
+    if owner:HasTag("tank") then
+        owner.AxeTargetPostion = inst.Transform:GetWorldPosition()
+    end
     inst:PushEvent("on_landed")
 end
 
@@ -21,6 +24,7 @@ local function onequip(inst, owner) --装备
     owner.AnimState:Hide("ARM_normal")
     if owner:HasTag("tank")then
         owner.axe = inst
+        owner.AxeTargetPostion = nil
     end
 end
 
@@ -42,7 +46,7 @@ local function OnThrown(inst, owner, target)
 end
 
 local function OnHit(inst, owner, target)
-    OnDropped(inst)
+    OnDropped(inst, owner)
     owner.PushEvent("TargetRan")
     if target ~= nil and target:IsValid() and target.components.combat then
         local impactfx = SpawnPrefab("impact")
@@ -57,7 +61,8 @@ end
 local function OnMiss(inst, owner, target)
     if owner == target then
         owner.PushEvent("TargetRan")
-        OnDropped(inst)
+        
+        OnDropped(inst, owner)
     end
 end
 
