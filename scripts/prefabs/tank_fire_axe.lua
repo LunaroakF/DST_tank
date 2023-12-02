@@ -12,7 +12,11 @@ local function OnDropped(inst, owner)
     inst.AnimState:PlayAnimation("idle")
     inst.components.inventoryitem.pushlandedevents = true
     if owner:HasTag("tank") then
-        owner.AxeTargetPostion = inst.Transform:GetWorldPosition()
+        owner.IsAxeCanShoot = true
+        local Axex,Axey,Axez = inst.Transform:GetWorldPosition()
+        owner.Axex = Axex
+        owner.Axey = Axey
+        owner.Axez = Axez
     end
     inst:PushEvent("on_landed")
 end

@@ -87,7 +87,19 @@ end
 local function ChangeFireAxe(inst)
 	--传送
 	if inst.IsAxeCanShoot then
+		local a = math.random(0,100)
+		if a < 33 then
+			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE1)
+		elseif a>=33 and a<66 then
+			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE2)
+		else
+			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE3)
+		end
+		inst.IsAxeCanShoot = false
+		inst.Transform:SetPosition(inst.Axex,inst.Axey,inst.Axez)
+		--inst.AxeTargetPostion = nil
 		
+		return
 	end
 
 	--切换斧子
@@ -121,7 +133,7 @@ local master_postinit = function(inst)
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
 	
 	local IsAxeCanShoot = false
-	local AxeTargetPostion = nil
+	local Axex,Axey,Axez = nil
 	inst:ListenForEvent("TargetRan", function(inst,data)--不允许玩家继续传送
 		inst.IsAxeCanShoot = false
 		AxeTargetPostion = nil
@@ -204,8 +216,10 @@ end)
 --	end
 --end)
 TheInput:AddKeyUpHandler(KEY_Z, function()
-	if ThePlayer.components.inventory:EquipHasTag("tank_fire_axe") then
-		SendModRPCToServer(MOD_RPC["tank"]["switch_axe"])
+	if ThePlayer:HasTag("tank")then
+		if ThePlayer.components.inventory:EquipHasTag("tank_fire_axe") or ThePlayer.IsAxeCanShoot then
+			SendModRPCToServer(MOD_RPC["tank"]["switch_axe"])
+		end
 	end
 end)
 
