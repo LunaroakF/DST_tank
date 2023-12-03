@@ -87,6 +87,7 @@ end
 local function ChangeFireAxe(inst)
 	--传送
 	if inst.IsAxeCanShoot then
+		--随机说话
 		local a = math.random(0,100)
 		if a < 33 then
 			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE1)
