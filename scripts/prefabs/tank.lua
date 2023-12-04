@@ -83,7 +83,7 @@ local function AttackOther(inst, data)
 		end
 	end
 end
-
+ 
 local function ChangeFireAxe(inst)
 	--传送
 	if inst.IsAxeCanShoot then
