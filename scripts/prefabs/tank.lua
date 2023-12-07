@@ -97,6 +97,7 @@ local function ChangeFireAxe(inst)
 			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE3)
 		end
 		inst.IsAxeCanShoot = false
+		inst.SoundEmitter:PlaySound("dontstarve/creatures/together/deer/chain")--锁链的音效
 		inst.Transform:SetPosition(inst.Axex,inst.Axey,inst.Axez)
 		--inst.AxeTargetPostion = nil
 		
