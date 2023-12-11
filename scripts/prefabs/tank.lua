@@ -71,7 +71,6 @@ end
 
 local function AttackOther(inst, data)
 	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒
-
     local target = data.target
 	if target.components.health.currenthealth > 0 and target.components.inventory.equipslots[EQUIPSLOTS.HEAD] ~= nil then
 		if target.components.inventory:GetEquippedItem(EQUIPSLOTS.HEAD):HasTag("open_top_hat") then
