@@ -28,7 +28,7 @@ local function onequip(inst, owner) --装备
     owner.AnimState:Hide("ARM_normal")
     if owner:HasTag("tank")then
         owner.axe = inst
-        owner.AxeTargetPostion = nil
+        owner.IsAxeCanShoot = false
     end
 end
 
