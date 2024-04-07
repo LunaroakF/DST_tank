@@ -126,7 +126,7 @@ local common_postinit = function(inst)
 	inst.MiniMapEntity:SetIcon( "tank.tex" )
 end
 
---仅针对服务器优化
+--仅针对服务器优化的
 local master_postinit = function(inst)
 	--设置初始物品
     inst.starting_inventory = start_inv[TheNet:GetServerGameMode()] or start_inv.default
