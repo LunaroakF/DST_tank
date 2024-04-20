@@ -68,20 +68,6 @@ local function SomeBodyTouchMe(inst,data)
 		end
     end
 end
-
-local function AttackOther(inst, data)
-	--攻击携带兔耳罩的实体一秒恢复一滴血持续5秒
-    local target = data.target
-	if target.components.inventory and target.components.health.currenthealth > 0 and target.components.inventory.equipslots[EQUIPSLOTS.HEAD] ~= nil then
-		if target.components.inventory:GetEquippedItem(EQUIPSLOTS.HEAD):HasTag("open_top_hat") then
-		--if target.components.inventory ~= nil and target.components.inventory:IsItemEquipped(data.earmuffshat) then
-			if inst.components.tank_fear_injection.PHrefill == 0 then
-				inst.components.talker:Say(STRINGS.TANK_FIRST_GET_BLOOD)
-			end
-			inst.components.tank_fear_injection:PHrefillDoDelta(5)
-		end
-	end
-end
  
 local function ChangeFireAxe(inst)
 	--传送
@@ -145,6 +131,7 @@ local master_postinit = function(inst)
 	inst.soundsname = "willow"
 	inst:AddComponent("tank_data")
 	inst:AddComponent("tank_fear_injection")
+	inst:AddComponent("tank_loves_you")
 	--inst:AddComponent("combat")
 	--inst.components.combat.onhitotherfn = OnHitOther
 
@@ -186,8 +173,6 @@ local master_postinit = function(inst)
 			inst.components.health:SetAbsorptionAmount(0)
 		end
 	end)
-
-	inst:ListenForEvent("onhitother",AttackOther)
 
 	inst:ListenForEvent("ChangeWeapon",ChangeFireAxe)
 
