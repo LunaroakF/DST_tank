@@ -63,7 +63,7 @@ local function SomeBodyTouchMe(inst,data)
             	fx1.entity:SetParent(inst.entity)
 			else
 				fx2.entity:SetParent(inst.entity)
-			--fx.entity:
+			--fx.entity: 
 			end
 		end
     end
