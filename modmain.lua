@@ -174,7 +174,7 @@ local function SwitchAxe(inst)
 	--inst:PushEvent("ChangeWeapon")
 	--传送
 	if inst:HasTag("tank")then
-		if inst.components.inventory:EquipHasTag("tank_fire_axe") or ThePlayer.IsAxeCanShoot then
+		if inst.components.inventory:EquipHasTag("tank_fire_axe") or inst.IsAxeCanShoot then
 			if inst.IsAxeCanShoot then
 				--随机说话
 				local a = math.random(0,100)
