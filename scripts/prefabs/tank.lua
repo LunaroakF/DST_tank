@@ -176,11 +176,7 @@ end)
 --	end
 --end)
 TheInput:AddKeyUpHandler(KEY_Z, function()
-	if ThePlayer:HasTag("tank")then
-		if ThePlayer.components.inventory:EquipHasTag("tank_fire_axe") or ThePlayer.IsAxeCanShoot then
-			SendModRPCToServer(MOD_RPC["tank"]["switch_axe"])
-		end
-	end
+	SendModRPCToServer(MOD_RPC["tank"]["switch_axe"])
 end)
 
 return MakePlayerCharacter("tank", prefabs, assets, common_postinit, master_postinit, prefabs)
