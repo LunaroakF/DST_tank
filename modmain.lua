@@ -195,7 +195,7 @@ local function SwitchAxe(inst)
 	--切换斧子
 	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
 	local ForwardItem = nil
-	if ExistItem!= nil and ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
+	if ExistItem ~= nil and ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
 		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_NORMAL)
 		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.0)
 		ForwardItem = SpawnPrefab("tank_fire_axe")
