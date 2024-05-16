@@ -50,6 +50,9 @@ local function OnTaskTick(inst, self)
 
 end
 
+local function ClearPHrefill(inst)
+    inst.components.tank_fear_injection:ClearPHrefill()
+end
 
 local tank_fear_injection = Class(function(self,inst)
     self.inst=inst
@@ -60,6 +63,7 @@ local tank_fear_injection = Class(function(self,inst)
     self.fearinjectionitems={"stinger","armor_bramble","beemine","bluegem","blowdart","marsh_bush","cactus",
     "featherpencil","fish","gnarwail_horn","lifeinjector","lightninggoathorn","pocket_scale","sewingkit",
     "tentaclespike","trident"}
+    inst:ListenForEvent("ms_becameghost",ClearPHrefill)--清空自恢复血量
     self.inst.components.sanity.night_drain_mult = 0 --晚上不掉san
     self.inst.components.sanity.rate_modifier = 0--锁定san
     self.inst:DoPeriodicTask(1, OnTaskTick, nil, self)
@@ -68,6 +72,10 @@ end)
 function tank_fear_injection:PHrefillDoDelta(delta)
 	local old = self.PHrefill
 	self.PHrefill = old + delta
+end
+
+function tank_fear_injection:ClearPHrefill()
+	self.PHrefill = 0
 end
 
 return tank_fear_injection
