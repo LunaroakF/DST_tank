@@ -60,20 +60,7 @@ end
  
 local function ChangeFireAxe(inst)
 	--传送
-	if inst.IsAxeCanShoot then
-		--随机说话
-		local a = math.random(0,100)
-		if a < 33 then
-			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE1)
-		elseif a>=33 and a<66 then
-			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE2)
-		else
-			inst.components.talker:Say(STRINGS.TANK_TP_TO_AXE3)
-		end
-		inst.IsAxeCanShoot = false
-		inst.SoundEmitter:PlaySound("dontstarve/creatures/together/deer/chain")--锁链的音效
-		inst.Transform:SetPosition(inst.Axex,inst.Axey,inst.Axez)	
-		return
+	
 	end
 
 	--切换斧子
@@ -164,7 +151,7 @@ local master_postinit = function(inst)
 		end
 	end)
 
-	inst:ListenForEvent("ChangeWeapon",ChangeFireAxe)
+	--inst:ListenForEvent("ChangeWeapon",ChangeFireAxe)
 
 	--免伤
 	inst.DontTouchMeTimes = 0
