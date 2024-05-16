@@ -58,26 +58,6 @@ local function SomeBodyTouchMe(inst,data)
     end
 end
  
-local function ChangeFireAxe(inst)
-	--传送
-	
-	end
-
-	--切换斧子
-	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
-	local ForwardItem = nil
-	if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
-		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_NORMAL)
-		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.0)
-		ForwardItem = SpawnPrefab("tank_fire_axe")
-	else
-		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_SPEED)
-		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.2)
-		ForwardItem = SpawnPrefab("tank_fire_axe_speed")
-	end
-	inst.components.inventory:RemoveItem(ExistItem)
-	inst.components.inventory:Equip(ForwardItem)
-end
 
 --服务器和客户端初始化的时候，推荐在这里加一系列Tags
 local common_postinit = function(inst) 

@@ -172,7 +172,7 @@ AddModRPCHandler("tank", "use_data", UseData)
 
 local function SwitchAxe(inst)
 	--inst:PushEvent("ChangeWeapon")
-
+	--传送
 	if inst:HasTag("tank")then
 		if inst.components.inventory:EquipHasTag("tank_fire_axe") or ThePlayer.IsAxeCanShoot then
 			if inst.IsAxeCanShoot then
@@ -192,9 +192,20 @@ local function SwitchAxe(inst)
 			end
 		end
 	end
-
-	
-
+	--切换斧子
+	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
+	local ForwardItem = nil
+	if ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
+		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_NORMAL)
+		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.0)
+		ForwardItem = SpawnPrefab("tank_fire_axe")
+	else
+		inst.components.talker:Say(STRINGS.TANK_CHANGE_AXE_TO_SPEED)
+		inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.2)
+		ForwardItem = SpawnPrefab("tank_fire_axe_speed")
+	end
+	inst.components.inventory:RemoveItem(ExistItem)
+	inst.components.inventory:Equip(ForwardItem)
 end
 AddModRPCHandler("tank", "switch_axe", SwitchAxe)
 
