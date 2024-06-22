@@ -195,7 +195,7 @@ local function SwitchAxe(inst)
 	--切换斧子
 	local ExistItem = inst.components.inventory:GetEquippedItem(EQUIPSLOTS.HANDS)
 	local ForwardItem = nil
-	if ExistItem == nil then
+	if ExistItem == nil or not ExistItem:HasTag("tank_fire_axe")then
 		return
 	end
 	if  ExistItem:HasTag("tank_fire_axe") and ExistItem:HasTag("tank_fire_axe_speed") then
