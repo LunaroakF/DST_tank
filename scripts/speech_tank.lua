@@ -12,28 +12,28 @@ STRINGS.SKIN_NAMES.tank_none = "铽安克"
 
 STRINGS.CHARACTER_TITLES.tank = "铽安克"
 STRINGS.CHARACTER_NAMES.tank = "铽安克"
-STRINGS.CHARACTER_DESCRIPTIONS.tank = "*似乎在畏惧这什么？\n*疯子\n░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*曾经的折磨……如今还能和你们一样吗？\n*被赋予生命的枷锁"
+STRINGS.CHARACTER_DESCRIPTIONS.tank = "*似乎在畏惧这什么？\n*疯子\n░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*精神崩溃\n*毫无生机"
 STRINGS.CHARACTER_QUOTES.tank = "\"我恨不得把自己忘掉!!\n但是...忘掉了又有什么意思呢？..哈哈....\""
 STRINGS.CHARACTER_SURVIVABILITY.tank = "数据崩坏"
 
 STRINGS.NAMES.TANK_USELESS_SCARF = "无用围巾"
-STRINGS.NAMES.TANK_FIRE_AXE = "制 0-2型消防斧"
-STRINGS.NAMES.TANK_FIRE_AXE_SPEED = "制 0-2型消防斧"
+STRINGS.NAMES.TANK_FIRE_AXE = "0-2型消防斧"
+STRINGS.NAMES.TANK_FIRE_AXE_SPEED = "0-2型消防斧"
 STRINGS.NAMES.TANK_LUXURY_SANDWICH = "豪华三明治套餐"
 STRINGS.NAMES.TANK_FALLEN_DATA = "数据块"
 STRINGS.NAMES.TANK_CHAIN_NOACTIVED = "一坨锁链"
-STRINGS.NAMES.TANK_CHAIN_ACTIVED = "激活的 一坨锁链"
+STRINGS.NAMES.TANK_CHAIN_ACTIVED = "已激活的 一坨锁链"
 
 STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS = "我抓不住这东西！"
-STRINGS.TANK_FEAR_THE_HEART="蹦蹦跳跳的好恐怖"
+STRINGS.TANK_FEAR_THE_HEART="别…"
 STRINGS.TANK_USE_DATA = "你是想和我比寿命吗？"
-STRINGS.TANK_CHANGE_AXE_TO_NORMAL = "放你一马"--"你想试试我全新的武器吗"
-STRINGS.TANK_CHANGE_AXE_TO_SPEED = "快斧不长眼"--"你想试试我全新的武器吗"
-STRINGS.TANK_TP_TO_AXE1 = "血~我的宝♥"--传送到斧子1
-STRINGS.TANK_TP_TO_AXE2 = "这些都是我的!"--传送到斧子2
+STRINGS.TANK_CHANGE_AXE_TO_NORMAL = "放你一马。"--"你想试试我全新的武器吗"
+STRINGS.TANK_CHANGE_AXE_TO_SPEED = "妈的,有种别跑。"--"你想试试我全新的武器吗"
+STRINGS.TANK_TP_TO_AXE1 = "切。"--传送到斧子1
+STRINGS.TANK_TP_TO_AXE2 = "来啊？!"--传送到斧子2
 STRINGS.TANK_TP_TO_AXE3 = "还想跑多久?"--传送到斧子3
 STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS = "什么感觉都没有。"
-STRINGS.TANK_REVIVER_FEAR = "够了...这次我不想再拿着了"
+STRINGS.TANK_REVIVER_FEAR = "够了...这次..不想再拿着了"
 STRINGS.TANK_FIRST_GET_BLOOD = "温暖的血液！"
 STRINGS.TANK_CAN_NOT_USE_MULTIPLAYER_PORTAL = "▓░ ▓▓▓ ░▓ ▓░▓░ ▓░▓░ ░ ░░░ ░░░ ▓░▓░▓▓"
 
@@ -48,14 +48,14 @@ return {
         },
         BUILD =
         {
-            MOUNTED = "啧.没地放...",
-            HASPET = "我不想再要更多的杂鱼了 拜托。",
+            MOUNTED = "啧 没地放...",
+            HASPET = "太乱了。",
         },
 		SHAVE =
 		{
-			AWAKEBEEFALO = "得让它睡着吧？这伙计脾气不小。",
+			AWAKEBEEFALO = "得让它睡着吧？",
 			GENERIC = "可别这样糟蹋它的毛啊..",
-			NOBITS = "这..不太...好吧..有点变态啊..",
+			NOBITS = "嗯...",
             REFUSE = "only_used_by_woodie",
 		},
 		STORE =
@@ -67,15 +67,15 @@ return {
 		},
         CONSTRUCT =
         {
-            INUSE = "妈* ！别不要脸啊喂！",
-            NOTALLOWED = "Excel提示验证限制不匹配..我刚刚说了什么...??",
+            INUSE = "妈的 ！别不要脸啊喂！",
+            NOTALLOWED = "别。",
             EMPTY = "我得需要一些材料。总不可能用土来建造吧？",
-            MISMATCH = "靠。计划出问题了！",
+            MISMATCH = "靠 又出问题了。",
         },
 		RUMMAGE =
 		{	
 			GENERIC = "做这件事真的很白痴。",
-			INUSE = "哈~一群废物..额.没说你们。",
+			INUSE = "一群废物...没说你们。",
             NOTMASTERCHEF = "该收手了....",
 		},
 		UNLOCK =
@@ -85,7 +85,7 @@ return {
 		USEKLAUSSACKKEY =
         {
         	WRONGKEY = "喂 哪不对吧！？",
-        	KLAUS = "抱歉宝贝~有点忙哦~~（坏笑",
+        	KLAUS = "抱歉~有点忙哦~~",
 			QUAGMIRE_WRONGKEY = "真想拆了这破玩意 非得要这破钥匙。",
         },
 		ACTIVATE = 
@@ -125,8 +125,8 @@ return {
             BUSY = "等会我我马上在试试！",
             ABIGAILHEART = "这东西 吼~确实值得",
             GHOSTHEART = "我是怎么想到这破主意的...",
-            NOTGEM = "咦.别黏上去吧..有够恶心的",
-            WRONGGEM = "这*妈怎么搞？！谁能帮个忙啊？？！",
+            NOTGEM = "有够恶心的。",
+            WRONGGEM = "这他妈怎么搞？帮个忙啊！",
             NOTSTAFF = "这形状看的怪怪的.....",
             MUSHROOMFARM_NEEDSSHROOM = "这蘑菇有啥用?",
             MUSHROOMFARM_NEEDSLOG = "这长的磕巴的木头能干嘛啊？？",
@@ -137,7 +137,7 @@ return {
             NOTSCULPTABLE = "这啥跟啥玩意？我感觉不可能把那玩意变成雕像吧？",
             NOTATRIUMKEY = "额......................",
             CANTSHADOWREVIVE = "我想不会诈尸吧...",
-            WRONGSHADOWFORM = "嗯啊~！！！！这玩意好烦啊！！！！！",
+            WRONGSHADOWFORM = "该死的蠢玩意儿！",
             NOMOON = "得看到月亮吧。",
 			PIGKINGGAME_MESSY = "得收拾这些垃圾了",
 			PIGKINGGAME_DANGER = "现在这样我喜欢~",
@@ -148,29 +148,29 @@ return {
             FULL = "你这都是什么破玩意？？",
             DEAD = "得留着吧？",
             SLEEPING = "...没意思。",
-            BUSY = "▩▥▧ª▬▏▏╲〓▬",
+            BUSY = "▩▥▧ª▬▬",
         },
         GIVEALLTOPLAYER =
         {
             FULL = "东西都要溢出来了喂！",
             DEAD = "emm..或许我不太需要？",
-            SLEEPING = "不省人事 无心牵挂。",
+            SLEEPING = "别在看了。",
             BUSY = "我待会再试试。",
         },
         WRITE =
         {
             GENERIC = "已经够好了我不想去摆弄这玩意了。",
-            INUSE = "只有能容纳一个涂鸦者的空间 别在硬搞了。",
+            INUSE = "别瞎搞了。",
         },
         DRAW =
         {
-            NOIMAGE = "我希望有个参照物在旁边 因为这样会好画一些。",
+            NOIMAGE = "嘿我又不是画画的料 来个参照物好不？",
         },
         CHANGEIN =
         {
             GENERIC = "不想！换有够麻烦的。",
             BURNING = "完美！？",
-            INUSE = "它一次只能进行一种转变好吧》",
+            INUSE = "它一次只能进行一种转变好吧",
         },
         ATTUNE =
         {
@@ -189,10 +189,10 @@ return {
         {
             --Recipes/Teacher
             KNOWN = "知道了就没必要浪费时间了吧。",
-            CANTLEARN = "我不想学习那个。",
+            CANTLEARN = "我不想学习这个。",
 
             --MapRecorder/MapExplorer
-            WRONGWORLD = "这地图不能在这用 白痴~",
+            WRONGWORLD = "这地图不能在这用 傻子。",
         },
         WRAPBUNDLE =
         {
@@ -224,9 +224,9 @@ return {
         },
         LOWER_SAIL_FAIL =
         {
-            "艹 日 十",
+            "服了。",
             "没办法减速啊！",
-            "失败是成功它老母。",
+            "服了。",
         },
         BATHBOMB =
         {
@@ -235,14 +235,14 @@ return {
         },
 	},
 	ACTIONFAIL_GENERIC = "不想这么做 白痴。",
-	ANNOUNCE_BOAT_LEAK = "这水怎么越来越多了啊！？？！？！！",
+	ANNOUNCE_BOAT_LEAK = "这水怎么越来越多了啊！？？",
 	ANNOUNCE_BOAT_SINK = "你妈！！ 船要裂开了！",
 	ANNOUNCE_DIG_DISEASE_WARNING = "现在看起来好多了。",
 	ANNOUNCE_PICK_DISEASE_WARNING = "嗯哼~就是这个味吗？",
 	ANNOUNCE_ADVENTUREFAIL = "额这次不太顺利啊...",
-    ANNOUNCE_MOUNT_LOWHEALTH = "吼吼 鲜血流出来了哦~？",
+    ANNOUNCE_MOUNT_LOWHEALTH = "鲜血流出来了哦~？",
 
-	ANNOUNCE_BEES = "哦 草！",
+	ANNOUNCE_BEES = "草！",
 	ANNOUNCE_BOOMERANG = "为啥每次听到这声音我的胃都好难受...",
 	ANNOUNCE_CHARLIE = "妈的 又来！",
 	ANNOUNCE_CHARLIE_ATTACK = "呜啊！ 妈的疼死了。",
@@ -266,7 +266,7 @@ return {
 	},
 	ANNOUNCE_SACREDCHEST_YES = "应该值得",
 	ANNOUNCE_SACREDCHEST_NO = "...有够挑剔的",
-    ANNOUNCE_DUSK = "额 天黑了 该休息下了 ",
+    ANNOUNCE_DUSK = "白痴总算睡了 ",
     
 
 	ANNOUNCE_EAT =
@@ -276,7 +276,7 @@ return {
 		SPOILED = "凑合着吃吧..总比没有好...",
 		STALE = "这看着还行...应该能吃",
 		INVALID = "干嘛...你觉得我会吃这鬼玩意吗...?",
-        YUCKY = "真会有白痴会去吃比顾龍面还要难吃的东西么？？",
+        YUCKY = "真会有白痴会去吃比腐烂物还要难吃的东西么？？",
         
         --Warly specific ANNOUNCE_EAT strings
 		COOKED = "only_used_by_warly",
@@ -325,10 +325,10 @@ return {
 	ANNOUNCE_INV_FULL = "我不应该拿这么多东西。",
 	ANNOUNCE_KNOCKEDOUT = "嗷呜! 我的头！！",
 	ANNOUNCE_LOWRESEARCH = "完全没学到啥有用的。",
-	ANNOUNCE_MOSQUITOS = "妈*！滚开！！",
-    ANNOUNCE_NOWARDROBEONFIRE = "喂！！着火了！我还想穿下衣服呢！",
-    ANNOUNCE_NODANGERGIFT = "额..我想把那些怪物解决了才能安全的拆我的礼物..",
-    ANNOUNCE_NOMOUNTEDGIFT = "我得先从这头蠢牛身上下来。",
+	ANNOUNCE_MOSQUITOS = "妈的！滚开！！",
+    ANNOUNCE_NOWARDROBEONFIRE = "喂！！着火了！",
+    ANNOUNCE_NODANGERGIFT = "别把后背交给敌人好吗？",
+    ANNOUNCE_NOMOUNTEDGIFT = "我得先从这头蠢东西身上下来。",
 	ANNOUNCE_NODANGERSLEEP = "在这样睡下去这块就是我的墓碑了好吧...",
 	ANNOUNCE_NODAYSLEEP = "大白天的光晃的我眼睛疼。",
 	ANNOUNCE_NODAYSLEEP_CAVE = "咱没必要这么闲 更何况我还不困。",
@@ -336,9 +336,9 @@ return {
 	ANNOUNCE_NOSLEEPONFIRE = "我没有那种强烈的困意。",
 	ANNOUNCE_NODANGERSIESTA = "现在睡着太过危险了！",
 	ANNOUNCE_NONIGHTSIESTA = "建议不要晚上睡 蛮冷的。",
-	ANNOUNCE_NONIGHTSIESTA_CAVE = "在这根本放松不了把",
+	ANNOUNCE_NONIGHTSIESTA_CAVE = "在这根本放松不了吧。",
 	ANNOUNCE_NOHUNGERSIESTA = "太饿了！！！！",
-	ANNOUNCE_NODANGERAFK = "Now's not the time to flee this fight!",
+	ANNOUNCE_NODANGERAFK = "别跑啊！",
 	ANNOUNCE_NO_TRAP = "哈哈！我就说嘛挺简单的~",
 	ANNOUNCE_PECKED = "喂！喂喂！快停下！",
 	ANNOUNCE_QUAKE = "这声音听起来不妙啊。",
@@ -352,30 +352,30 @@ return {
     ANNOUNCE_COMPASS_OUT = "指南针坏了...",
 	ANNOUNCE_TRAP_WENT_OFF = "卧槽。",
 	ANNOUNCE_UNIMPLEMENTED = "哎！哎哎！应该还准备好吧！",
-	ANNOUNCE_WORMHOLE = "啊...双头虫？希望如此吧。",
+	ANNOUNCE_WORMHOLE = "这啥？",
 	ANNOUNCE_TOWNPORTALTELEPORT = "我不确定那玩意科学不 而且我也不喜欢。",
 	ANNOUNCE_CANFIX = "我应该能修好..吧？",
 	ANNOUNCE_ACCOMPLISHMENT = "喔喔！很有成就感呢！",
 	ANNOUNCE_ACCOMPLISHMENT_DONE = "啊..那帮家伙能看到我就好了。",	
 	ANNOUNCE_INSUFFICIENTFERTILIZER = "你还.饿..吗？",
-	ANNOUNCE_TOOL_SLIP = "哎草！飞出去了！",
+	ANNOUNCE_TOOL_SLIP = "我靠飞出去了？！",
 	ANNOUNCE_LIGHTNING_DAMAGE_AVOIDED = "wow这可怕的闪电。",
-	ANNOUNCE_TOADESCAPING = "这死蛤蟆..啧可别把我当作空气了啊！！",
-	ANNOUNCE_TOADESCAPED = "这死蛤蟆跑了..服了。",
+	ANNOUNCE_TOADESCAPING = "这死蛤蟆..啧。",
+	ANNOUNCE_TOADESCAPED = "跑了..服了。",
 
 
-	ANNOUNCE_DAMP = "请问....哪里有毛巾？我想擦一下身体。",
+	ANNOUNCE_DAMP = "哪里有毛巾？我想擦一下身体...",
 	ANNOUNCE_WET = "..希望能停下来吧",
 	ANNOUNCE_WETTER = "......",
 	ANNOUNCE_SOAKED = "啊..浑身湿透了。",
 
-	ANNOUNCE_WASHED_ASHORE = "额..蛮幸运的 至少没死。",
+	ANNOUNCE_WASHED_ASHORE = "蛮幸运的 至少没死。",
 
     ANNOUNCE_DESPAWN = "看见光了！",
-	ANNOUNCE_BECOMEGHOST = "汪呜唔呜呜！！",
+	ANNOUNCE_BECOMEGHOST = "汪呜唔呜！！",
 	ANNOUNCE_GHOSTDRAIN = "我感觉.我要失控了..",
-	ANNOUNCE_PETRIFED_TREES = "这树在尖叫吗？？蛮有意思的..",
-	ANNOUNCE_KLAUS_ENRAGE = "妹油办法了！！跑啊！",
+	ANNOUNCE_PETRIFED_TREES = "这树在叫吗？",
+	ANNOUNCE_KLAUS_ENRAGE = "楞啥呢！！跑啊！",
 	ANNOUNCE_KLAUS_UNCHAINED = "它的链条松开了！",
 	ANNOUNCE_KLAUS_CALLFORHELP = "这家伙在求饶吗~？",
 
@@ -394,16 +394,16 @@ return {
 
     --hallowed nights
     ANNOUNCE_SPOOKED = "喂喂！你看到了吗？！",
-	ANNOUNCE_BRAVERY_POTION = "嗯哼~诡异的树",
+	ANNOUNCE_BRAVERY_POTION = "诡异的树。",
 	ANNOUNCE_MOONPOTION_FAILED = "我还没泡够呢..",
 
     --lavaarena event
-    ANNOUNCE_REVIVING_CORPSE = "来帮你了 宝贝~",
-    ANNOUNCE_REVIVED_OTHER_CORPSE = "完好如初。",
-    ANNOUNCE_REVIVED_FROM_CORPSE = "额..啊..嗯...谢。",
+    ANNOUNCE_REVIVING_CORPSE = "来帮你了。",
+    ANNOUNCE_REVIVED_OTHER_CORPSE = "完好如初 还不赖嘛。",
+    ANNOUNCE_REVIVED_FROM_CORPSE = "无所谓了。",
 
     ANNOUNCE_FLARE_SEEN = "看样子..像是迷路了hh。",
-    ANNOUNCE_OCEAN_SILHOUETTE_INCOMING = "海.海怪！",
+    ANNOUNCE_OCEAN_SILHOUETTE_INCOMING = "谁？",
 
     --quagmire event
     QUAGMIRE_ANNOUNCE_NOTRECIPE = "就这点食材还不如直接拿去烤了吃...",
@@ -415,20 +415,20 @@ return {
     {
         "该如何称呼您~？",
         "出来散散心了吗 嗯哼？",
-        "我的主！",
+        "好。",
     },
 
-    ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK    = "全是电呢",
-    ANNOUNCE_ATTACH_BUFF_ATTACK            = "干架！",
-    ANNOUNCE_ATTACH_BUFF_PLAYERABSORPTION  = "我感觉安全多了。",
-    ANNOUNCE_ATTACH_BUFF_WORKEFFECTIVENESS = "生产力提高了。",
-    ANNOUNCE_ATTACH_BUFF_MOISTUREIMMUNITY  = "干的像薇克巴顿的讲义。",
+    ANNOUNCE_ATTACH_BUFF_ELECTRICATTACK    = "额？",
+    ANNOUNCE_ATTACH_BUFF_ATTACK            = "还行。",
+    ANNOUNCE_ATTACH_BUFF_PLAYERABSORPTION  = "？",
+    ANNOUNCE_ATTACH_BUFF_WORKEFFECTIVENESS = "啥？",
+    ANNOUNCE_ATTACH_BUFF_MOISTUREIMMUNITY  = "啊？",
     
-    ANNOUNCE_DETACH_BUFF_ELECTRICATTACK    = "电没了 但是还残存静电。",
-    ANNOUNCE_DETACH_BUFF_ATTACK            = "肌肉紧实的感觉很快就消失了。",
-    ANNOUNCE_DETACH_BUFF_PLAYERABSORPTION  = "虽然时间不长，但是我很喜欢~♥",
-    ANNOUNCE_DETACH_BUFF_WORKEFFECTIVENESS = "拖延症又回来了...",
-    ANNOUNCE_DETACH_BUFF_MOISTUREIMMUNITY  = "结束了。",
+    ANNOUNCE_DETACH_BUFF_ELECTRICATTACK    = "？",
+    ANNOUNCE_DETACH_BUFF_ATTACK            = "好累。",
+    ANNOUNCE_DETACH_BUFF_PLAYERABSORPTION  = "。",
+    ANNOUNCE_DETACH_BUFF_WORKEFFECTIVENESS = "累了。",
+    ANNOUNCE_DETACH_BUFF_MOISTUREIMMUNITY  = "？",
     
     --Wurt announce strings
     ANNOUNCE_KINGCREATED = "only_used_by_wurt",
@@ -448,26 +448,26 @@ return {
 	BATTLECRY =
 	{
 		GENERIC = "你想好怎么死了吗？嗯~？",
-		PIG = "斯哈♥ 高级火腿~",
+		PIG = "哈哈 高级火腿!",
 		PREY = "我想看看你的内脏..可以让我看看吗？",
-		SPIDER = "你想被我的肉垫踩死吗？",
+		SPIDER = "再接着来啊？",
 		SPIDER_WARRIOR = "死的好惨哦~",
-		DEER = "去死吧 傻狍子！",
+		DEER = "傻子！",
 	},
 	COMBAT_QUIT =
 	{
-		GENERIC = "它肯定 “尝到” 了我的厉害了~",
-		PIG = "这次姑且..就放过它吧嗯嗯",
-		PREY = "它的速度太快了！",
-		SPIDER = "额...我都有点反胃了..",
-		SPIDER_WARRIOR = "嘘~你这个讨厌的家伙！",
+		GENERIC = "尝到厉害了吗？   ",
+		PIG = "这次姑且..就放过它吧",
+		PREY = "速度太快了！",
+		SPIDER = "额...我有点反胃了..",
+		SPIDER_WARRIOR = "啧。",
 	},
 	DESCRIBE =
 	{
 		MULTIPLAYER_PORTAL = "看样子...是这个大门把我搞到这里的吗？",
         MULTIPLAYER_PORTAL_MOONROCK = "呃呜？",
         MOONROCKIDOL = "我不想崇拜这b玩意",
-        CONSTRUCTION_PLANS = "b玩意用品",
+        CONSTRUCTION_PLANS = "干。",
 
         ANTLION =
         {
@@ -476,10 +476,10 @@ return {
             UNHAPPY = "有点凶啊。",
         },
         ANTLIONTRINKET = "有人可能对此感兴趣。",
-        SANDSPIKE = "*！我原本会被刺穿的！",
-        SANDBLOCK = "真是坚持不懈呢~",
-        GLASSSPIKE = "我还没有被刺穿时的记忆。",
-        GLASSBLOCK = "送你份狗屎哈哈。",
+        SANDSPIKE = "我草吓死我了。",
+        SANDBLOCK = "真是坚持不懈呢~！",
+        GLASSSPIKE = "玻璃吗？",
+        GLASSBLOCK = "还行挺好看的。",
         ABIGAIL_FLOWER =
         {
             GENERIC ="蛮漂亮的 是朵温柔的花。",
@@ -490,23 +490,23 @@ return {
             HAUNTED_GROUND = "我可能没兴趣查明白这啥玩意。",
         },
 
-        BALLOONS_EMPTY = "看起来像小丑货币。",
-        BALLOON = "嗯 漂浮了",
+        BALLOONS_EMPTY = "可笑的玩具。",
+        BALLOON = "有人可以把这可笑的玩具扎破吗？",
 
         BERNIE_INACTIVE =
         {
-            BROKEN = "它最终像一块镜子一样破碎。",
-            GENERIC = "糊了~",
+            BROKEN = "损坏了..啊真不想这样。",
+            GENERIC = "玩具熊呢",
         },
 
-        BERNIE_ACTIVE = "嗯~..你好 漂亮的熊小姐。",
-        BERNIE_BIG = "呃.你还是别惹她了 除非你不建议变成烤猪。",
+        BERNIE_ACTIVE = "活着的？",
+        BERNIE_BIG = "挺厉害的",
 
-        BOOK_BIRDS = "嗯.饿了....喂别嘲笑好吗这书诱惑极大好吗！",
+        BOOK_BIRDS = "嗯.饿了...别嘲笑好吗。",
         BOOK_TENTACLES = "嘶.这书看不懂。",
         BOOK_GARDENING = "嗯..根本没有讲为何我的菜枯萎了。",
-        BOOK_SLEEP = "很好 我都没看懂这到底说了什么。",
-        BOOK_BRIMSTONE = "开头很无聊 但将近结尾就变好了。",
+        BOOK_SLEEP = "很好 有助于睡眠质量。",
+        BOOK_BRIMSTONE = "不懂。",
 
         PLAYER =
         {
@@ -529,7 +529,7 @@ return {
         WAXWELL =
         {
             GENERIC = "早啊%s!",
-            ATTACKER = "你这家伙怎么突然和灰朗一样嘴糊上了？",
+            ATTACKER = "你这家伙怎么不说话了？",
             MURDERER = "I'll show you Logic and Reason... those're my fists!",
             REVIVER = "%s is using his powers for good.",
             GHOST = "Don't look at me like that, %s! I'm working on it!",
@@ -704,7 +704,7 @@ return {
 			ABOVEGROUND = "I'd sure like to whack that mole... thing.",
 		},
 		MOLEHILL = "What a nice, homey hole in the ground!",
-		MOLEHAT = "A wretched stench, but excellent visibility.",
+		MOLEHAT = "？不对吧？？",
 
 		EEL = "This will make a delicious meal. ",
 		EEL_COOKED = "Smells great!",
@@ -725,8 +725,8 @@ return {
 		SENTRYWARD = "额...说起功能的话 还是别让我看见这个了。",
         TOWNPORTAL =
         {
-			GENERIC = "它们正在等待着生命触摸。",
-			ACTIVE = "我感觉我的身体正在分离。",
+			GENERIC = "摸？...然后呢？",
+			ACTIVE = "我...不舒服。",
 		},
         TOWNPORTALTALISMAN = 
         {
@@ -776,7 +776,7 @@ return {
 		MINOTAUR = "That thing doesn't look happy.",
 		SPIDER_DROPPER = "Note to self: Don't look up.",
 		NIGHTMARELIGHT = "I wonder what function this served.",
-		NIGHTSTICK = "It's electric!",
+		NIGHTSTICK = "我靠 带电的。 ",
 		GREENGEM = "It's green and gemmy.",
 		MULTITOOL_AXE_PICKAXE = "一举两用 不过我还是喜欢我的斧头。",
 		ORANGESTAFF = "This beats walking.",
@@ -822,21 +822,21 @@ return {
 		
 		COMPASS =
 		{
-			GENERIC="Which way am I facing?",
-			N = "North.",
-			S = "South.",
-			E = "East.",
-			W = "West.",
-			NE = "Northeast.",
-			SE = "Southeast.",
-			NW = "Northwest.",
-			SW = "Southwest.",
+			GENERIC="指南针。",
+			N = "北面。",
+			S = "南面。",
+			E = "东面。",
+			W = "西面。",
+			NE = "东北方。",
+			SE = "东南方。",
+			NW = "西北方。",
+			SW = "西南方。",
 		},
 
         HOUNDSTOOTH = "嗯哼?我不希望这是我的牙齿耶。",
         ARMORSNURTLESHELL = "It sticks to your back when you wear it.",
         BAT = "Ack! That's terrifying!",
-        BATBAT = "I bet I could fly if I held two of them.",
+        BATBAT = "用的时候总有种感觉...感觉会回复我的伤势。",
         BATWING = "I hate those things, even when they're dead.",
         BATWING_COOKED = "At least it's not coming back.",
         BATCAVE = "I don't want to wake them.",
@@ -844,23 +844,23 @@ return {
         BUNNYMAN = "I am filled with an irresistible urge to do science.",
         FLOWER_CAVE = "这植物散发出来了奇妙的光。",
         GUANO = "Another flavor of poop.",
-        LANTERN = "A more civilized light.",
+        LANTERN = "就不能更方便点？像是做个手电筒...？",
         LIGHTBULB = "It's strangely tasty looking.",
         MANRABBIT_TAIL = "I feel a lil better when I hold one.",
         MUSHROOMHAT = "Makes the wearer look like a fun guy.",
         MUSHROOM_LIGHT2 =
         {
-            ON = "wow 非常漂亮。",
-            OFF = "一个漂亮的蘑菇台灯。",
-            BURNT = "我没有让它发霉 我发誓。",
+            ON = "非常漂亮。",
+            OFF = "一个蘑菇台灯。",
+            BURNT = "焦了。",
         },
         MUSHROOM_LIGHT =
         {
-            ON = "这台大蘑菇散发出了温柔的光。",
+            ON = "大台灯。",
             OFF = "一台大蘑菇灯。",
             BURNT = "烧焦了 可惜。",
         },
-        SLEEPBOMB = "It makes snooze circles when I throw it.",
+        SLEEPBOMB = "这袋子...味道很怪...有点困...",
         MUSHROOMBOMB = "A mushroom cloud in the making!",
         SHROOM_SKIN = "Warts and all!",
         TOADSTOOL_CAP =
@@ -974,16 +974,16 @@ return {
         },
 
 		MAXWELLPHONOGRAPH = "So that's where the music was coming from.",
-		BOOMERANG = "Aerodynamical!",
+		BOOMERANG = "小孩子玩具。",
 		PIGGUARD = "He doesn't look as friendly as the others.",
 		ABIGAIL = "嗯 一位可爱的幽灵。",
 		ADVENTURE_PORTAL = "I'm not sure I want to fall for that a second time.",
 		AMULET = "I feel so safe when I get to wear it.",
 		ANIMAL_TRACK = "Tracks left by food. I mean... an animal.",
-		ARMORGRASS = "Hopefully there aren't any bugs in it.",
+		ARMORGRASS = "嘿 穿这身遇到火会怎样？",
 		ARMORMARBLE = "That looks really heavy.",
-		ARMORWOOD = "That is a perfectly reasonable piece of clothing.",
-		ARMOR_SANITY = "Wearing that makes me feel safe and insecure.",
+		ARMORWOOD = "能抗住几下挺不错的。",
+		ARMOR_SANITY = "这真的能抗住攻击吗...",
 		ASH =
 		{
 			GENERIC = "All that's left after the fire has done its job.",
@@ -991,7 +991,7 @@ return {
 			REMAINS_EYE_BONE = "The eyebone was consumed by fire in the teleportation!",
 			REMAINS_THINGIE = "There's a perfectly scientific explanation for that.",
 		},
-		AXE = "A trusty axe.",
+		AXE = "做工差太多了 嘿。",
 		BABYBEEFALO = 
 		{
 			GENERIC = "Awwww. So cute!",
@@ -1063,14 +1063,14 @@ return {
 
 		BEEFALOHAT = "That's a case of hat-hair waiting to happen.",
 		BEEFALOWOOL = "It smells like beefalo tears.",
-		BEEHAT = "Protects your skin, but squashes your meticulous coiffure.",
-        BEESWAX = "Beeswax is a scientifically proven preservative!",
-		BEEHIVE = "It's buzzing with activity.",
-		BEEMINE = "It buzzes when shaken.",
+		BEEHAT = "遮挡那些烦人的蜜蜂 不错~",
+        BEESWAX = "蜂蜡不错。",
+		BEEHIVE = "吵闹的蜂群窝",
+		BEEMINE = "踩到的人要不幸喽~",
 		BEEMINE_MAXWELL = "Bottled mosquito rage!",
 		BERRIES = "Red berries taste the best.",
 		BERRIES_COOKED = "I don't think heat improved them.",
-        BERRIES_JUICY = "Extra tasty, though they won't last long.",
+        BERRIES_JUICY = "好吃是好吃 就是坏的快。",
         BERRIES_JUICY_COOKED = "Better eat them before they spoil!",
 		BERRYBUSH =
 		{
@@ -1086,7 +1086,7 @@ return {
 		{
 			BARREN = "It won't make any berries in this state.",
 			WITHERED = "The heat even dehydrated the juicy berries!",
-			GENERIC = "I should leave them there until it's time to eat.",
+			GENERIC = "上面的果子挺甜的摘点尝尝。",
 			PICKED = "The bush is working hard on the next batch.",
 			DISEASED = "It looks pretty sick.",
 			DISEASING = "Err, something's not right.",
@@ -1103,15 +1103,15 @@ return {
 			DEAD = "也许只是在休息 但是我不这么认为。",
 			SKELETON = "在这牢笼中离开了这个世界。",
 		},
-		BIRDTRAP = "Gives me a net advantage!",
+		BIRDTRAP = "总有傻子自投罗网。",
 		CAVE_BANANA_BURNT = "Not my fault!",
 		BIRD_EGG = "A small, normal egg.",
 		BIRD_EGG_COOKED = "Sunny side yum!",
 		BISHOP = "Back off, preacherman!",
-		BLOWDART_FIRE = "This seems fundamentally unsafe.",
-		BLOWDART_SLEEP = "Just don't breathe in.",
-		BLOWDART_PIPE = "Good practice for my birthday cake!",
-		BLOWDART_YELLOW = "It has shocking accuracy.",
+		BLOWDART_FIRE = "...很难理解怎么着起火来的。",
+		BLOWDART_SLEEP = "有意思 你说这东西被扎到会起层冰？",
+		BLOWDART_PIPE = "被扎到可不好受啊。",
+		BLOWDART_YELLOW = "带电的 可以引雷。",
 		BLUEAMULET = "Cool as ice!",
 		BLUEGEM = "It sparkles with cold energy.",
 		BLUEPRINT = 
@@ -1140,7 +1140,7 @@ return {
 			HELD = "我搞不懂这蝴蝶是如何变成花的...",
 		},
 		BUTTERFLYMUFFIN = "We threw the recipe away and just kind of winged it.",
-		BUTTERFLYWINGS = "已经死了 不过它的身体可以留下成为美丽的标本。",
+		BUTTERFLYWINGS = "死了 不过身体可以留下成为标本。",
 		BUZZARD = "What a bizarre buzzard!",
 
 		SHADOWDIGGER = "Oh good. Now there's more of him.",
@@ -1158,7 +1158,7 @@ return {
 		{
 			EMBERS = "得加燃料了，不然火就要灭了。",
 			GENERIC = "能驱走黑暗。",
-			HIGH = "我操！行了这火够大了。",
+			HIGH = "我操！行了这有点过头了。",
 			LOW = "火变得有点小了。",
 			NORMAL = "真舒服 比当时的实验室舒服多了。",
 			OUT = "得，结束了。",
@@ -1167,12 +1167,12 @@ return {
 		{
 			EMBERS = "得加燃料了，不然火就要灭了",
 			GENERIC = "能驱走黑暗。",
-			HIGH = "够了傻逼！太冷了。",
-			LOW = "冰快烧化了。",
-			NORMAL = "冰凉的火在夏天很舒服。",
+			HIGH = "太热了！干啥呢！",
+			LOW = "快灭了。",
+			NORMAL = "蛮有氛围的。",
 			OUT = "得，结束了。",
 		},
-		CANE = "Technically walking is just controlled falling.",
+		CANE = "该跑路喽~",
 		CATCOON = "A playful little thing.",
 		CATCOONDEN = 
 		{
@@ -1193,7 +1193,7 @@ return {
 		},
 		WATERMELON_SEEDS = "It's a melon seed.",
 		CAVE_FERN = "It's a fern.",
-		CHARCOAL = "It's small, dark, and smells like burnt wood.",
+		CHARCOAL = "一小块木炭 这味道不太舒服。",
         CHESSPIECE_PAWN = "I can relate.",
         CHESSPIECE_ROOK =
         {
@@ -1267,7 +1267,7 @@ return {
 		CROW =
 		{
 			GENERIC = "我不知道为什么大家都挺讨厌讨厌乌鸦 反正我是蛮喜欢的。",
-			HELD = "He's not very happy in there.",
+			HELD = "抓住喽 小家伙。",
 		},
 		CUTGRASS = "一把草。",
 		CUTREEDS = "一捆芦苇 做成纸挺不错的。",
@@ -1281,7 +1281,7 @@ return {
         DEER_ANTLER = "Was that supposed to come off?",
         DEER_GEMMED = "It's being controlled by that beast!",
 		DEERCLOPS = "嗨！够我吃好几天了！",
-		DEERCLOPS_EYEBALL = "这眼睛比我之前吃掉的大多了。 ",
+		DEERCLOPS_EYEBALL = "这可比我之前吃掉的大多了。 ",
 		EYEBRELLAHAT =	"It watches over the wearer.",
 		DEPLETED_GRASS =
 		{
@@ -1307,10 +1307,10 @@ return {
 			UNLOCKED = "Now the machine can work!",
 		},
 		DIVININGRODSTART = "That rod looks useful!",
-		DRAGONFLY = "That's one fly dragon!",
-		ARMORDRAGONFLY = "Hot mail!",
-		DRAGON_SCALES = "They're still warm.",
-		DRAGONFLYCHEST = "像是最终奖励一样豪华。",
+		DRAGONFLY = "喂 大苍蝇找点事干不？",
+		ARMORDRAGONFLY = "碰碰看啊？会着火的呢~",
+		DRAGON_SCALES = "好大一块皮 有点热。",
+		DRAGONFLYCHEST = "不错的箱子。",
 		DRAGONFLYFURNACE = 
 		{
 			HAMMERED = "I don't think it's supposed to look like that.",
@@ -1355,8 +1355,8 @@ return {
 		DRAGONFRUIT_COOKED = "The fruit's still weird.",
 		DRAGONFRUIT_SEEDS = "It's a weird fruit seed.",
 		DRAGONPIE = "The dragonfruit is very filling.",
-		DRUMSTICK = "真是一块好肉呢。",
-		DRUMSTICK_COOKED = "嘿！还真挺好吃的~",
+		DRUMSTICK = "之前偶尔沾点昏也只不过是鸡肉 还没尝过鸡腿味道。",
+		DRUMSTICK_COOKED = "还真挺好吃的~",
 		DUG_BERRYBUSH = "Now it can be taken anywhere.",
 		DUG_BERRYBUSH_JUICY = "This could be replanted closer to home.",
 		DUG_GRASS = "It can be planted anywhere now.",
@@ -1400,22 +1400,22 @@ return {
 		},
 		EVERGREEN_SPARSE =
 		{
-			BURNING = "What a waste of wood.",
-			BURNT = "I feel like I could have prevented that.",
+			BURNING = "快点吧。",
+			BURNT = "烧的只有炭了。",
 			CHOPPED = "舒服多了",
 			GENERIC = "不一样的树 相同的恶心。",
 		},
 		TWIGGYTREE = 
 		{
-			BURNING = "What a waste of wood.",
-			BURNT = "I feel like I could have prevented that.",
-			CHOPPED = "Take that, nature!",
-			GENERIC = "It's all stick-y.",			
-			DISEASED = "It looks sick. More so than usual.",
+			BURNING = "谁想救火？",
+			BURNT = "烧的只有炭了。",
+			CHOPPED = "给挖出来吧 别那天被绊倒了。",
+			GENERIC = "就这点叶子吗？",			
+			DISEASED = "生病了？",
 		},
-		TWIGGY_NUT_SAPLING = "It doesn't need any help to grow.",
-        TWIGGY_OLD = "That tree looks pretty wimpy.",
-		TWIGGY_NUT = "There's a stick-y tree inside it that wants to get out.",
+		TWIGGY_NUT_SAPLING = "小树苗。",
+        TWIGGY_OLD = "枯萎了 看看别的树吧。",
+		TWIGGY_NUT = "看看 树种子。",
 		EYEPLANT = "I think I'm being watched.",
 		INSPECTSELF = "Am I still in one piece?",
 		FARMPLOT =
@@ -1426,11 +1426,11 @@ return {
 			BURNT = "I don't think anything will grow in a pile of ash.",
 		},
 		FEATHERHAT = "BECOME THE BIRD!",
-		FEATHER_CROW = "A feather from a black bird.",
+		FEATHER_CROW = "很漂亮的羽毛",
 		FEATHER_ROBIN = "A redbird feather.",
 		FEATHER_ROBIN_WINTER = "A snowbird feather.",
 		FEATHER_CANARY = "A canary feather.",
-		FEATHERPENCIL = "The feather increases the scientific properties of the writing.",
+		FEATHERPENCIL = "之前有的话不至于崩溃。",
 		FEM_PUPPET = "She's trapped!",
 		FIREFLIES =
 		{
@@ -1451,12 +1451,12 @@ return {
 		{
 			EMBERS = "..我希望在它灭了之前有人能添加下燃料。",
 			GENERIC = "驱走黑暗。",
-			HIGH = "“节电”空调。",
-			LOW = "快没“电”了",
+			HIGH = "凉快啊 像空调呢。",
+			LOW = "快没电了。",
 			NORMAL = "真舒服呢。",
-			OUT = "冰火灭了。",
+			OUT = "谁给空调关了？",
 		},
-		FIRESTAFF = "I don't want to set the world on fire.",
+		FIRESTAFF = "像是游戏一样...",
 		FIRESUPPRESSOR = 
 		{	
 			ON = "全自动灭火器已准备就绪。",
@@ -1479,7 +1479,7 @@ return {
 		FLOWERHAT = "鲜艳的像是沾满了鲜血。",
 		FLOWER_EVIL = "也很美丽哦。",
 		FOLIAGE = "一些多叶植物。",
-		FOOTBALLHAT = "I don't like sports.",
+		FOOTBALLHAT = "开个口子把耳朵放出来就好了 太闷了。",
         FOSSIL_PIECE = "Science bones! We should put them back together.",
         FOSSIL_STALKER =
         {
@@ -1499,17 +1499,17 @@ return {
 			SLEEPING = "Aww, look at him sleep!",
 		},
 		FROGGLEBUNWICH = "A very leggy sandwich.",
-		FROGLEGS = "I've heard it's a delicacy.",
-		FROGLEGS_COOKED = "Tastes like chicken.",
+		FROGLEGS = "有点恶心。",
+		FROGLEGS_COOKED = "我想...我之前的想法错了。",
 		FRUITMEDLEY = "Fruity.",
 		FURTUFT = "一小团毛 不是我的。", 
 		GEARS = "一些还可以用的齿轮。",
-		GHOST = "This offends me as a scientist.",
-		GOLDENAXE = "That's one fancy axe.",
-		GOLDENPICKAXE = "Hey, isn't gold really soft?",
-		GOLDENPITCHFORK = "Why did I even make a pitchfork this fancy?",
-		GOLDENSHOVEL = "I can't wait to dig holes.",
-		GOLDNUGGET = "不知道在这地方还会不会有人为了这一块金子而展示内心的丑陋呢手哈哈。",
+		GHOST = "老哥我又没杀你 我甚至都不认识你是谁 别追我了好吗？白痴。",
+		GOLDENAXE = "...搞得我都想给我斧头镀个金了。",
+		GOLDENPICKAXE = "总算有结实的了。",
+		GOLDENPITCHFORK = "有必要吗...？ 好吧我觉得挺不错的。",
+		GOLDENSHOVEL = "喂 有点炫富过头了吧。",
+		GOLDNUGGET = "不知道在这地方还会不会有人为了这一块金子而展示内心的丑陋呢哈哈。",
 		GRASS =
 		{
 			BARREN = "枯萎了 可能再也醒不过来了。",
@@ -1533,17 +1533,17 @@ return {
 			INGROUND = "It's sleeping.",
 			PICKED = "I wonder if it will come back?",
 		},
-		GUNPOWDER = "It looks like pepper.",
-		HAMBAT = "This seems unsanitary.",
-		HAMMER = "Stop! It's time! To hammer things!",
+		GUNPOWDER = "火药劲还挺大的。",
+		HAMBAT = "还不如烤了吃呢。",
+		HAMMER = "嘿 你知道吗？我想锤烂些混蛋。",
 		HEALINGSALVE = "The stinging means that it's working.",
 		HEATROCK =
 		{
-			FROZEN = "It's colder than ice.",
-			COLD = "That's a cold stone.",
-			GENERIC = "I could manipulate its temperature.",
-			WARM = "It's quite warm and cuddly... for a rock!",
-			HOT = "Nice and toasty hot!",
+			FROZEN = "嘿夏天没这个我会死的。",
+			COLD = "不错的温度",
+			GENERIC = "不错我喜欢这个 只限冷的。",
+			WARM = "暖暖的 冬天会不错。",
+			HOT = "温度可以低一点吗？",
 		},
 		HOME = "Someone must live here.",
 		HOMESIGN =
@@ -1564,8 +1564,8 @@ return {
             UNWRITTEN = "The sign is currently blank.",
 			BURNT = "\"Don't play with matches.\"",
 		},
-		HONEY = "Looks delicious!",
-		HONEYCOMB = "Bees used to live in this.",
+		HONEY = "甜的...这个味道吗。",
+		HONEYCOMB = "不错 很有结构感。",
 		HONEYHAM = "Sweet and savory.",
 		HONEYNUGGETS = "Tastes like chicken, but I don't think it is.",
 		HORN = "It sounds like a beefalo field in there.",
@@ -1601,11 +1601,11 @@ return {
 		KRAMPUS_SACK = "Ew. It has Krampus slime all over it.",
 		LEIF = "He's huge!",
 		LEIF_SPARSE = "He's huge!",
-		LIGHTER  = "It's her lucky lighter.",
+		LIGHTER  = "有个打火机真的挺方便的。",
 		LIGHTNING_ROD =
 		{
-			CHARGED = "是谁发誓了呢？",
-			GENERIC = "有了这个 发誓被雷劈好像就没用了吧hhh。",
+			CHARGED = "有谁发誓了呢？",
+			GENERIC = "有了这个 发誓好像就没用了吧。",
 		},
 		LIGHTNINGGOAT = 
 		{
@@ -1615,7 +1615,7 @@ return {
 		LIGHTNINGGOATHORN = "It's like a miniature lightning rod.",
 		GOATMILK = "It's buzzing with tastiness!",
 		LITTLE_WALRUS = "He won't be cute and cuddly forever.",
-		LIVINGLOG = "It looks worried.",
+		LIVINGLOG = "长这个脸给谁看呢？",
 		LOG =
 		{
 			BURNING = "嘶...好烫!",
@@ -1634,7 +1634,7 @@ return {
         MANDRAKE_COOKED = "It doesn't seem so strange anymore.",
         MAPSCROLL = "A blank map. Doesn't seem very useful.",
         MARBLE = "漂亮的花纹。",
-        MARBLEBEAN = "I traded the old family cow for it.",
+        MARBLEBEAN = "这是...石头..豆子？",
         MARBLEBEAN_SAPLING = "搞不懂....这石头是怎么长成树的。",
         MARBLESHRUB = "呃..真搞不懂不懂。",
         MARBLEPILLAR = "I think I could use that.",
@@ -1673,7 +1673,7 @@ return {
             DRYING_NOTMEAT = ".",
             DRYINGINRAIN_NOTMEAT = "草！！你妈的啥时候下不好啊有病吧！",
         },
-        MEAT_DRIED = "干尸块。",
+        MEAT_DRIED = "风干肉块。",
         MERM = "这味多少有点熏脑子了。",
         MERMHEAD =
         {
@@ -1685,7 +1685,7 @@ return {
             GENERIC = "Who would live here?",
             BURNT = "Nothing to live in, now.",
         },
-        MINERHAT = "A hands-free way to brighten your day.",
+        MINERHAT = "头灯。",
         MONKEY = "Curious little guy.",
         MONKEYBARREL = "Did that just move?",
         MONSTERLASAGNA = "It's an affront to science.",
@@ -1695,16 +1695,16 @@ return {
         TRAILMIX = "A healthy, natural snack.",
         HOTCHILI = "Five alarm!",
         GUACAMOLE = "Avogadro's favorite dish.",
-        MONSTERMEAT = "生的 但...和那一帮畜生一样恶心。",
+        MONSTERMEAT = "生的...和那一帮畜生一样恶心。",
         MONSTERMEAT_DRIED = "我当时怎么没想到这种折磨方式啊...",
-        MOOSE = "I don't exactly know what that thing is.",
+        MOOSE = "鸭子？鹅？.....鹿？？",
         MOOSE_NESTING_GROUND = "It puts its babies there.",
         MOOSEEGG = "The babies are like excited electrons trying to escape.",
-        MOSSLING = "Aaah! You are definitely not an electron!",
+        MOSSLING = "小孩？有趣。",
         FEATHERFAN = "Down, to bring the temperature down.",
         MINIFAN = "Somehow the breeze comes out the back twice as fast.",
-        GOOSE_FEATHER = "Fluffy!",
-        STAFF_TORNADO = "Spinning doom.",
+        GOOSE_FEATHER = "不错的羽毛。",
+        STAFF_TORNADO = "刮起风来我可管不了了。",
         MOSQUITO =
         {
             GENERIC = "Disgusting little bloodsucker.",
@@ -1718,7 +1718,7 @@ return {
         },
         NIGHTLIGHT = "用那些诡异的怪物来点燃 很奇妙呢。",
         NIGHTMAREFUEL = "黏黏的。",
-        NIGHTSWORD = "Why would anyone make this? It's terrifying.",
+        NIGHTSWORD = "嘿 你说恐惧能粘上血吗~？",
         NITRE = "I'm not a geologist.",
         ONEMANBAND = "We should add a beefalo bell.",
         OASISLAKE =
@@ -1727,16 +1727,16 @@ return {
 			EMPTY = "It's dry as a bone.",
 		},
         PANDORASCHEST = "It may contain something fantastic! Or horrible.",
-        PANFLUTE = "To serenade the animals.",
-        PAPYRUS = "Some sheets of paper.",
-        WAXPAPER = "Some sheets of wax paper.",
-        PENGUIN = "看起来它心情挺不错的 不过企鹅不是在南极么？",
+        PANFLUTE = "...很温柔...让人身心愉悦的声音。",
+        PAPYRUS = "这纸还不错。",
+        WAXPAPER = "打上蜡了保存效果估计会很不错。",
+        PENGUIN = "看起来它心情挺不错的 不过这会有企鹅吗？",
         PERD = "Stupid bird! Stay away from those berries!",
         PEROGIES = "These turned out pretty good.",
-        PETALS = "...额我要这些花瓣干啥。",
+        PETALS = "我要这些花瓣干啥。",
         PETALS_EVIL = "I'm not sure I want to hold those.",
         PHLEGM = "It's thick and pliable. And salty.",
-        PICKAXE = "Iconic, isn't it?",
+        PICKAXE = "差劲 来点结实的好不好？",
         PIGGYBACK = "This little piggy's gone... \"home\".",
         PIGHEAD =
         {
@@ -1750,14 +1750,14 @@ return {
             LIGHTSOUT = "Come ON! I know you're home!",
             BURNT = "Not so fancy now, pig!",
         },
-        PIGKING = "Ewwww, he smells!",
+        PIGKING = "待多久了...",
         PIGMAN =
         {
-            DEAD = "Someone should tell its family.",
-            FOLLOWER = "You're part of my entourage.",
-            GENERIC = "They kind of creep me out.",
-            GUARD = "Looks serious.",
-            WEREPIG = "Not a friendly pig!!",
+            DEAD = "还用说吗？",
+            FOLLOWER = "蠢。",
+            GENERIC = "蠢。",
+            GUARD = "蠢。",
+            WEREPIG = "又疯一个？",
         },
         PIGSKIN = "It still has the tail on it.",
         PIGTENT = "Smells like bacon.",
@@ -1765,7 +1765,7 @@ return {
         PINECONE = "听说松子挺好吃的 不知道这里面有没有。",
         PINECONE_SAPLING = "It'll be a tree soon!",
         LUMPY_SAPLING = "How did this tree even reproduce?",
-        PITCHFORK = "Now I just need an angry mob to join.",
+        PITCHFORK = "草叉子嘛。",
         PLANTMEAT = "That doesn't look very appealing.",
         PLANTMEAT_COOKED = "At least it's warm now.",
         PLANT_NORMAL =
@@ -1806,7 +1806,7 @@ return {
         RAINCOAT = "Keeps the rain where it ought to be. Outside your body.",
         RAINHAT = "Messy hair... the terrible price of dryness.",
         RATATOUILLE = "An excellent source of fiber.",
-        RAZOR = "A sharpened rock tied to a stick. For hygiene!",
+        RAZOR = "我不喜欢剪毛 别靠近我。",
         REDGEM = "It sparkles with inner warmth.",
         RED_CAP = "It smells funny.",
         RED_CAP_COOKED = "It's different now...",
@@ -1853,8 +1853,8 @@ return {
         RESURRECTIONSTONE = "诡异的石台 似乎可以救活那些奇怪的朋友。",
         ROBIN =
         {
-            GENERIC = "Does that mean winter is gone?",
-            HELD = "He likes my pocket.",
+            GENERIC = "抓个鸟不？",
+            HELD = "嘿小家伙怕我不？",
         },
         ROBIN_WINTER =
         {
@@ -1887,16 +1887,16 @@ return {
         ICE = "嗷喔 还真挺凉的。",
         ROCKS = "一些小石头块。",
         ROOK = "Storm the castle!",
-        ROPE = "Some short lengths of rope.",
+        ROPE = "粗麻绳捆点东西不错。",
         ROTTENEGG = "Ew! It stinks!",
         ROYAL_JELLY = "It infuses the eater with the power of science!",
         JELLYBEAN = "One part jelly, one part bean.",
         SADDLE_BASIC = "That'll allow the mounting of some smelly animal.",
         SADDLE_RACE = "This saddle really flies!",
         SADDLE_WAR = "The only problem is the saddle sores.",
-        SADDLEHORN = "This could take a saddle off.",
-        SALTLICK = "大多数牛儿们很喜欢舔这个方块。",
-        BRUSH = "I bet the beefalo really like this.",
+        SADDLEHORN = "更加方便卸载的插件。",
+        SALTLICK = "多数生物都喜欢舔这块盐。",
+        BRUSH = "其实我也想梳梳毛 乱糟糟的。",
 		SANITYROCK =
 		{
 			ACTIVE = "That's a CRAZY looking rock!",
@@ -1919,7 +1919,7 @@ return {
    		},
    		SCULPTINGTABLE=
    		{
-			EMPTY = "可以制作..嗯...美丽的雕像？",
+			EMPTY = "看过...给个图纸应该能。",
 			BLOCK = "Ready for sculpting.",
 			SCULPTURE = "A masterpiece!",
 			BURNT = "Burnt right down.",
@@ -1936,7 +1936,7 @@ return {
 		SCULPTURE_BISHOPBODY = 
 		{
 			COVERED = "It looks old, but it feels new.",
-			UNCOVERED = "There's a big piece missing.",
+			UNCOVERED = "怎么？让我挖个坑埋点骨头？别开玩笑了。",
 			FINISHED = "Now what?",
 			READY = "Something's moving inside.",
 		},
@@ -1952,9 +1952,9 @@ return {
         GARGOYLE_WEREPIG = "症状像是美杜莎搞的鬼。",
 		SEEDS = "这一颗...又是什么品种的呢？",
 		SEEDS_COOKED = "That cooked the life right out of 'em!",
-		SEWING_KIT = "Darn it! Darn it all to heck!",
-		SEWING_TAPE = "Good for mending.",
-		SHOVEL = "There's a lot going on underground.",
+		SEWING_KIT = "看过一些有关这方面的书本 应该能行。",
+		SEWING_TAPE = "太熟悉了 太熟悉了。",
+		SHOVEL = "铲子 挖掘用的。",
 		SILK = "It comes from a spider's butt.",
 		SKELETON = "Better you than me.",
 		SCORCHED_SKELETON = "Spooky.",
@@ -1969,8 +1969,8 @@ return {
 		SMALLMEAT = "就这点儿？啧 真不过瘾呐...",
 		SMALLMEAT_DRIED = "这一小块还挺上瘾的。",
 		SPAT = "What a crusty looking animal.",
-		SPEAR = "That's one pointy stick.",
-		SPEAR_WATHGRITHR = "It feels very stabby.",
+		SPEAR = "还不赖嘛挺锋利的。",
+		SPEAR_WATHGRITHR = "专业的就是不一样。",
 		WATHGRITHRHAT = "Pretty fancy hat, that.",
 		SPIDER =
 		{
@@ -2005,7 +2005,7 @@ return {
 		STATUEHARP = "What happened to the head?",
 		STATUEMAXWELL = "He's a lot shorter in person.",
 		STEELWOOL = "Scratchy metal fibers.",
-		STINGER = "Looks sharp!",
+		STINGER = "拿远点 恶心。",
 		STRAWHAT = "Hats always ruin my hair.",
 		STUFFEDEGGPLANT = "It's really stuffing!",
 		SWEATERVEST = "This vest is dapper as all get-out.",
@@ -2014,7 +2014,7 @@ return {
 		TAFFY = "If I had a dentist they'd be mad I ate stuff like that.",
 		TALLBIRD = "That's a tall bird!",
 		TALLBIRDEGG = "Will it hatch?",
-		TALLBIRDEGG_COOKED = "Delicious and nutritious.",
+		TALLBIRDEGG_COOKED = "没必要讲究 别那么麻烦。",
 		TALLBIRDEGG_CRACKED =
 		{
 			COLD = "Is it shivering or am I?",
@@ -2057,7 +2057,7 @@ return {
 			GENERIC = "在里面小睡一会真的很舒服呢。",
 			BURNT = "It won't provide much shade now.",
 		},
-		TENTACLE = "That looks dangerous.",
+		TENTACLE = "重 不想穿！",
 		TENTACLESPIKE = "It's pointy and slimy.",
 		TENTACLESPOTS = "I think these were its genitalia.",
 		TENTACLE_PILLAR = "A slimy pole.",
@@ -2065,10 +2065,10 @@ return {
 		TENTACLE_PILLAR_ARM = "Little slippery arms.",
 		TENTACLE_GARDEN = "Yet another slimy pole.",
 		TOPHAT = "What a nice hat.",
-		TORCH = "Something to hold back the night.",
-		TRANSISTOR = "It's whirring with electricity.",
-		TRAP = "I wove it real tight.",
-		TRAP_TEETH = "This is a nasty surprise.",
+		TORCH = "荒野最简陋的移动光源。",
+		TRANSISTOR = "一小块电子元件",
+		TRAP = "抓点吃的。",
+		TRAP_TEETH = "这陷阱也是有够疯狂的。",
 		TRAP_TEETH_MAXWELL = "I'll want to avoid stepping on that!",
 		TREASURECHEST = 
 		{
@@ -2227,7 +2227,7 @@ return {
 		TRUNK_WINTER = "A thick, hairy trunk.",
 		TUMBLEWEED = "Who knows what that tumbleweed has picked up.",
 		TURKEYDINNER = "Mmmm.",
-		TWIGS = "It's a bunch of small twigs.",
+		TWIGS = "比较结实的树枝。",
 		UMBRELLA = "I always hate when my hair gets wet and poofy.",
 		GRASS_UMBRELLA = "My hair looks good wet... it's when it dries that's the problem.",
 		UNIMPLEMENTED = "It doesn't look finished! It could be dangerous.",
@@ -2270,13 +2270,13 @@ return {
 		},
 		WARG = "You might be something to reckon with, big dog.",
 		WASPHIVE = "I think those bees are mad.",
-		WATERBALLOON = "What a scientific marvel!",
+		WATERBALLOON = "别砸我。",
 		WATERMELON = "Sticky sweet.",
 		WATERMELON_COOKED = "Juicy and warm.",
 		WATERMELONHAT = "Let the juice run down your face.",
 		WAXWELLJOURNAL = "Spooky.",
 		WETGOOP = "It tastes like nothing.",
-        WHIP = "Nothing like loud noises to help keep the peace.",
+        WHIP = "要我说...能不能把这死玩意烧掉。",
 		WINTERHAT = "It'll be good for when winter comes.",
 		WINTEROMETER = 
 		{
@@ -2323,7 +2323,7 @@ return {
 		WORMHOLE_LIMITED = "这死虫子生病了？",
 		ACCOMPLISHMENT_SHRINE = "I want to use it, and I want the world to know that I did.",        
 		LIVINGTREE = "Is it watching me?",
-		ICESTAFF = "It's cold to the touch.",
+		ICESTAFF = "冰冷的 不错。",
 		REVIVER = "The beating of this hideous heart will bring a ghost back to life!",
 		SHADOWHEART = "The power of science must have reanimated it...",
         ATRIUM_RUBBLE = 
@@ -2360,9 +2360,9 @@ return {
 		HUMANMEAT = "Flesh is flesh. Where do I draw the line?",
 		HUMANMEAT_COOKED = "Cooked nice and pink, but still morally gray.",
 		HUMANMEAT_DRIED = "Letting it dry makes it not come from a human, right?",
-		ROCK_MOON = "陨石 看样子应该是从月球过来的。",
-		MOONROCKNUGGET = "陨石 看样子应该是从月球过来的。1",
-		MOONROCKCRATER = "I should stick something shiny in it. For research.",
+		ROCK_MOON = "看样子应该是从月球过来的。",
+		MOONROCKNUGGET = "看样子应该是从月球过来的。",
+		MOONROCKCRATER = "像是块眼白。",
 		MOONROCKSEED = "There's science inside!",
 
         REDMOONEYE = "It can see and be seen for miles!",
@@ -2764,7 +2764,7 @@ return {
         },
         ICEBERG_MELTED = "It's completely melted.",
 
-        MINIFLARE = "I can light it to let everyone know I'm here.",
+        MINIFLARE = "晚上效果好。",
 
 		MOON_FISSURE = 
 		{
@@ -2788,7 +2788,7 @@ return {
         SEAFARING_PROTOTYPER =
         {
             GENERIC = "海上生存指南机。",
-            BURNT = "已经废了  看啥我可没碰啊。",
+            BURNT = "已经废了看啥我可没碰啊。",
         },
         BOAT_ITEM = "It would be nice to do some experiments on the water.",
         STEERINGWHEEL_ITEM = "That's going to be the steering wheel.",
@@ -2830,7 +2830,7 @@ return {
 
 		COOKIECUTTER = "I don't like the way it's looking at my boat...",
 		COOKIECUTTERSHELL = "A shell of its former self.",
-		COOKIECUTTERHAT = "At least my hair will stay dry.",
+		COOKIECUTTERHAT = "虫子尸壳做的帽子？有够疯的。",
 		SALTSTACK =
 		{
 			GENERIC = "Are those natural formations?",
@@ -2844,8 +2844,8 @@ return {
         MALBATROSS_FEATHER = "Plucked from a fine feathered fiend.",
         MALBATROSS_BEAK = "Smells fishy.",
         MAST_MALBATROSS_ITEM = "It's lighter than it looks.",
-        MAST_MALBATROSS = "额..嘿嘿 这羽毛是那只鸟借我的你信吗？嘿嘿。",
-		MALBATROSS_FEATHERED_WEAVE = "I'm making a quill-t!",
+        MAST_MALBATROSS = "这羽毛是那只鸟借我的你信吗？嘿嘿。",
+		MALBATROSS_FEATHERED_WEAVE = "这帆挺顺溜的。",
 
         WALKINGPLANK = "Couldn't we have just made a lifeboat?",
         OAR = "Manual ship acceleration.",
