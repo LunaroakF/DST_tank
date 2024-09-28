@@ -122,7 +122,7 @@ return {
             GENERIC = "放在这里又有什么用 还不如不放。",
             DEAD = "留着吧 或许能帮上忙。",
             SLEEPING = "没意思。",
-            BUSY = "等会我我马上在试试！",
+            BUSY = "急什么？",
             ABIGAILHEART = "这东西 吼~确实值得",
             GHOSTHEART = "我是怎么想到这破主意的...",
             NOTGEM = "有够恶心的。",
@@ -247,8 +247,8 @@ return {
 	ANNOUNCE_CHARLIE = "妈的 又来！",
 	ANNOUNCE_CHARLIE_ATTACK = "呜啊！ 妈的疼死了。",
 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific 
-	ANNOUNCE_COLD = "额？",
-	ANNOUNCE_HOT = "啊？",
+	ANNOUNCE_COLD = "有点冷了。",
+	ANNOUNCE_HOT = "喂 我想我需要避避太阳了快要...热死了...",
 	ANNOUNCE_CRAFTING_FAIL = "确实缺少一个关键成分",
 	ANNOUNCE_DEERCLOPS = "蛤~？终于要来了吗？",
 	ANNOUNCE_CAVEIN = "呃！哦哦嗷这是要地震了吗？！！",
@@ -471,9 +471,9 @@ return {
 
         ANTLION =
         {
-            GENERIC = "我身上有它想要的东西呢。",
-            VERYHAPPY = "看起来 这玩意和我的关系还不错。",
-            UNHAPPY = "有点凶啊。",
+            GENERIC = "嘿 臭虫别捣乱。",
+            VERYHAPPY = "这就满足了？哈。",
+            UNHAPPY = "你还不高兴上了？",
         },
         ANTLIONTRINKET = "有人可能对此感兴趣。",
         SANDSPIKE = "我草吓死我了。",
@@ -710,12 +710,12 @@ return {
 		EEL_COOKED = "Smells great!",
 		UNAGI = "I hope this doesn't make anyone eel!",
 		EYETURRET = "嗯..这大家伙一直看着我挺不舒服的。",
-		EYETURRET_ITEM = "I think it's sleeping.",
+		EYETURRET_ITEM = "嗯.....",
 		MINOTAURHORN = "Wow! I'm glad that didn't gore me!",
 		MINOTAURCHEST = "It may contain a bigger something fantastic! Or horrible.",
-		THULECITE_PIECES = "It's some smaller chunks of Thulecite.",
+		THULECITE_PIECES = "铥碎片？",
 		POND_ALGAE = "Some algae by a pond.",
-		GREENSTAFF = "This will come in handy.",
+		GREENSTAFF = "能分解成之前的法杖吗？有趣耶。",
 		GIFT = "Is that for me?",
         GIFTWRAP = "That's a wrap!",
 		POTTEDFERN = "一款洞穴里的小草。",
@@ -754,12 +754,12 @@ return {
 			CAVE = "已经看不见月亮了。",
 			WEREBEAVER = "only_used_by_woodie", --woodie specific
         },
-		THULECITE = "I wonder where this is from?",
-		ARMORRUINS = "It's oddly light.",
+		THULECITE = "我记错了吗...是这个颜色？",
+		ARMORRUINS = "嘿 这可比那个大理石好用多了。",
 		ARMORSKELETON = "No bones about it.",
 		SKELETONHAT = "这东西似乎对我没用呢...管它呢~。",
-		RUINS_BAT = "It has quite a heft to it.",
-		RUINSHAT = "How's my hair?",
+		RUINS_BAT = "揍那些死混蛋恐怕都叫不出来吧~",
+		RUINSHAT = "这红宝石哪来的...",
 		NIGHTMARE_TIMEPIECE =
 		{
             CALM = "All is well.",
@@ -768,7 +768,7 @@ return {
             STEADY = "It seems to be staying steady.",
             WANING = "Feels like it's receding.",
             DAWN = "The nightmare is almost gone!",
-            NOMAGIC = "There's no magic around here.",
+            NOMAGIC = "纪念品？ 嘿 别这么闲了。",
 		},
 		BISHOP_NIGHTMARE = "It's falling apart!",
 		ROOK_NIGHTMARE = "Terrifying!",
@@ -776,23 +776,23 @@ return {
 		MINOTAUR = "That thing doesn't look happy.",
 		SPIDER_DROPPER = "Note to self: Don't look up.",
 		NIGHTMARELIGHT = "I wonder what function this served.",
-		NIGHTSTICK = "我靠 带电的。 ",
-		GREENGEM = "It's green and gemmy.",
+		NIGHTSTICK = "我靠 带电的？ ",
+		GREENGEM = "有一股很轻松的味道。",
 		MULTITOOL_AXE_PICKAXE = "一举两用 不过我还是喜欢我的斧头。",
-		ORANGESTAFF = "This beats walking.",
-		YELLOWAMULET = "Warm to the touch.",
-		GREENAMULET = "No base should be without one!",
+		ORANGESTAFF = "更轻松了。",
+		YELLOWAMULET = "闪闪发光。",
+		GREENAMULET = "质量真的没问题吗 嘿。",
 		SLURPERPELT = "Doesn't look all that much different dead.",	
 
 		SLURPER = "It's so hairy!",
 		SLURPER_PELT = "Doesn't look all that much different dead.",
-		ARMORSLURPER = "A soggy, sustaining, succulent suit.",
-		ORANGEAMULET = "Teleportation can be so useful.",
-		YELLOWSTAFF = "A genius invention... a gem on a stick.",
-		YELLOWGEM = "This gem is yellow.",
-		ORANGEGEM = "It's an orange gem.",
-        OPALSTAFF = "It's scientifically proven that gems look better on top of sticks.",
-        OPALPRECIOUSGEM = "This gem seems special.",
+		ARMORSLURPER = "不会饿啊...感觉没啥区别。",
+		ORANGEAMULET = "妈的 白痴别在检那些垃圾了行不？！",
+		YELLOWSTAFF = "太阳吗？ 真没想到。",
+		YELLOWGEM = "不错的...想不出来词了。",
+		ORANGEGEM = "不错的颜色。",
+        OPALSTAFF = "这东西真的太棒了。",
+        OPALPRECIOUSGEM = "哦..哇...这真的没有疯子去抢吗 哈哈哈。",
         TELEBASE = 
 		{
 			VALID = "哈！ 好了！...所以这玩意该咋用？？",
@@ -847,17 +847,17 @@ return {
         LANTERN = "就不能更方便点？像是做个手电筒...？",
         LIGHTBULB = "It's strangely tasty looking.",
         MANRABBIT_TAIL = "I feel a lil better when I hold one.",
-        MUSHROOMHAT = "Makes the wearer look like a fun guy.",
+        MUSHROOMHAT = "就 希望这帽子没毒吧。",
         MUSHROOM_LIGHT2 =
         {
             ON = "非常漂亮。",
-            OFF = "一个蘑菇台灯。",
+            OFF = "一台大蘑菇灯。",
             BURNT = "焦了。",
         },
         MUSHROOM_LIGHT =
         {
-            ON = "大台灯。",
-            OFF = "一台大蘑菇灯。",
+            ON = "蘑菇台灯。",
+            OFF = "一个蘑菇台灯。",
             BURNT = "烧焦了 可惜。",
         },
         SLEEPBOMB = "这袋子...味道很怪...有点困...",
@@ -978,10 +978,10 @@ return {
 		PIGGUARD = "He doesn't look as friendly as the others.",
 		ABIGAIL = "嗯 一位可爱的幽灵。",
 		ADVENTURE_PORTAL = "I'm not sure I want to fall for that a second time.",
-		AMULET = "I feel so safe when I get to wear it.",
+		AMULET = "戴上总感觉身上酥酥麻麻的。",
 		ANIMAL_TRACK = "Tracks left by food. I mean... an animal.",
 		ARMORGRASS = "嘿 穿这身遇到火会怎样？",
-		ARMORMARBLE = "That looks really heavy.",
+		ARMORMARBLE = "好重 不想穿...",
 		ARMORWOOD = "能抗住几下挺不错的。",
 		ARMOR_SANITY = "这真的能抗住攻击吗...",
 		ASH =
@@ -999,7 +999,7 @@ return {
         },
         BUNDLE = "Our supplies are in there!",
         BUNDLEWRAP = "Wrapping things up should make them easier to carry.",
-		BACKPACK = "You could fit a whole lot of science in there.",
+		BACKPACK = "别在包里塞垃圾就行。",
 		BACONEGGS = "The perfect breakfast for a man of science.",
 		BANDAGE = "Seems sterile enough.",
 		BASALT = "That's too strong to break through!",
@@ -1061,7 +1061,7 @@ return {
             PUDGY = "Hmmm, there may be too much food inside it.",
 		},
 
-		BEEFALOHAT = "That's a case of hat-hair waiting to happen.",
+		BEEFALOHAT = "太闷了 拿开。",
 		BEEFALOWOOL = "It smells like beefalo tears.",
 		BEEHAT = "遮挡那些烦人的蜜蜂 不错~",
         BEESWAX = "蜂蜡不错。",
@@ -1112,8 +1112,8 @@ return {
 		BLOWDART_SLEEP = "有意思 你说这东西被扎到会起层冰？",
 		BLOWDART_PIPE = "被扎到可不好受啊。",
 		BLOWDART_YELLOW = "带电的 可以引雷。",
-		BLUEAMULET = "Cool as ice!",
-		BLUEGEM = "It sparkles with cold energy.",
+		BLUEAMULET = "不会过冷了？有啥用还不如不会让我降温。",
+		BLUEGEM = "蓝宝石...和我之前看到的不一样呢。",
 		BLUEPRINT = 
 		{ 
             COMMON = "It's scientific!",
@@ -1132,7 +1132,7 @@ return {
 		BONESHARD = "哇哦~来猜猜这是谁的碎骨头片？",
 		BONESTEW = "A stew to put some meat on your bones.",
 		BUGNET = "并不是抓鱼的网呢。",
-		BUSHHAT = "It's kind of scratchy.",
+		BUSHHAT = "不错的伪装。",
 		BUTTER = "黄油嗯..嗯！？？？？",
 		BUTTERFLY =
 		{
@@ -1179,7 +1179,7 @@ return {
 			GENERIC = "It's a den in a stump.",
 			EMPTY = "Its owner ran out of lives.",
 		},
-		CATCOONHAT = "Ears hat!",
+		CATCOONHAT = "有点热。",
 		COONTAIL = "I think it's still swishing.",
 		CARROT = "Yuck. This vegetable came out of the dirt.",
 		CARROT_COOKED = "味道不错~",
@@ -1227,7 +1227,7 @@ return {
         CHESSJUNK1 = "A pile of broken chess pieces.",
         CHESSJUNK2 = "Another pile of broken chess pieces.",
         CHESSJUNK3 = "Even more broken chess pieces.",
-		CHESTER = "Otto von Chesterfield, Esq.",
+		CHESTER = "喂 小家伙你眼睛呢？",
 		CHESTER_EYEBONE =
 		{
 			GENERIC = "怪可爱的。",
@@ -1282,13 +1282,13 @@ return {
         DEER_GEMMED = "It's being controlled by that beast!",
 		DEERCLOPS = "嗨！够我吃好几天了！",
 		DEERCLOPS_EYEBALL = "这可比我之前吃掉的大多了。 ",
-		EYEBRELLAHAT =	"It watches over the wearer.",
+		EYEBRELLAHAT =	"眼睛防水效果还不赖嘛。",
 		DEPLETED_GRASS =
 		{
 			GENERIC = "It's probably a tuft of grass.",
 		},
-        GOGGLESHAT = "What a stylish pair of goggles.",
-        DESERTHAT = "Quality eye protection.",
+        GOGGLESHAT = "帅吗？很傻好吧。",
+        DESERTHAT = "又丑又闷 还好能挡风沙。",
 		DEVTOOL = "It smells of bacon!",
 		DEVTOOL_NODEV = "I'm not strong enough to wield it.",
 		DIRTPILE = "It's a pile of dirt... or IS it?",
@@ -1365,7 +1365,7 @@ return {
 		DURIAN = "Oh, it smells!",
 		DURIAN_COOKED = "Now it smells even worse!",
 		DURIAN_SEEDS = "It's a durian seed.",
-		EARMUFFSHAT = "Makes you warm and fuzzy inside. Outside, too.",
+		EARMUFFSHAT = "果然和记忆中的感觉差不多。",
 		EGGPLANT = "It doesn't look like an egg.",
 		EGGPLANT_COOKED = "It's even less eggy.",
 		EGGPLANT_SEEDS = "It's an eggplant seed.",
@@ -1425,7 +1425,7 @@ return {
 			NEEDSFERTILIZER = "I think it needs to be fertilized.",
 			BURNT = "I don't think anything will grow in a pile of ash.",
 		},
-		FEATHERHAT = "BECOME THE BIRD!",
+		FEATHERHAT = "部落酋长？ 太白痴了这个帽子",
 		FEATHER_CROW = "很漂亮的羽毛",
 		FEATHER_ROBIN = "A redbird feather.",
 		FEATHER_ROBIN_WINTER = "A snowbird feather.",
@@ -1476,8 +1476,8 @@ return {
             ROSE = "To match my rosy cheeks.",
         },
         FLOWER_WITHERED = "再美丽的生命终究还是会衰落。",
-		FLOWERHAT = "鲜艳的像是沾满了鲜血。",
-		FLOWER_EVIL = "也很美丽哦。",
+		FLOWERHAT = "鲜艳的...像是沾满了鲜血。",
+		FLOWER_EVIL = "也很美哦。",
 		FOLIAGE = "一些多叶植物。",
 		FOOTBALLHAT = "开个口子把耳朵放出来就好了 太闷了。",
         FOSSIL_PIECE = "Science bones! We should put them back together.",
@@ -1495,7 +1495,7 @@ return {
 		FROG =
 		{
 			DEAD = "He's croaked.",
-			GENERIC = "He's so cute!",
+			GENERIC = "青蛙？ 我看是蛤蟆吧。",
 			SLEEPING = "Aww, look at him sleep!",
 		},
 		FROGGLEBUNWICH = "A very leggy sandwich.",
@@ -1579,7 +1579,7 @@ return {
 		HOUNDBONE = "额...哎..别这么看着我 我不吃的。",
 		HOUNDMOUND = "嘿！ 你们还过得好么？！ 哈哈！",
 		ICEBOX = "能有一款不需要电的冰箱简直再好不过了。",
-		ICEHAT = "Stay cool, boy.",
+		ICEHAT = "别给冻傻了。",
 		ICEHOUND = "在饥饿和寒冷的天气里它经历了一次蜕化。",
 		INSANITYROCK =
 		{
@@ -1701,8 +1701,8 @@ return {
         MOOSE_NESTING_GROUND = "It puts its babies there.",
         MOOSEEGG = "The babies are like excited electrons trying to escape.",
         MOSSLING = "小孩？有趣。",
-        FEATHERFAN = "Down, to bring the temperature down.",
-        MINIFAN = "Somehow the breeze comes out the back twice as fast.",
+        FEATHERFAN = "不错的羽毛扇子。",
+        MINIFAN = "给小孩玩的吧？ ",
         GOOSE_FEATHER = "不错的羽毛。",
         STAFF_TORNADO = "刮起风来我可管不了了。",
         MOSQUITO =
@@ -1720,7 +1720,7 @@ return {
         NIGHTMAREFUEL = "黏黏的。",
         NIGHTSWORD = "嘿 你说恐惧能粘上血吗~？",
         NITRE = "I'm not a geologist.",
-        ONEMANBAND = "We should add a beefalo bell.",
+        ONEMANBAND = "好吵 我不想穿着。",
         OASISLAKE =
 		{
 			GENERIC = "Is that a mirage?",
@@ -1737,7 +1737,7 @@ return {
         PETALS_EVIL = "I'm not sure I want to hold those.",
         PHLEGM = "It's thick and pliable. And salty.",
         PICKAXE = "差劲 来点结实的好不好？",
-        PIGGYBACK = "This little piggy's gone... \"home\".",
+        PIGGYBACK = "好大的味...这都不处理吗？",
         PIGHEAD =
         {
             GENERIC = "Looks like an offering to the beast.",
@@ -1786,7 +1786,7 @@ return {
         PUMPKIN_COOKED = "How did it not turn into a pie?",
         PUMPKIN_LANTERN = "Spooky!",
         PUMPKIN_SEEDS = "It's a pumpkin seed.",
-        PURPLEAMULET = "It's whispering to me.",
+        PURPLEAMULET = "装饰品哦~",
         PURPLEGEM = "漂亮 总感觉很像我呢。",
         RABBIT =
         {
@@ -1803,11 +1803,11 @@ return {
             GENERIC = "我觉得这玩意没必要吧。",
             BURNT = "正好 腾出地方来了。",
         },
-        RAINCOAT = "Keeps the rain where it ought to be. Outside your body.",
-        RAINHAT = "Messy hair... the terrible price of dryness.",
+        RAINCOAT = "嘿 下雨天没这个我真的会难受的呢~",
+        RAINHAT = "防水吗 不错。",
         RATATOUILLE = "An excellent source of fiber.",
         RAZOR = "我不喜欢剪毛 别靠近我。",
-        REDGEM = "It sparkles with inner warmth.",
+        REDGEM = "热的？",
         RED_CAP = "It smells funny.",
         RED_CAP_COOKED = "It's different now...",
         RED_MUSHROOM =
@@ -1971,7 +1971,7 @@ return {
 		SPAT = "What a crusty looking animal.",
 		SPEAR = "还不赖嘛挺锋利的。",
 		SPEAR_WATHGRITHR = "专业的就是不一样。",
-		WATHGRITHRHAT = "Pretty fancy hat, that.",
+		WATHGRITHRHAT = "很优雅。",
 		SPIDER =
 		{
 			DEAD = "Ewwww!",
@@ -2006,11 +2006,11 @@ return {
 		STATUEMAXWELL = "He's a lot shorter in person.",
 		STEELWOOL = "Scratchy metal fibers.",
 		STINGER = "拿远点 恶心。",
-		STRAWHAT = "Hats always ruin my hair.",
+		STRAWHAT = "有点刺挠 不是很舒服呢。",
 		STUFFEDEGGPLANT = "It's really stuffing!",
-		SWEATERVEST = "This vest is dapper as all get-out.",
-		REFLECTIVEVEST = "Keep off, evil sun!",
-		HAWAIIANSHIRT = "It's not lab-safe!",
+		SWEATERVEST = "背心？不了不用了。",
+		REFLECTIVEVEST = "有效果吗？没吧。",
+		HAWAIIANSHIRT = "度假吗？我喜欢~",
 		TAFFY = "If I had a dentist they'd be mad I ate stuff like that.",
 		TALLBIRD = "That's a tall bird!",
 		TALLBIRDEGG = "Will it hatch?",
@@ -2046,7 +2046,7 @@ return {
 		TELEPORTATO_CRANK = "Tough enough to handle the most intense experiments.",
 		TELEPORTATO_POTATO = "This metal potato contains great and fearful power...",
 		TELEPORTATO_RING = "A ring that could focus dimensional energies.",
-		TELESTAFF = "That could reveal the world.",
+		TELESTAFF = "每次看到雷恐怕都会吓一跳吧。",
 		TENT = 
 		{
 			GENERIC = "就算是疯子也是得睡觉的。",
@@ -2064,7 +2064,7 @@ return {
         TENTACLE_PILLAR_HOLE = "Seems stinky, but worth exploring.",
 		TENTACLE_PILLAR_ARM = "Little slippery arms.",
 		TENTACLE_GARDEN = "Yet another slimy pole.",
-		TOPHAT = "What a nice hat.",
+		TOPHAT = "别带着这个装绅士了 蠢到爆了。",
 		TORCH = "荒野最简陋的移动光源。",
 		TRANSISTOR = "一小块电子元件",
 		TRAP = "抓点吃的。",
@@ -2220,16 +2220,16 @@ return {
 		PIGELITEFIGHTER4 = "Wouldn't you rather hit someone else?", --GREEN
 
 		BISHOP_CHARGE_HIT = "Ow!",
-		TRUNKVEST_SUMMER = "Wilderness casual.",
-		TRUNKVEST_WINTER = "Winter survival gear.",
+		TRUNKVEST_SUMMER = "这个还凑合点。",
+		TRUNKVEST_WINTER = "我有毛 拿走吧。",
 		TRUNK_COOKED = "Somehow even more nasal than before.",
 		TRUNK_SUMMER = "A light breezy trunk.",
 		TRUNK_WINTER = "A thick, hairy trunk.",
 		TUMBLEWEED = "Who knows what that tumbleweed has picked up.",
 		TURKEYDINNER = "Mmmm.",
 		TWIGS = "比较结实的树枝。",
-		UMBRELLA = "I always hate when my hair gets wet and poofy.",
-		GRASS_UMBRELLA = "My hair looks good wet... it's when it dries that's the problem.",
+		UMBRELLA = "不赖嘛 下雨天有个伞真是不错。",
+		GRASS_UMBRELLA = "拿把破伞就算好看谁会用？",
 		UNIMPLEMENTED = "It doesn't look finished! It could be dangerous.",
 		WAFFLES = "I'm waffling on whether it needs more syrup.",
 		WALL_HAY = 
@@ -2241,7 +2241,7 @@ return {
 		WALL_STONE = "That's a nice wall.",
 		WALL_STONE_ITEM = "They make me feel so safe.",
 		WALL_RUINS = "还蛮古老的。",
-		WALL_RUINS_ITEM = "A solid piece of history.",
+		WALL_RUINS_ITEM = "比之前见过的结实多啦~",
 		WALL_WOOD = 
 		{
 			GENERIC = "Pointy!",
@@ -2273,14 +2273,14 @@ return {
 		WATERBALLOON = "别砸我。",
 		WATERMELON = "Sticky sweet.",
 		WATERMELON_COOKED = "Juicy and warm.",
-		WATERMELONHAT = "Let the juice run down your face.",
+		WATERMELONHAT = "真不会浪费吗？ 还有戴头上...",
 		WAXWELLJOURNAL = "Spooky.",
 		WETGOOP = "It tastes like nothing.",
         WHIP = "要我说...能不能把这死玩意烧掉。",
-		WINTERHAT = "It'll be good for when winter comes.",
+		WINTERHAT = "太土了...吧。",
 		WINTEROMETER = 
 		{
-			GENERIC = "大型水银温度计 额还是酒精的？",
+			GENERIC = "大型水银温度计 应该是酒精的吧？",
 			BURNT = "烧毁了...应该是酒精温度计吧？",
 		},
 
@@ -2821,7 +2821,7 @@ return {
             PICKED = "漂浮的海带根。",
         },
 		BULLKELP_ROOT = "在怎么想也应该种水里吧。",
-        KELPHAT = "沾满了粘液 待在头上挺恶心的..不过我不在乎~",
+        KELPHAT = "粘粘的 戴在头上挺恶心的...",
 		KELP = "一些海带 当做燃料很不错。 ",
 		KELP_COOKED = "海带泥简易的食物。",
 		KELP_DRIED = "脆脆小零食~",
@@ -2929,7 +2929,7 @@ return {
         WEREITEM_GOOSE = "That thing's giving ME goosebumps!",
         WEREITEM_MOOSE = "A perfectly normal cursed moose thing.",
 
-        MERMHAT = "Finally, I can show my face in public.",
+        MERMHAT = "带上这个真的不会被发现吗？有够蠢的。",
         MERMTHRONE =
         {
             GENERIC = "Looks fit for a swamp king!",
