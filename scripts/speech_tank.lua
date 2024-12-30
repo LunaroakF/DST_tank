@@ -12,7 +12,7 @@ STRINGS.SKIN_NAMES.tank_none = "铽安克"
 
 STRINGS.CHARACTER_TITLES.tank = "铽安克"
 STRINGS.CHARACTER_NAMES.tank = "铽安克"
-STRINGS.CHARACTER_DESCRIPTIONS.tank = "*似乎在畏惧这什么？\n*疯子\n░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*精神崩溃\n*毫无生机"
+STRINGS.CHARACTER_DESCRIPTIONS.tank = "\n*有人,似乎在畏惧这什么？\n*疯子\n░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  ░▓░▓░░░▓░░░▓▓░░▓░▓▓  ▓░░░░▓▓░░  \n*精神崩溃\n*毫无生机"
 STRINGS.CHARACTER_QUOTES.tank = "\"我恨不得把自己忘掉!!\n但是...忘掉了又有什么意思呢？..哈哈....\""
 STRINGS.CHARACTER_SURVIVABILITY.tank = "数据崩坏"
 
@@ -248,7 +248,7 @@ return {
 	ANNOUNCE_CHARLIE_ATTACK = "呜啊！ 妈的疼死了。",
 	ANNOUNCE_CHARLIE_MISSED = "only_used_by_winona", --winona specific 
 	ANNOUNCE_COLD = "有点冷了。",
-	ANNOUNCE_HOT = "喂 我想我需要避避太阳了快要...热死了...",
+	ANNOUNCE_HOT = "喂 我想我马上...快要...热死了...",
 	ANNOUNCE_CRAFTING_FAIL = "确实缺少一个关键成分",
 	ANNOUNCE_DEERCLOPS = "蛤~？终于要来了吗？",
 	ANNOUNCE_CAVEIN = "呃！哦哦嗷这是要地震了吗？！！",
@@ -954,7 +954,7 @@ return {
 		TURF_DESERTDIRT = "A chunk of ground.",
 		TURF_FUNGUS_GREEN = "A chunk of ground.",
 		TURF_FUNGUS_RED = "A chunk of ground.",
-		TURF_DRAGONFLY = "Do you want proof that it's fireproof?",
+		TURF_DRAGONFLY = "嘿 真的防火不？",
 
 		POWCAKE = "Science help us.",
         CAVE_ENTRANCE = "I wonder if that rock could be moved.",
@@ -978,7 +978,7 @@ return {
 		PIGGUARD = "He doesn't look as friendly as the others.",
 		ABIGAIL = "嗯 一位可爱的幽灵。",
 		ADVENTURE_PORTAL = "I'm not sure I want to fall for that a second time.",
-		AMULET = "戴上总感觉身上酥酥麻麻的。",
+		AMULET = "总感觉身上酥酥麻麻的。",
 		ANIMAL_TRACK = "Tracks left by food. I mean... an animal.",
 		ARMORGRASS = "嘿 穿这身遇到火会怎样？",
 		ARMORMARBLE = "好重 不想穿...",
@@ -1006,7 +1006,7 @@ return {
 		BEARDHAIR = "It's only gross when they're not your own.",
 		BEARGER = "我操 好大只。",
 		BEARGERVEST = "嘿嘿 熊皮大衣。",
-		ICEPACK = "The fur keeps the temperature inside stable.",
+		ICEPACK = "让我背着一大块皮毛冰箱？疯了？",
 		BEARGER_FUR = "一大块毛皮 用来保暖应该很不错。",
 		BEDROLL_STRAW = "Looks comfy, but it smells like mildew.",
 		BEEQUEEN = "Keep that stinger away from me!",
@@ -1230,7 +1230,7 @@ return {
 		CHESTER = "喂 小家伙你眼睛呢？",
 		CHESTER_EYEBONE =
 		{
-			GENERIC = "怪可爱的。",
+			GENERIC = "话说我能知道你在想些什么吗？",
 			WAITING = "可能它只是想小睡一会。",
 		},
 		COOKEDMANDRAKE = "Poor little guy.",
@@ -1242,7 +1242,7 @@ return {
 			COOKING_LONG = "完美是美食总是要等待的。",
 			COOKING_SHORT = "快了 别急。",
 			DONE = "成品出锅！",
-			EMPTY = "额..以前看过23本食谱书 应该可行吧？",
+			EMPTY = "额..以前看过几本本食谱书 应该可行吧？",
 			BURNT = "别看我 真的不是我烧的。",
 		},
 		CORN = "High in fructose!",
@@ -1291,7 +1291,7 @@ return {
         DESERTHAT = "又丑又闷 还好能挡风沙。",
 		DEVTOOL = "It smells of bacon!",
 		DEVTOOL_NODEV = "I'm not strong enough to wield it.",
-		DIRTPILE = "It's a pile of dirt... or IS it?",
+		DIRTPILE = "泄露痕迹喽~宝贝？",
 		DIVININGROD =
 		{
 			COLD = "The signal is very faint.",
@@ -2280,7 +2280,7 @@ return {
 		WINTERHAT = "太土了...吧。",
 		WINTEROMETER = 
 		{
-			GENERIC = "大型水银温度计 应该是酒精的吧？",
+			GENERIC = "大型温度计...应该是酒精的吧？",
 			BURNT = "烧毁了...应该是酒精温度计吧？",
 		},
 
