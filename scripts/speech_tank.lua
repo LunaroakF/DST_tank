@@ -715,9 +715,9 @@ return {
 		MINOTAURCHEST = "It may contain a bigger something fantastic! Or horrible.",
 		THULECITE_PIECES = "铥碎片？",
 		POND_ALGAE = "Some algae by a pond.",
-		GREENSTAFF = "能分解成之前的法杖吗？有趣耶。",
+		GREENSTAFF = "嘿 这算分解还是还原？ 来猜猜看嘛。",
 		GIFT = "Is that for me?",
-        GIFTWRAP = "That's a wrap!",
+        GIFTWRAP = "增加点节日气氛 虽然我体会不到一点罢了。",
 		POTTEDFERN = "一款洞穴里的小草。",
         SUCCULENT_POTTED = "盆栽里的多肉。",
 		SUCCULENT_PLANT = "Aloe there.",
@@ -938,8 +938,8 @@ return {
         TURF_METEOR = "月...球？ 挺稀奇的哈。",
         TURF_PEBBLEBEACH = "A chunk of beach.",
         TURF_ROAD = "Hastily cobbled stones.",
-        TURF_ROCKY = "A chunk of ground.",
-        TURF_SAVANNA = "A chunk of ground.",
+        TURF_ROCKY = "一大块地皮。",
+        TURF_SAVANNA = "一大块地皮。",
         TURF_WOODFLOOR = "These are floorboards.",
 
 		TURF_CAVE="Yet another ground type.",
@@ -951,9 +951,9 @@ return {
 		TURF_DECIDUOUS = "Yet another ground type.",
 		TURF_SANDY = "Yet another ground type.",
 		TURF_BADLANDS = "Yet another ground type.",
-		TURF_DESERTDIRT = "A chunk of ground.",
-		TURF_FUNGUS_GREEN = "A chunk of ground.",
-		TURF_FUNGUS_RED = "A chunk of ground.",
+		TURF_DESERTDIRT = "一大块地皮。",
+		TURF_FUNGUS_GREEN = "一大块地皮。",
+		TURF_FUNGUS_RED = "一大块地皮。",
 		TURF_DRAGONFLY = "嘿 真的防火不？",
 
 		POWCAKE = "Science help us.",
@@ -998,7 +998,7 @@ return {
 		    SLEEPING = "Sweet dreams, smelly.",
         },
         BUNDLE = "Our supplies are in there!",
-        BUNDLEWRAP = "Wrapping things up should make them easier to carry.",
+        BUNDLEWRAP = "收拾收拾带走吧。",
 		BACKPACK = "别在包里塞垃圾就行。",
 		BACONEGGS = "The perfect breakfast for a man of science.",
 		BANDAGE = "Seems sterile enough.",
@@ -1790,12 +1790,12 @@ return {
         PURPLEGEM = "漂亮 总感觉很像我呢。",
         RABBIT =
         {
-            GENERIC = "He's looking for carrots.",
+            GENERIC = "小兔子~♪... 乖乖~♪ ... 把门♪... 开开......",
             HELD = "Do you like science?",
         },
         RABBITHOLE =
         {
-            GENERIC = "That must lead to the Kingdom of the Bunnymen.",
+            GENERIC = "嘿 你家门忘关了。",
             SPRING = "The Kingdom of the Bunnymen is closed for the season.",
         },
         RAINOMETER =
@@ -2725,7 +2725,7 @@ return {
         	GLASS = "Water turns to glass under the moon. That's just science.",
 			EMPTY = "I'll just have to wait for it to fill up again.",
         },
-        MOONGLASS = "It's very sharp.",
+        MOONGLASS = "嘿 小心点 别被划伤了。",
         MOONGLASS_ROCK = "越漂亮的玻璃 越是得小心被划伤呢。",
         BATHBOMB = "It's just textbook chemistry.",
         TRAP_STARFISH =
