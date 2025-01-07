@@ -706,8 +706,8 @@ return {
 		MOLEHILL = "What a nice, homey hole in the ground!",
 		MOLEHAT = "？不对吧？？",
 
-		EEL = "This will make a delicious meal. ",
-		EEL_COOKED = "Smells great!",
+		EEL = "嘿 再不吃就不新鲜美味了哦~",
+		EEL_COOKED = "味道不错 没刺更好。",
 		UNAGI = "I hope this doesn't make anyone eel!",
 		EYETURRET = "嗯..这大家伙一直看着我挺不舒服的。",
 		EYETURRET_ITEM = "嗯.....",
@@ -1105,8 +1105,8 @@ return {
 		},
 		BIRDTRAP = "总有傻子自投罗网。",
 		CAVE_BANANA_BURNT = "Not my fault!",
-		BIRD_EGG = "A small, normal egg.",
-		BIRD_EGG_COOKED = "Sunny side yum!",
+		BIRD_EGG = "嘿！ 我想吃这个 想的可~~太久了~！",
+		BIRD_EGG_COOKED = "还是想着比较美味啊...",
 		BISHOP = "Back off, preacherman!",
 		BLOWDART_FIRE = "...很难理解怎么着起火来的。",
 		BLOWDART_SLEEP = "有意思 你说这东西被扎到会起层冰？",
@@ -1181,7 +1181,7 @@ return {
 		},
 		CATCOONHAT = "有点热。",
 		COONTAIL = "I think it's still swishing.",
-		CARROT = "Yuck. This vegetable came out of the dirt.",
+		CARROT = "对眼睛好~ 哈 你得吃老多了伙计。",
 		CARROT_COOKED = "味道不错~",
 		CARROT_PLANTED = "一种营养价值很高的蔬菜，含有多种人体所需的维生素，如维生素A、B1、B2、C等。",
 		CARROT_SEEDS = "It's a carrot seed.",
@@ -1245,8 +1245,8 @@ return {
 			EMPTY = "额..以前看过几本本食谱书 应该可行吧？",
 			BURNT = "别看我 真的不是我烧的。",
 		},
-		CORN = "High in fructose!",
-		CORN_COOKED = "Cooked and high in fructose!",
+		CORN = "想试试烤玉米 感觉会不错呢。",
+		CORN_COOKED = "来点小惊喜也是不错的。",
 		CORN_SEEDS = "It's a corn seed.",
         CANARY =
 		{
@@ -1781,7 +1781,7 @@ return {
         POND = "I can't see the bottom!",
         POOP = "I should fill my pockets!",
         FERTILIZER = "That is definitely a bucket full of poop.",
-        PUMPKIN = "It's as big as my head!",
+        PUMPKIN = "一大块南瓜。",
         PUMPKINCOOKIE = "That's a pretty gourd cookie!",
         PUMPKIN_COOKED = "How did it not turn into a pie?",
         PUMPKIN_LANTERN = "Spooky!",
@@ -2013,7 +2013,7 @@ return {
 		HAWAIIANSHIRT = "度假吗？我喜欢~",
 		TAFFY = "If I had a dentist they'd be mad I ate stuff like that.",
 		TALLBIRD = "That's a tall bird!",
-		TALLBIRDEGG = "Will it hatch?",
+		TALLBIRDEGG = "没看过我还真以为是鸵鸟蛋。",
 		TALLBIRDEGG_COOKED = "没必要讲究 别那么麻烦。",
 		TALLBIRDEGG_CRACKED =
 		{
@@ -2308,9 +2308,9 @@ return {
         WINTER_FOOD4 = "....看着就没胃口", --fruitcake
         WINTER_FOOD5 = "It's nice to eat something other than berries for once.", --yule log cake
         WINTER_FOOD6 = "I'm puddin' that straight in my mouth!", --plum pudding
-        WINTER_FOOD7 = "It's a hollowed apple filled with yummy juice.", --apple cider
+        WINTER_FOOD7 = "嘿 又是酒~", --apple cider
         WINTER_FOOD8 = "How does it stay warm? A thermodynamical mug?", --hot cocoa
-        WINTER_FOOD9 = "Can science explain why it tastes so good?", --eggnog
+        WINTER_FOOD9 = "嘿 我其实不想喝酒 好吧一点点也行。", --eggnog
 
         KLAUS = "What on earth is that thing!",
         KLAUS_SACK = "We should definitely open that.",
@@ -2446,11 +2446,11 @@ return {
         QUAGMIRE_TURNIP_SEEDS = "A handful of odd seeds.",
         
         QUAGMIRE_GARLIC = "The number one breath enhancer.",
-        QUAGMIRE_GARLIC_COOKED = "Perfectly browned.",
+        QUAGMIRE_GARLIC_COOKED = "当做调料会不错。",
         QUAGMIRE_GARLIC_SEEDS = "A handful of odd seeds.",
         
-        QUAGMIRE_ONION = "Looks crunchy.",
-        QUAGMIRE_ONION_COOKED = "A successful chemical reaction.",
+        QUAGMIRE_ONION = "辣眼...我想我得等会在处理了。",
+        QUAGMIRE_ONION_COOKED = "报仇 哈哈。",
         QUAGMIRE_ONION_SEEDS = "A handful of odd seeds.",
         
         QUAGMIRE_POTATO = "The apples of the earth.",
@@ -2901,7 +2901,7 @@ return {
         TURNIP_COOKED = "Cooking is science in practice.",
         TURNIP_SEEDS = "A handful of odd seeds.",
         
-        GARLIC = "The number one breath enhancer.",
+        GARLIC = "别让汁水黏在毛上 很难受",
         GARLIC_COOKED = "Perfectly browned.",
         GARLIC_SEEDS = "A handful of odd seeds.",
         
@@ -2917,8 +2917,8 @@ return {
         TOMATO_COOKED = "Cooking's easy if you understand chemistry.",
         TOMATO_SEEDS = "A handful of odd seeds.",
 
-        ASPARAGUS = "A vegetable.", 
-        ASPARAGUS_COOKED = "Science says it's good for me.",
+        ASPARAGUS = "比之前吃的好。, 
+        ASPARAGUS_COOKED = "不错的一种早饭方式。",
         ASPARAGUS_SEEDS = "It's asparagus seeds.",
 
         PEPPER = "Nice and spicy.",
