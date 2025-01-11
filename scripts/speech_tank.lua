@@ -1784,7 +1784,7 @@ return {
         PUMPKIN = "一大块南瓜。",
         PUMPKINCOOKIE = "That's a pretty gourd cookie!",
         PUMPKIN_COOKED = "How did it not turn into a pie?",
-        PUMPKIN_LANTERN = "Spooky!",
+        PUMPKIN_LANTERN = "不要那这种傻到冒烟的东西来吓我 唉。",
         PUMPKIN_SEEDS = "It's a pumpkin seed.",
         PURPLEAMULET = "装饰品哦~",
         PURPLEGEM = "漂亮 总感觉很像我呢。",
@@ -2917,7 +2917,7 @@ return {
         TOMATO_COOKED = "Cooking's easy if you understand chemistry.",
         TOMATO_SEEDS = "A handful of odd seeds.",
 
-        ASPARAGUS = "比之前吃的好。, 
+        ASPARAGUS = "比之前吃的好。", 
         ASPARAGUS_COOKED = "不错的一种早饭方式。",
         ASPARAGUS_SEEDS = "It's asparagus seeds.",
 
