@@ -79,6 +79,10 @@ function tank_data:GetCD()
     return self.cd
 end
 
+function tank_data:GetCurrent()
+    return self.current
+end
+
 function tank_data:SetCD(amount)
     self.cd=amount
 end

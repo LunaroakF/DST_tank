@@ -148,11 +148,7 @@ import{
 local function UseData(inst)
 	if inst:HasTag("tank") and not inst:HasTag("playerghost") then
 		if inst.components.tank_data:GetCD()==0 then
-			local defaultscreen = false
-			if TheFrontEnd:GetActiveScreen() and TheFrontEnd:GetActiveScreen().name and type(TheFrontEnd:GetActiveScreen().name) == "string" and TheFrontEnd:GetActiveScreen().name == "HUD" then
-				defaultscreen = true
-			end
-			if  inst.components.tank_data.current>=8 and defaultscreen then
+			if inst.components.tank_data.current>=8 then
 				inst.components.locomotor:SetExternalSpeedMultiplier(inst, "tank_speed_mod", 1.6)
 				inst.components.health:DoDelta(5,false,inst.health)
 				--inst.components.health:SetAbsorptionAmount(1)无敌
