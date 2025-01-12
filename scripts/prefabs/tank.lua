@@ -146,7 +146,9 @@ end
 
 --X键使用数据
 TheInput:AddKeyUpHandler(KEY_X, function()
-	SendModRPCToServer( MOD_RPC["tank"]["use_data"])
+	if TheFrontEnd:GetActiveScreen() and TheFrontEnd:GetActiveScreen().name and type(TheFrontEnd:GetActiveScreen().name) == "string" and TheFrontEnd:GetActiveScreen().name == "HUD" then
+		SendModRPCToServer(MOD_RPC["tank"]["use_data"])
+	end
 end)
 
 --Z键切换斧子
