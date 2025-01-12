@@ -1687,7 +1687,7 @@ return {
         },
         MINERHAT = "头灯。",
         MONKEY = "Curious little guy.",
-        MONKEYBARREL = "Did that just move?",
+        MONKEYBARREL = "真是一个恶心的恶作剧啊。",
         MONSTERLASAGNA = "It's an affront to science.",
         FLOWERSALAD = "A bowl of foliage.",
         ICECREAM = "I scream for ice cream!",
@@ -2130,20 +2130,20 @@ return {
         TRINKET_45 = "It's picking up frequencies from another world.", -- Odd Radio ONI trinket
         TRINKET_46 = "Maybe a tool for testing aerodynamics?", -- Hairdryer ONI trinket
         
-        HALLOWEENCANDY_1 = "The cavities are probably worth it, right?",
-        HALLOWEENCANDY_2 = "What corruption of science grew these?",
-        HALLOWEENCANDY_3 = "It's... corn.",
-        HALLOWEENCANDY_4 = "They wriggle on the way down.",
-        HALLOWEENCANDY_5 = "My teeth are going to have something to say about this tomorrow.",
-        HALLOWEENCANDY_6 = "I... don't think I'll be eating those.",
-        HALLOWEENCANDY_7 = "Everyone'll be raisin' a fuss over these.",
-        HALLOWEENCANDY_8 = "Only a sucker wouldn't love this.",
-        HALLOWEENCANDY_9 = "Sticks to your teeth.",
-        HALLOWEENCANDY_10 = "Only a sucker wouldn't love this.",
-        HALLOWEENCANDY_11 = "Much better tasting than the real thing.",
+        HALLOWEENCANDY_1 = "哦 一大块苹果糖。",
+        HALLOWEENCANDY_2 = "这个是糖 哈哈。",
+        HALLOWEENCANDY_3 = "玉米吗？ 我都有点分不清楚是糖还是真的了。",
+        HALLOWEENCANDY_4 = "蜘蛛~",
+        HALLOWEENCANDY_5 = "到底从哪里来的...？",
+        HALLOWEENCANDY_6 = "...我认为...这不是葡萄干...不知道为什么。",
+        HALLOWEENCANDY_7 = "休闲吃不错。",
+        HALLOWEENCANDY_8 = "小孩子喜欢吃...我没尝过给我来一个。",
+        HALLOWEENCANDY_9 = "嘿 软软的感觉很不错。",
+        HALLOWEENCANDY_10 = "一个...印有幽灵头的糖果。",
+        HALLOWEENCANDY_11 = "哦？巧克力 不错的点子。",
         HALLOWEENCANDY_12 = "Did that candy just move?", --ONI meal lice candy
-        HALLOWEENCANDY_13 = "Oh, my poor jaw.", --Griftlands themed candy
-        HALLOWEENCANDY_14 = "I don't do well with spice.", --Hot Lava pepper candy
+        HALLOWEENCANDY_13 = "甜味石头？ 太蠢了吧。", --Griftlands themed candy
+        HALLOWEENCANDY_14 = "一块辣椒 是糖果吗？应该吧。", --Hot Lava pepper candy
         CANDYBAG = "It's some sort of delicious pocket dimension for sugary treats.",
 
 		HALLOWEEN_ORNAMENT_1 = "A spectornament I could hang in a tree.",
@@ -2302,14 +2302,14 @@ return {
 		WINTER_ORNAMENTFORGE = "I should hang this one over a fire.",
 		WINTER_ORNAMENTGORGE = "For some reason it makes me hungry.",
 
-        WINTER_FOOD1 = "The anatomy's not right, but I'll overlook it.", --gingerbread cookie
-        WINTER_FOOD2 = "I'm going to eat forty. For science.", --sugar cookie
-        WINTER_FOOD3 = "A Yuletide toothache waiting to happen.", --candy cane
+        WINTER_FOOD1 = "你好呀 小孩。", --gingerbread cookie
+        WINTER_FOOD2 = "美味的曲奇饼干。", --sugar cookie
+        WINTER_FOOD3 = "圣诞节的糖是这个味道吗？", --candy cane
         WINTER_FOOD4 = "....看着就没胃口", --fruitcake
-        WINTER_FOOD5 = "It's nice to eat something other than berries for once.", --yule log cake
-        WINTER_FOOD6 = "I'm puddin' that straight in my mouth!", --plum pudding
+        WINTER_FOOD5 = "一块大蛋糕！ 嘿看看这个多美味~", --yule log cake
+        WINTER_FOOD6 = "天啊...想着一口想太久了...", --plum pudding
         WINTER_FOOD7 = "嘿 又是酒~", --apple cider
-        WINTER_FOOD8 = "How does it stay warm? A thermodynamical mug?", --hot cocoa
+        WINTER_FOOD8 = "热可可 不错的选择。", --hot cocoa
         WINTER_FOOD9 = "嘿 我其实不想喝酒 好吧一点点也行。", --eggnog
 
         KLAUS = "What on earth is that thing!",
