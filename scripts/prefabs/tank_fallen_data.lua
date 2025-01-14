@@ -9,7 +9,9 @@ local function ItemEating(inst, owner)
     if owner:HasTag("tank") then
         owner.components.tank_data:DoDelta(1.5)
     else
-        owner.components.talker:Say(STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS)
+        if owner:HasTag("player") then
+            owner.components.talker:Say(STRINGS.TANK_FALLEN_DATA_USED_BY_OTHERS)
+        end
     end
 end
 
