@@ -688,8 +688,8 @@ return {
         LAVA_POND_ROCK = "As gneiss a place as any.",
 
 		WEBBERSKULL = "Poor little guy. He deserves a proper funeral.",
-		WORMLIGHT = "Looks delicious.",
-		WORMLIGHT_LESSER = "Kinda wrinkled.",
+		WORMLIGHT = "很亮眼哦。",
+		WORMLIGHT_LESSER = "感觉不是很新鲜。",
 		WORM =
 		{
 		    PLANT = "Seems safe to me.",
@@ -699,7 +699,7 @@ return {
         WORMLIGHT_PLANT = "Seems safe to me.",
 		MOLE =
 		{
-			HELD = "Nowhere left to dig, my friend.",
+			HELD = "好大只老鼠。",
 			UNDERGROUND = "Something's under there, searching for minerals.",
 			ABOVEGROUND = "I'd sure like to whack that mole... thing.",
 		},
@@ -813,10 +813,10 @@ return {
         ANCIENT_STATUE = "It seems to throb out of tune with the world.",
 
         LICHEN = "Only a cyanobacteria could grow in this light.",
-		CUTLICHEN = "Nutritious, but it won't last long.",
+		CUTLICHEN = "凑合下也不是问题 习惯了。",
 
-		CAVE_BANANA = "It's mushy.",
-		CAVE_BANANA_COOKED = "Yum!",
+		CAVE_BANANA = "一帮蠢猴子的最爱 嘿。",
+		CAVE_BANANA_COOKED = "很甜。",
 		CAVE_BANANA_TREE = "It's dubiously photosynthetical.",
 		ROCKY = "It has terrifying claws.",
 		
@@ -1068,10 +1068,10 @@ return {
 		BEEHIVE = "吵闹的蜂群窝",
 		BEEMINE = "踩到的人要不幸喽~",
 		BEEMINE_MAXWELL = "Bottled mosquito rage!",
-		BERRIES = "Red berries taste the best.",
-		BERRIES_COOKED = "I don't think heat improved them.",
-        BERRIES_JUICY = "好吃是好吃 就是坏的快。",
-        BERRIES_JUICY_COOKED = "Better eat them before they spoil!",
+		BERRIES = "一颗颗酸甜小零食。",
+		BERRIES_COOKED = "不错 在来点。",
+        BERRIES_JUICY = "好吃是好吃 就是不好存放啊...",
+        BERRIES_JUICY_COOKED = "快点吃吧 不然坏了就可惜了。",
 		BERRYBUSH =
 		{
 			BARREN = "I think it needs to be fertilized.",
@@ -1120,8 +1120,8 @@ return {
             RARE = "It's REALLY scientific!",
         },
         SKETCH = "A picture of a sculpture. We'll need somewhere to make it.",
-		BLUE_CAP = "It's weird and gooey.",
-		BLUE_CAP_COOKED = "It's different now...",
+		BLUE_CAP = "最好别吃...",
+		BLUE_CAP_COOKED = "啊...看着就不敢试。",
 		BLUE_MUSHROOM =
 		{
 			GENERIC = "It's a mushroom.",
@@ -1150,9 +1150,9 @@ return {
 			GENERIC = "可以的话麻烦滚开 真的。",
 			PICKED = "舒服了。",
 		},
-		CACTUS_MEAT_COOKED = "Grilled fruit of the desert.",
-		CACTUS_MEAT = "There are still some spines between me and a tasty meal.",
-		CACTUS_FLOWER = "A pretty flower from a prickly plant.",
+		CACTUS_MEAT_COOKED = "值得。",
+		CACTUS_MEAT = "疼...啊 习惯了吧。",
+		CACTUS_FLOWER = "谁说只有玫瑰带刺 哈哈。",
 
 		COLDFIRE =
 		{
@@ -1351,8 +1351,8 @@ return {
 		},
 		LAVAE_TOOTH = "It's an egg tooth!",
 
-		DRAGONFRUIT = "What a weird fruit.",
-		DRAGONFRUIT_COOKED = "The fruit's still weird.",
+		DRAGONFRUIT = "哦！试试。",
+		DRAGONFRUIT_COOKED = "能好吃吗...算了试试也无妨。",
 		DRAGONFRUIT_SEEDS = "It's a weird fruit seed.",
 		DRAGONPIE = "The dragonfruit is very filling.",
 		DRUMSTICK = "之前偶尔沾点昏也只不过是鸡肉 还没尝过鸡腿味道。",
@@ -1362,12 +1362,12 @@ return {
 		DUG_GRASS = "It can be planted anywhere now.",
 		DUG_MARSH_BUSH = "This needs to be planted.",
 		DUG_SAPLING = "This needs to be planted.",
-		DURIAN = "Oh, it smells!",
-		DURIAN_COOKED = "Now it smells even worse!",
+		DURIAN = "你还真是全副武装啊。",
+		DURIAN_COOKED = "确实值得尝试...但是这味道...",
 		DURIAN_SEEDS = "It's a durian seed.",
 		EARMUFFSHAT = "果然和记忆中的感觉差不多。",
-		EGGPLANT = "It doesn't look like an egg.",
-		EGGPLANT_COOKED = "It's even less eggy.",
+		EGGPLANT = "啊..越想越觉得好吃。",
+		EGGPLANT_COOKED = "真比那个破土豆好多了。",
 		EGGPLANT_SEEDS = "It's an eggplant seed.",
 		
 		ENDTABLE = 
@@ -1525,8 +1525,8 @@ return {
 			GENERIC = "It's an extra leafy lizard.",	
 			DISEASED = "It looks really sick.",
 		},
-		GREEN_CAP = "It seems pretty normal.",
-		GREEN_CAP_COOKED = "It's different now...",
+		GREEN_CAP = "...不是很敢吃。",
+		GREEN_CAP_COOKED = "要不让别人试试？",
 		GREEN_MUSHROOM =
 		{
 			GENERIC = "It's a mushroom.",
@@ -1613,7 +1613,7 @@ return {
 			CHARGED = "I don't think it liked being struck by lightning.",
 		},
 		LIGHTNINGGOATHORN = "It's like a miniature lightning rod.",
-		GOATMILK = "It's buzzing with tastiness!",
+		GOATMILK = "不会电我吧。",
 		LITTLE_WALRUS = "He won't be cute and cuddly forever.",
 		LIVINGLOG = "长这个脸给谁看呢？",
 		LOG =
@@ -1628,7 +1628,7 @@ return {
 
 		MANDRAKE_ACTIVE = "Cut it out!",
 		MANDRAKE_PLANTED = "I've heard strange things about those plants.",
-		MANDRAKE = "Mandrake roots have strange properties.",
+		MANDRAKE = "你终于永远闭上嘴了。",
 
         MANDRAKESOUP = "Well, he won't be waking up again.",
         MANDRAKE_COOKED = "It doesn't seem so strange anymore.",
@@ -1775,15 +1775,15 @@ return {
             READY = "Mmmm. Ready to harvest.",
             WITHERED = "The heat killed it.",
         },
-        POMEGRANATE = "It looks like the inside of an alien's brain.",
-        POMEGRANATE_COOKED = "Haute Cuisine!",
+        POMEGRANATE = "可得费点时间了。",
+        POMEGRANATE_COOKED = "也...还好吧。",
         POMEGRANATE_SEEDS = "It's a pome-whatsit seed.",
         POND = "I can't see the bottom!",
         POOP = "I should fill my pockets!",
         FERTILIZER = "That is definitely a bucket full of poop.",
-        PUMPKIN = "一大块南瓜。",
+        PUMPKIN = "在食物丰富的情况下搭配着会挺不错的。",
         PUMPKINCOOKIE = "That's a pretty gourd cookie!",
-        PUMPKIN_COOKED = "How did it not turn into a pie?",
+        PUMPKIN_COOKED = "要一块试试吗？会很不错的。",
         PUMPKIN_LANTERN = "不要那这种傻到冒烟的东西来吓我 唉。",
         PUMPKIN_SEEDS = "It's a pumpkin seed.",
         PURPLEAMULET = "装饰品哦~",
@@ -1808,8 +1808,8 @@ return {
         RATATOUILLE = "An excellent source of fiber.",
         RAZOR = "我不喜欢剪毛 别靠近我。",
         REDGEM = "热的？",
-        RED_CAP = "It smells funny.",
-        RED_CAP_COOKED = "It's different now...",
+        RED_CAP = "没毒吧...没吧..希望没....",
+        RED_CAP_COOKED = "熟了应该没毒了吧...？",
         RED_MUSHROOM =
         {
             GENERIC = "It's a mushroom.",
@@ -1889,7 +1889,7 @@ return {
         ROOK = "Storm the castle!",
         ROPE = "粗麻绳捆点东西不错。",
         ROTTENEGG = "Ew! It stinks!",
-        ROYAL_JELLY = "It infuses the eater with the power of science!",
+        ROYAL_JELLY = "好东西怎么能藏着掖着呢~？",
         JELLYBEAN = "One part jelly, one part bean.",
         SADDLE_BASIC = "That'll allow the mounting of some smelly animal.",
         SADDLE_RACE = "This saddle really flies!",
@@ -2223,7 +2223,7 @@ return {
 		TRUNKVEST_SUMMER = "这个还凑合点。",
 		TRUNKVEST_WINTER = "我有毛 拿走吧。",
 		TRUNK_COOKED = "Somehow even more nasal than before.",
-		TRUNK_SUMMER = "A light breezy trunk.",
+		TRUNK_SUMMER = "有点...算了有就不错了。",
 		TRUNK_WINTER = "A thick, hairy trunk.",
 		TUMBLEWEED = "Who knows what that tumbleweed has picked up.",
 		TURKEYDINNER = "Mmmm.",
@@ -2271,8 +2271,8 @@ return {
 		WARG = "You might be something to reckon with, big dog.",
 		WASPHIVE = "I think those bees are mad.",
 		WATERBALLOON = "别砸我。",
-		WATERMELON = "Sticky sweet.",
-		WATERMELON_COOKED = "Juicy and warm.",
+		WATERMELON = "嘿 一起来点？",
+		WATERMELON_COOKED = "感觉还是凉的好。",
 		WATERMELONHAT = "真不会浪费吗？ 还有戴头上...",
 		WAXWELLJOURNAL = "Spooky.",
 		WETGOOP = "It tastes like nothing.",
@@ -2453,12 +2453,12 @@ return {
         QUAGMIRE_ONION_COOKED = "报仇 哈哈。",
         QUAGMIRE_ONION_SEEDS = "A handful of odd seeds.",
         
-        QUAGMIRE_POTATO = "The apples of the earth.",
-        QUAGMIRE_POTATO_COOKED = "A successful temperature experiment.",
+        QUAGMIRE_POTATO = "吃过太多了 已经没那么期待了。",
+        QUAGMIRE_POTATO_COOKED = "已经吃腻了 换换口味吧。",
         QUAGMIRE_POTATO_SEEDS = "A handful of odd seeds.",
         
-        QUAGMIRE_TOMATO = "It's red because it's full of science.",
-        QUAGMIRE_TOMATO_COOKED = "Cooking's easy if you understand chemistry.",
+        QUAGMIRE_TOMATO = "看看这可口的番茄~",
+        QUAGMIRE_TOMATO_COOKED = "烤熟了也不错。",
         QUAGMIRE_TOMATO_SEEDS = "A handful of odd seeds.",
         
         QUAGMIRE_FLOUR = "Ready for baking.",
@@ -2701,11 +2701,11 @@ return {
         	GENERIC = "My vast scientific knowledge tells me it's... a moon butterfly.",
         	HELD = "I've got you now.",
         },
-		MOONBUTTERFLYWINGS = "We're really winging it now.",
+		MOONBUTTERFLYWINGS = "令人夺目。",
         MOONBUTTERFLY_SAPLING = "A moth turned into a tree? Lunacy!",
         ROCK_AVOCADO_FRUIT = "I'd shatter my teeth on that.",
-        ROCK_AVOCADO_FRUIT_RIPE = "Uncooked stone fruit is the pits.",
-        ROCK_AVOCADO_FRUIT_RIPE_COOKED = "It's actually soft enough to eat now.",
+        ROCK_AVOCADO_FRUIT_RIPE = "牛油果？ ...？",
+        ROCK_AVOCADO_FRUIT_RIPE_COOKED = "看着不错。",
         ROCK_AVOCADO_FRUIT_SPROUT = "It's growing.",
         ROCK_AVOCADO_BUSH = 
         {
@@ -2901,8 +2901,8 @@ return {
         TURNIP_COOKED = "Cooking is science in practice.",
         TURNIP_SEEDS = "A handful of odd seeds.",
         
-        GARLIC = "别让汁水黏在毛上 很难受",
-        GARLIC_COOKED = "Perfectly browned.",
+        GARLIC = "别让汁水黏在毛上 很难受。",
+        GARLIC_COOKED = "配上其他菜更好。",
         GARLIC_SEEDS = "A handful of odd seeds.",
         
         ONION = "Looks crunchy.",
@@ -2921,8 +2921,8 @@ return {
         ASPARAGUS_COOKED = "不错的一种早饭方式。",
         ASPARAGUS_SEEDS = "It's asparagus seeds.",
 
-        PEPPER = "Nice and spicy.",
-        PEPPER_COOKED = "It was already hot to begin with.",
+        PEPPER = "灼烧感令人上瘾 真的不是什么受虐狂吗...",
+        PEPPER_COOKED = "来点应该 还行。",
         PEPPER_SEEDS = "A handful of seeds.",
 
         WEREITEM_BEAVER = "I guess science works differently up North.",
