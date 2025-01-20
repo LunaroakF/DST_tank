@@ -677,7 +677,7 @@ return {
             DEAD = "The petals droop and shimmer in the light.",
         },
         GLOMMERWINGS = "These would look empirically amazing on a helmet!",
-        GLOMMERFUEL = "This goop smells foul.",
+        GLOMMERFUEL = "啊 该不会觉得我会想吃吧...服了。",
         BELL = "Dingalingaling.",
         STATUEGLOMMER =
         {
@@ -711,17 +711,17 @@ return {
 		UNAGI = "I hope this doesn't make anyone eel!",
 		EYETURRET = "嗯..这大家伙一直看着我挺不舒服的。",
 		EYETURRET_ITEM = "嗯.....",
-		MINOTAURHORN = "Wow! I'm glad that didn't gore me!",
+		MINOTAURHORN = "看看这大块的角 想想这大家伙。",
 		MINOTAURCHEST = "It may contain a bigger something fantastic! Or horrible.",
 		THULECITE_PIECES = "铥碎片？",
 		POND_ALGAE = "Some algae by a pond.",
 		GREENSTAFF = "嘿 这算分解还是还原？ 来猜猜看嘛。",
 		GIFT = "Is that for me?",
         GIFTWRAP = "增加点节日气氛 虽然我体会不到一点罢了。",
-		POTTEDFERN = "一款洞穴里的小草。",
+		POTTEDFERN = "一款洞穴里的草。",
         SUCCULENT_POTTED = "盆栽里的多肉。",
 		SUCCULENT_PLANT = "Aloe there.",
-		SUCCULENT_PICKED = "I could eat that, but I'd rather not.",
+		SUCCULENT_PICKED = "没啥味道还粘粘的。",
 		SENTRYWARD = "额...说起功能的话 还是别让我看见这个了。",
         TOWNPORTAL =
         {
@@ -845,7 +845,7 @@ return {
         FLOWER_CAVE = "这植物散发出来了奇妙的光。",
         GUANO = "Another flavor of poop.",
         LANTERN = "就不能更方便点？像是做个手电筒...？",
-        LIGHTBULB = "It's strangely tasty looking.",
+        LIGHTBULB = "悄悄这闪亮的“眼睛” ",
         MANRABBIT_TAIL = "I feel a lil better when I hold one.",
         MUSHROOMHAT = "就 希望这帽子没毒吧。",
         MUSHROOM_LIGHT2 =
@@ -976,7 +976,7 @@ return {
 		MAXWELLPHONOGRAPH = "So that's where the music was coming from.",
 		BOOMERANG = "小孩子玩具。",
 		PIGGUARD = "He doesn't look as friendly as the others.",
-		ABIGAIL = "嗯 一位可爱的幽灵。",
+		ABIGAIL = "喂 你一定有很多话想说吧 嘿。",
 		ADVENTURE_PORTAL = "I'm not sure I want to fall for that a second time.",
 		AMULET = "总感觉身上酥酥麻麻的。",
 		ANIMAL_TRACK = "Tracks left by food. I mean... an animal.",
@@ -1734,8 +1734,8 @@ return {
         PERD = "Stupid bird! Stay away from those berries!",
         PEROGIES = "These turned out pretty good.",
         PETALS = "我要这些花瓣干啥。",
-        PETALS_EVIL = "I'm not sure I want to hold those.",
-        PHLEGM = "It's thick and pliable. And salty.",
+        PETALS_EVIL = "哦..喔 吓人 哈哈。",
+        PHLEGM = "哦...他妈的我希望你没有什么恶趣味...",
         PICKAXE = "差劲 来点结实的好不好？",
         PIGGYBACK = "好大的味...这都不处理吗？",
         PIGHEAD =
@@ -2694,7 +2694,7 @@ return {
             CHOPPED = "That was a pretty thick tree.",
             GENERIC = "I didn't know trees grew on the moon.",
         },
-		MOON_TREE_BLOSSOM = "It fell from the moon tree.",
+		MOON_TREE_BLOSSOM = "哦~ 嗯 好看 行了吧。",
 
         MOONBUTTERFLY = 
         {
@@ -2703,7 +2703,7 @@ return {
         },
 		MOONBUTTERFLYWINGS = "令人夺目。",
         MOONBUTTERFLY_SAPLING = "A moth turned into a tree? Lunacy!",
-        ROCK_AVOCADO_FRUIT = "I'd shatter my teeth on that.",
+        ROCK_AVOCADO_FRUIT = "这真的不是石头吗。",
         ROCK_AVOCADO_FRUIT_RIPE = "牛油果？ ...？",
         ROCK_AVOCADO_FRUIT_RIPE_COOKED = "看着不错。",
         ROCK_AVOCADO_FRUIT_SPROUT = "It's growing.",
@@ -2919,7 +2919,7 @@ return {
 
         ASPARAGUS = "比之前吃的好。", 
         ASPARAGUS_COOKED = "不错的一种早饭方式。",
-        ASPARAGUS_SEEDS = "It's asparagus seeds.",
+        ASPARAGUS_SEEDS = "芦笋种子。",
 
         PEPPER = "灼烧感令人上瘾 真的不是什么受虐狂吗...",
         PEPPER_COOKED = "来点应该 还行。",
