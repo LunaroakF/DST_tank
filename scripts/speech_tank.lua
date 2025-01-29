@@ -1184,14 +1184,14 @@ return {
 		CARROT = "对眼睛好~ 哈 你得吃老多了伙计。",
 		CARROT_COOKED = "味道不错~",
 		CARROT_PLANTED = "一种营养价值很高的蔬菜，含有多种人体所需的维生素，如维生素A、B1、B2、C等。",
-		CARROT_SEEDS = "It's a carrot seed.",
+		CARROT_SEEDS = "一粒粒胡萝卜种子。",
 		CARTOGRAPHYDESK =
 		{
 			GENERIC = "现在它们可以让我看看它们找到什么了！",
 			BURNING = "So much for that.",
 			BURNT = "Nothing but ash now.",
 		},
-		WATERMELON_SEEDS = "It's a melon seed.",
+		WATERMELON_SEEDS = "我应该能确定和我之前遇见的不一样了。",
 		CAVE_FERN = "It's a fern.",
 		CHARCOAL = "一小块木炭 这味道不太舒服。",
         CHESSPIECE_PAWN = "I can relate.",
@@ -1247,7 +1247,7 @@ return {
 		},
 		CORN = "想试试烤玉米 感觉会不错呢。",
 		CORN_COOKED = "来点小惊喜也是不错的。",
-		CORN_SEEDS = "It's a corn seed.",
+		CORN_SEEDS = "应该不长这样吧...",
         CANARY =
 		{
 			GENERIC = "Some sort of yellow creature made of science.",
@@ -1353,7 +1353,7 @@ return {
 
 		DRAGONFRUIT = "哦！试试。",
 		DRAGONFRUIT_COOKED = "能好吃吗...算了试试也无妨。",
-		DRAGONFRUIT_SEEDS = "It's a weird fruit seed.",
+		DRAGONFRUIT_SEEDS = "长得像土豆 嘿嘿。",
 		DRAGONPIE = "The dragonfruit is very filling.",
 		DRUMSTICK = "之前偶尔沾点昏也只不过是鸡肉 还没尝过鸡腿味道。",
 		DRUMSTICK_COOKED = "还真挺好吃的~",
@@ -1364,11 +1364,11 @@ return {
 		DUG_SAPLING = "This needs to be planted.",
 		DURIAN = "你还真是全副武装啊。",
 		DURIAN_COOKED = "确实值得尝试...但是这味道...",
-		DURIAN_SEEDS = "It's a durian seed.",
+		DURIAN_SEEDS = "榴莲籽。",
 		EARMUFFSHAT = "果然和记忆中的感觉差不多。",
 		EGGPLANT = "啊..越想越觉得好吃。",
 		EGGPLANT_COOKED = "真比那个破土豆好多了。",
-		EGGPLANT_SEEDS = "It's an eggplant seed.",
+		EGGPLANT_SEEDS = "嘿 茄子的种子。",
 		
 		ENDTABLE = 
 		{
@@ -1777,7 +1777,7 @@ return {
         },
         POMEGRANATE = "可得费点时间了。",
         POMEGRANATE_COOKED = "也...还好吧。",
-        POMEGRANATE_SEEDS = "It's a pome-whatsit seed.",
+        POMEGRANATE_SEEDS = "种子。",
         POND = "I can't see the bottom!",
         POOP = "I should fill my pockets!",
         FERTILIZER = "That is definitely a bucket full of poop.",
@@ -1785,7 +1785,7 @@ return {
         PUMPKINCOOKIE = "That's a pretty gourd cookie!",
         PUMPKIN_COOKED = "要一块试试吗？会很不错的。",
         PUMPKIN_LANTERN = "不要那这种傻到冒烟的东西来吓我 唉。",
-        PUMPKIN_SEEDS = "It's a pumpkin seed.",
+        PUMPKIN_SEEDS = "南瓜籽儿。",
         PURPLEAMULET = "装饰品哦~",
         PURPLEGEM = "漂亮 总感觉很像我呢。",
         RABBIT =
@@ -2205,9 +2205,9 @@ return {
 		},
 		PIG_TOKEN = "This looks important.",
 		PIG_COIN = "This'll pay off in a fight.",
-		YOTP_FOOD1 = "A feast fit for me.",
-		YOTP_FOOD2 = "A meal only a beast would love.",
-		YOTP_FOOD3 = "Nothing fancy.",
+		YOTP_FOOD1 = "这太豪华了 嘿。",
+		YOTP_FOOD2 = "猪食 乐了。",
+		YOTP_FOOD3 = "看样 不是很好吃。",
 
 		PIGELITE1 = "What are you looking at?", --BLUE
 		PIGELITE2 = "He's got gold fever!", --RED
@@ -2443,29 +2443,29 @@ return {
         
         QUAGMIRE_TURNIP = "It's a raw turnip.",
         QUAGMIRE_TURNIP_COOKED = "Cooking is science in practice.",
-        QUAGMIRE_TURNIP_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_TURNIP_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_GARLIC = "The number one breath enhancer.",
         QUAGMIRE_GARLIC_COOKED = "当做调料会不错。",
-        QUAGMIRE_GARLIC_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_GARLIC_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_ONION = "辣眼...我想我得等会在处理了。",
         QUAGMIRE_ONION_COOKED = "报仇 哈哈。",
-        QUAGMIRE_ONION_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_ONION_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_POTATO = "吃过太多了 已经没那么期待了。",
         QUAGMIRE_POTATO_COOKED = "已经吃腻了 换换口味吧。",
-        QUAGMIRE_POTATO_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_POTATO_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_TOMATO = "看看这可口的番茄~",
         QUAGMIRE_TOMATO_COOKED = "烤熟了也不错。",
-        QUAGMIRE_TOMATO_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_TOMATO_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_FLOUR = "Ready for baking.",
         QUAGMIRE_WHEAT = "It looks a bit grainy.",
-        QUAGMIRE_WHEAT_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_WHEAT_SEEDS = "看不懂是什么。",
         --NOTE: raw/cooked carrot uses regular carrot strings
-        QUAGMIRE_CARROT_SEEDS = "A handful of odd seeds.",
+        QUAGMIRE_CARROT_SEEDS = "看不懂是什么。",
         
         QUAGMIRE_ROTTEN_CROP = "I don't think the altar will want that.",
         
@@ -2858,7 +2858,7 @@ return {
 
         PORTABLECOOKPOT_ITEM =
         {
-            GENERIC = "Now we're cookin'!",
+            GENERIC = "很精致的锅。",
             DONE = "Now we're done cookin'!",
 
 			COOKING_LONG = "That meal is going to take a while.",
@@ -2866,17 +2866,17 @@ return {
 			EMPTY = "I bet there's nothing in there.",
         },
         
-        PORTABLEBLENDER_ITEM = "It mixes all the food.",
+        PORTABLEBLENDER_ITEM = "打碎调料用的。",
         PORTABLESPICER_ITEM =
         {
-            GENERIC = "This will spice things up.",
+            GENERIC = "撒个调料都要这么精致吗？ 太蠢了...",
             DONE = "Should make things a little tastier.",
         },
-        SPICEPACK = "A breakthrough in culinary science!",
-        SPICE_GARLIC = "A powerfully potent powder.",
-        SPICE_SUGAR = "Sweet! It's sweet!",
-        SPICE_CHILI = "A flagon of fiery fluid.",
-        SPICE_SALT = "A little sodium's good for the heart.",
+        SPICEPACK = "会很不错哦~",
+        SPICE_GARLIC = "很香哦。",
+        SPICE_SUGAR = "糖结晶？好东西。",
+        SPICE_CHILI = "辣辣的 令人上瘾的调料。",
+        SPICE_SALT = "我都不敢想加点盐会有多好吃。",
         MONSTERTARTARE = "There's got to be something else to eat around here.",
         FRESHFRUITCREPES = "Sugary fruit! Part of a balanced breakfast.",
         FROGFISHBOWL = "Is that just... frogs stuffed inside a fish?",
@@ -2899,23 +2899,23 @@ return {
 
         TURNIP = "It's a raw turnip.",
         TURNIP_COOKED = "Cooking is science in practice.",
-        TURNIP_SEEDS = "A handful of odd seeds.",
+        TURNIP_SEEDS = "看不懂是什么。",
         
         GARLIC = "别让汁水黏在毛上 很难受。",
         GARLIC_COOKED = "配上其他菜更好。",
-        GARLIC_SEEDS = "A handful of odd seeds.",
+        GARLIC_SEEDS = "看不懂是什么。",
         
         ONION = "Looks crunchy.",
         ONION_COOKED = "A successful chemical reaction.",
-        ONION_SEEDS = "A handful of odd seeds.",
+        ONION_SEEDS = "看不懂是什么。",
         
         POTATO = "The apples of the earth.",
         POTATO_COOKED = "A successful temperature experiment.",
-        POTATO_SEEDS = "A handful of odd seeds.",
+        POTATO_SEEDS = "看不懂是什么。",
         
         TOMATO = "It's red because it's full of science.",
         TOMATO_COOKED = "Cooking's easy if you understand chemistry.",
-        TOMATO_SEEDS = "A handful of odd seeds.",
+        TOMATO_SEEDS = "看不懂是什么。",
 
         ASPARAGUS = "比之前吃的好。", 
         ASPARAGUS_COOKED = "不错的一种早饭方式。",
@@ -2923,11 +2923,11 @@ return {
 
         PEPPER = "灼烧感令人上瘾 真的不是什么受虐狂吗...",
         PEPPER_COOKED = "来点应该 还行。",
-        PEPPER_SEEDS = "A handful of seeds.",
+        PEPPER_SEEDS = "分不清楚。",
 
-        WEREITEM_BEAVER = "I guess science works differently up North.",
-        WEREITEM_GOOSE = "That thing's giving ME goosebumps!",
-        WEREITEM_MOOSE = "A perfectly normal cursed moose thing.",
+        WEREITEM_BEAVER = "这个当装饰品我估计都够呛。",
+        WEREITEM_GOOSE = "这是祭品吗...太抽象了吧。",
+        WEREITEM_MOOSE = "诡异的鹿头 太白痴了。",
 
         MERMHAT = "带上这个真的不会被发现吗？有够蠢的。",
         MERMTHRONE =
