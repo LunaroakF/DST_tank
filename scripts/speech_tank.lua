@@ -756,7 +756,7 @@ return {
         },
 		THULECITE = "我记错了吗...是这个颜色？",
 		ARMORRUINS = "嘿 这可比那个大理石好用多了。",
-		ARMORSKELETON = "No bones about it.",
+		ARMORSKELETON = "这是谁的骨头呀~？",
 		SKELETONHAT = "这东西似乎对我没用呢...管它呢~。",
 		RUINS_BAT = "揍那些死混蛋恐怕都叫不出来吧~",
 		RUINSHAT = "这红宝石哪来的...",
@@ -834,7 +834,7 @@ return {
 		},
 
         HOUNDSTOOTH = "嗯哼?我不希望这是我的牙齿耶。",
-        ARMORSNURTLESHELL = "It sticks to your back when you wear it.",
+        ARMORSNURTLESHELL = "蜷缩在里也只不过承受罢了。",
         BAT = "Ack! That's terrifying!",
         BATBAT = "用的时候总有种感觉...感觉会回复我的伤势。",
         BATWING = "看看这吓人的翅膀嘿。",
@@ -917,7 +917,7 @@ return {
         },
         SLURTLE = "Ew. Just ew.",
         SLURTLE_SHELLPIECES = "A puzzle with no solution.",
-        SLURTLEHAT = "That would mess up my hair.",
+        SLURTLEHAT = "我希望里面是干的 好吗。",
         SLURTLEHOLE = "A den of \"ew\".",
         SLURTLESLIME = "If it wasn't useful, I wouldn't touch it.",
         SNURTLE = "He's less gross, but still gross.",
@@ -1017,7 +1017,7 @@ return {
 		},
         BEEQUEENHIVEGROWN = "How in science did it get so big?!",
         BEEGUARD = "It's guarding the queen.",
-        HIVEHAT = "The world seems less a little crazy when I wear it.",
+        HIVEHAT = "你让我当一群蜇人还吵还白痴的皇后？ 你脑子是不是有病不是。",
         MINISIGN =
         {
             GENERIC = "蛮像的 应该吧...",
@@ -1699,8 +1699,8 @@ return {
         MONSTERMEAT_DRIED = "我当时怎么没想到这种折磨方式啊...",
         MOOSE = "鸭子？鹅？.....鹿？？",
         MOOSE_NESTING_GROUND = "It puts its babies there.",
-        MOOSEEGG = "The babies are like excited electrons trying to escape.",
-        MOSSLING = "小孩？有趣。",
+        MOOSEEGG = "看看这鸟巢 看样子够我吃好几顿了呢 哈。",
+        MOSSLING = "小屁孩 你妈呢？",
         FEATHERFAN = "不错的羽毛扇子。",
         MINIFAN = "给小孩玩的吧？ ",
         GOOSE_FEATHER = "不错的羽毛。",
@@ -1779,7 +1779,7 @@ return {
         POMEGRANATE_COOKED = "也...还好吧。",
         POMEGRANATE_SEEDS = "种子。",
         POND = "I can't see the bottom!",
-        POOP = "I should fill my pockets!",
+        POOP = "动物排泄物 嘿 要拿的话我希望用袋子装好吗。",
         FERTILIZER = "That is definitely a bucket full of poop.",
         PUMPKIN = "在食物丰富的情况下搭配着会挺不错的。",
         PUMPKINCOOKIE = "That's a pretty gourd cookie!",
@@ -2144,7 +2144,7 @@ return {
         HALLOWEENCANDY_12 = "Did that candy just move?", --ONI meal lice candy
         HALLOWEENCANDY_13 = "甜味石头？ 太蠢了吧。", --Griftlands themed candy
         HALLOWEENCANDY_14 = "一块辣椒 是糖果吗？应该吧。", --Hot Lava pepper candy
-        CANDYBAG = "It's some sort of delicious pocket dimension for sugary treats.",
+        CANDYBAG = "往装满的袋子往里面抓一大把！ 哦~ 我想我能忘掉一会破事。",
 
 		HALLOWEEN_ORNAMENT_1 = "A spectornament I could hang in a tree.",
 		HALLOWEEN_ORNAMENT_2 = "Completely batty decoration.",
@@ -2663,7 +2663,7 @@ return {
 
         --Wormwood
         COMPOSTWRAP = "Wormwood offered me a bite, but I respectfully declined.",
-        ARMOR_BRAMBLE = "The best offense is a good defense.",
+        ARMOR_BRAMBLE = "拿远点...",
         TRAP_BRAMBLE = "It'd really poke whoever stepped on it.",
 
         BOATFRAGMENT03 = "请问 这是谁的船？",
