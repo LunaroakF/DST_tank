@@ -189,7 +189,6 @@ local function fn2()
     inst.components.tool:SetAction(ACTIONS.CHOP)--允许砍树
  
     -------
-    
     --inst:AddComponent("finiteuses") --使用次数（叫耐久也可以）
     --inst.components.finiteuses:SetMaxUses(1000)
     --inst.components.finiteuses:SetUses(1000)
