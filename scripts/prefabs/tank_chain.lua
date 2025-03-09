@@ -46,6 +46,13 @@ local function OnHaunt(inst, haunter)--作祟后
     end
 end
 
+local function OnActivate(inst,doer)
+    if inst:HasTag("tank_chain_noactived") and doer.components.tank_data.current>=45 then
+        doer.components.tank_data:DoDelta(-45)
+        BeActived(inst,doer)
+    end
+end
+
 
 
 local function HasPhysics(obj)
@@ -86,12 +93,15 @@ local function fn_noactived()
     inst.components.lootdropper:SetChanceLootTable('chain_noactived')--掉落物组:chain
     inst:AddComponent("workable")--可破坏
     inst:AddComponent("hauntable")--可作祟
+    inst:AddComponent("activatable")--可以激活
+
     inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
     inst.components.hauntable:SetOnHauntFn(OnHaunt)
     inst.components.workable:SetWorkAction(ACTIONS.HAMMER)--用锤子
     inst.components.workable:SetWorkLeft(1)--敲1下
     inst.components.workable:SetOnFinishCallback(onhammered)
-
+    inst.components.activatable.OnActivate = OnActivate
+    inst.components.activatable.inactive = true
     -- MakeHauntableLaunch(inst)
 
     return inst
