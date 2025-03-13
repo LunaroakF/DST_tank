@@ -49,7 +49,11 @@ end
 local function OnActivate(inst,doer)
     if inst:HasTag("tank_chain_noactived") and doer.components.tank_data.current>=45 then
         doer.components.tank_data:DoDelta(-45)
+        inst.components.activatable.inactive = false
         BeActived(inst,doer)
+    else
+        inst.components.activatable.inactive = true
+        doer.components.talker:Say("没有足够的数据捏")
     end
 end
 
@@ -101,7 +105,6 @@ local function fn_noactived()
     inst.components.workable:SetWorkLeft(1)--敲1下
     inst.components.workable:SetOnFinishCallback(onhammered)
     inst.components.activatable.OnActivate = OnActivate
-    inst.components.activatable.inactive = true
     -- MakeHauntableLaunch(inst)
 
     return inst
