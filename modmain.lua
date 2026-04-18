@@ -7,7 +7,6 @@ PrefabFiles = {
 	"tank_luxury_sandwich",
 	"tank_fallen_data",
 	"tank_chain",
-
 }
 
 --资源引用
@@ -43,6 +42,9 @@ Assets = {
 	
 	Asset( "IMAGE", "images/names_gold_tank.tex" ),
     Asset( "ATLAS", "images/names_gold_tank.xml" ),
+
+	Asset("ATLAS", "images/items/tank_chain_noactived.xml"),
+	Asset("IMAGE", "images/items/tank_chain_noactived.tex"),
 }
 AddMinimapAtlas("images/map_icons/tank.xml")
 
@@ -143,6 +145,7 @@ end
 import{
 	'tank_recipes',
 }
+
 
 --数据
 local function UseData(inst)

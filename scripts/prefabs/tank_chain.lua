@@ -1,6 +1,8 @@
 local assets =
 {
     Asset("ANIM", "anim/tank_chain.zip"),  --地上的动画
+    Asset("ATLAS", "images/items/tank_luxury_sandwich.xml"), --加载物品栏贴图
+    Asset("IMAGE", "images/items/tank_luxury_sandwich.tex"),
 }
 
 SetSharedLootTable('chain_actived',--掉落物组"chain"
@@ -53,7 +55,7 @@ local function OnActivate(inst,doer)
         BeActived(inst,doer)
     else
         inst.components.activatable.inactive = true
-        doer.components.talker:Say("没有足够的数据捏")
+        doer.components.talker:Say(STRINGS.TANK_NOT_ENOUGH_DATA)
     end
 end
 
@@ -92,12 +94,14 @@ local function fn_noactived()
 
     inst:AddTag("tank_chain")
     inst:AddTag("tank_chain_noactived")
+    
     inst:AddComponent("inspectable") --可检查组件
     inst:AddComponent("lootdropper")--有掉落物
     inst.components.lootdropper:SetChanceLootTable('chain_noactived')--掉落物组:chain
     inst:AddComponent("workable")--可破坏
     inst:AddComponent("hauntable")--可作祟
     inst:AddComponent("activatable")--可以激活
+    
 
     inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
     inst.components.hauntable:SetOnHauntFn(OnHaunt)
@@ -156,52 +160,11 @@ local function fn_actived()
     return inst
 end
 
-local function fn_item()
-    local inst = CreateEntity()
-
-    inst.entity:AddTransform()
-    inst.entity:AddAnimState()
-    inst.entity:AddNetwork()
-
-    MakeInventoryPhysics(inst)
-    inst.AnimState:SetBank("tank_luxury_sandwich")  --地上动画
-    inst.AnimState:SetBuild("tank_luxury_sandwich")
-    inst.AnimState:PlayAnimation("idle")
-    
-    inst.entity:SetPristine()
-
-    if not TheWorld.ismastersim then
-        return inst
-    end
-
-    inst:AddComponent("inspectable") --可检查组件
-    inst:AddComponent("inventoryitem") --物品组件
-	inst.components.inventoryitem.atlasname = "images/items/tank_luxury_sandwich.xml" --物品贴图
-    MakeSmallBurnable(inst, TUNING.MED_BURNTIME)
-
-    inst:AddComponent("stackable")
-    inst.components.stackable.maxsize = TUNING.STACK_SIZE_MEDITEM
-	
-    inst:AddComponent("edible") --可食用组件
-
-    if GetPlayer():HasTag("tank") then
-        inst.components.edible.healthvalue = 20
-    else
-        inst.components.edible.healthvalue = -101
-    end
-
-    inst.components.edible.sanityvalue = 2
-    inst.components.edible.hungervalue = 66
-
-    inst:AddComponent("perishable")
-    inst.components.perishable:SetPerishTime(TUNING.PERISH_ONE_DAY)
-    inst.components.perishable:StartPerishing()
-    inst.components.perishable.onperishreplacement = "spoiled_food"
-
-
-    MakeHauntableLaunch(inst)
-    return inst
-end
-
 return Prefab("tank_chain_noactived", fn_noactived, assets),
-       Prefab("tank_chain_actived", fn_actived, assets)
+       Prefab("tank_chain_actived", fn_actived, assets),
+       MakePlacer(
+           "tank_chain_noactived_placer",
+           "tank_chain_noactived",
+           "tank_chain_noactived",
+           "idle"
+       )

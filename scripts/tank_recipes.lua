@@ -15,3 +15,21 @@ local IsServer = _G.TheNet:GetIsServer() or _G.TheNet:IsDedicated()
 --豪华三明治套餐
 local tank_luxury_sandwich = AddRecipe2("tank_luxury_sandwich", {Ingredient("frogglebunwich", 1),Ingredient("spoiled_food", 4),Ingredient("stinger", 1),Ingredient("berries_juicy", 1)}, TECH.NONE, {builder_tag = "tank", atlas = "images/items/tank_luxury_sandwich.xml", image = "tank_luxury_sandwich.tex"}, {"CHARACTER","COOKING"})
 --tank_luxury_sandwich.tagneeded = false
+
+local tank_chain_noactived = AddRecipe2(
+    "tank_chain_noactived",
+    {
+        Ingredient(CHARACTER_INGREDIENT.HEALTH, 200),
+    },
+    TECH.NONE,
+    {
+        builder_tag = "tank",
+        placer = "tank_chain_noactived_placer",
+
+        atlas = "images/items/tank_chain_noactived.xml",
+        image = "tank_chain_noactived.tex",
+
+        no_deconstruction = true,
+    },
+    {"CHARACTER"}
+)
