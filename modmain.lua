@@ -146,7 +146,6 @@ import{
 	'tank_recipes',
 }
 
-
 --数据
 local function UseData(inst)
 	if inst:HasTag("tank") and not inst:HasTag("playerghost") then
@@ -210,7 +209,6 @@ local function SwitchAxe(inst)
 	inst.components.inventory:Equip(ForwardItem)
 end
 AddModRPCHandler("tank", "switch_axe", SwitchAxe)
-
 
 --免疫硬直，from myth
 AddStategraphPostInit("wilson", function(sg)
@@ -337,6 +335,49 @@ AddPrefabPostInit("multiplayer_portal", function(inst)
             end
             return old and old(inst, doer)
         end)
+    end
+end)
+
+--覆写合成权限，不能制作远古或者魔法科技
+AddComponentPostInit("builder", function(self)
+    local oldCB, oldKR, oldCL = self.CanBuild, self.KnowsRecipe, self.CanLearn
+
+    -- 判定函数：检查配方是否属于魔法或远古
+    local function IsRestricted(recipe_name)
+        if self.inst:HasTag("tank") then
+            local recipe = GetValidRecipe(recipe_name)
+            if recipe and ((recipe.level.MAGIC or 0) > 0 or (recipe.level.ANCIENT or 0) > 0) then
+                return true
+            end
+        end
+        return false
+    end
+
+    -- 监听科技树变化事件（靠近/离开合成台时触发）
+    self.inst:ListenForEvent("techtreechange", function(inst, data)
+        if inst:HasTag("tank") and inst.components.talker then
+            -- data.level 包含了当前玩家所处的科技环境级别
+            local tech = data.level
+            if (tech.MAGIC or 0) > 0 or (tech.ANCIENT or 0) > 0 then
+                -- 只有当科技台处于“工作/发光”状态时才说话
+                inst.components.talker:Say(STRINGS.TANK_FELT_STRANGE_ENERGY)
+            end
+        end
+    end)
+
+    -- 拦截逻辑保持不变
+    self.CanBuild = function(self, rec, ...)
+        return not IsRestricted(rec) and oldCB(self, rec, ...)
+    end
+
+    self.KnowsRecipe = function(self, rec, ...)
+        return not IsRestricted(rec) and oldKR(self, rec, ...)
+    end
+
+    if self.CanLearn then
+        self.CanLearn = function(self, rec, ...)
+            return not IsRestricted(rec) and oldCL(self, rec, ...)
+        end
     end
 end)
 
