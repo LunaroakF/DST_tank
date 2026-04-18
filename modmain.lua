@@ -224,6 +224,119 @@ AddStategraphPostInit("wilson", function(sg)
     end)
 end)
 
+--覆写采花逻辑，tank采花不加血
+AddPrefabPostInit("flower", function(inst)
+    if not TheWorld.ismastersim then return end
+	local ROSE_NAME = "rose"
+    if inst.components.pickable ~= nil then
+        inst.components.pickable.onpickedfn = function(inst, picker)
+            local pos = inst:GetPosition()
+
+            if picker ~= nil then
+                --tank采花不加血
+                if picker.components.sanity ~= nil 
+                    and not picker:HasTag("plantkin") 
+                    and not picker:HasTag("tank") then
+
+                    picker.components.sanity:DoDelta(TUNING.SANITY_TINY)
+                end
+                if inst.animname == ROSE_NAME and
+                    picker.components.combat ~= nil and
+                    not (picker.components.inventory ~= nil and picker.components.inventory:EquipHasTag("bramble_resistant")) and
+                    not picker:HasTag("shadowminion") then
+
+                    picker.components.combat:GetAttacked(inst, TUNING.ROSE_DAMAGE)
+                    picker:PushEvent("thorns")
+                end
+            end
+            if not inst.planted then
+                TheWorld:PushEvent("beginregrowth", inst)
+            end
+
+            TheWorld:PushEvent("plantkilled", { doer = picker, pos = pos })
+        end
+    end
+end)
+
+--覆写告密的心，tank不允许有这个东西
+AddPrefabPostInit("reviver", function(inst)
+    inst:AddTag("tank_reviverheart")
+    if not TheWorld.ismastersim then return end
+    if inst.components.inventoryitem ~= nil then
+        inst.components.inventoryitem:SetOnPickupFn(function(inst, owner)
+            if owner == nil or owner.components.inventory == nil then
+                return
+            end
+            if owner:HasTag("tank") then
+                --延迟一帧，确保物品已进入背包
+                inst:DoTaskInTime(0, function()
+                    local dropped = false
+                    for k, v in pairs(owner.components.inventory.itemslots) do
+                        if v ~= nil and v:HasTag("tank_reviverheart") then
+                            owner.components.inventory:DropItem(v)
+                            dropped = true
+                        end
+                    end
+                    --只说一次
+                    if dropped then
+                        owner.components.talker:Say(STRINGS.TANK_FEAR_THE_HEART)
+                    end
+                end)
+            end
+        end)
+    end
+end)
+
+--覆写肉块雕像，tank不允许用这个复活
+AddPrefabPostInit("resurrectionstatue", function(inst)
+    if not TheWorld.ismastersim then return end
+    if inst.components.attunable ~= nil then
+        local old_onattunecost = inst.components.attunable.onattunecostfn
+        inst.components.attunable:SetOnAttuneCostFn(function(inst, player)
+            if player:HasTag("tank") then
+                if player.components.talker then
+                    player.components.talker:Say(STRINGS.TANK_CAN_NOT_USE_MULTIPLAYER_PORTAL)
+                end
+                return false
+            end
+            if old_onattunecost then
+                return old_onattunecost(inst, player)
+            end
+        end)
+    end
+end)
+
+--覆写试金石，tank不允许用这个复活
+AddPrefabPostInit("resurrectionstone", function(inst)
+    if not TheWorld.ismastersim then return end
+    if inst.components.hauntable then
+        local old = inst.components.hauntable.onhaunt
+        inst.components.hauntable:SetOnHauntFn(function(inst, doer)
+            if doer and doer:HasTag("tank") then
+                doer.components.talker:Say(STRINGS.TANK_CAN_NOT_USE_MULTIPLAYER_PORTAL)
+                return false
+            end
+            return old and old(inst, doer)
+        end)
+    end
+
+end)
+
+--覆写绚丽之门，tank不允许用这个复活
+AddPrefabPostInit("multiplayer_portal", function(inst)
+    if not TheWorld.ismastersim then return end
+    if inst.components.hauntable then
+        local old = inst.components.hauntable.onhaunt
+        inst.components.hauntable:SetOnHauntFn(function(inst, doer)
+            if doer and doer:HasTag("tank") then
+                doer.components.talker:Say(STRINGS.TANK_CAN_NOT_USE_MULTIPLAYER_PORTAL)
+                return false
+            end
+            return old and old(inst, doer)
+        end)
+    end
+end)
+
 --对话
 STRINGS.CHARACTERS.TANK = require "speech_tank"
 

@@ -44,17 +44,36 @@ local function fn()
         inst:Remove()
     end)
     
-    inst.components.inventoryitem:SetOnPickupFn(function(inst,owner)
-        if owner:HasTag("tank") then
-            Periodic:Cancel()
-        else
-            inst.tank_data_Periodic = owner:DoPeriodicTask(1,function()
-                owner.components.inventory:DropEverythingWithTag("tank_fallen_data")
-                owner.components.talker:Say(STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS)
-                inst.tank_data_Periodic:Cancel()
-            end)
+inst.components.inventoryitem:SetOnPickupFn(function(inst, owner)
+
+    if owner == nil or owner.components.inventory == nil then
+        return
+    end
+    --非 tank 才处理
+    if not owner:HasTag("tank") then
+        --防止同一帧疯狂触发
+        if owner._tank_fallen_lock then
+            return
         end
-    end)
+        owner._tank_fallen_lock = true
+        inst:DoTaskInTime(0, function()
+            local dropped = false
+            for k, v in pairs(owner.components.inventory.itemslots) do
+                if v ~= nil and v:HasTag("tank_fallen_data") then
+                    owner.components.inventory:DropItem(v)
+                    dropped = true
+                end
+            end
+            if dropped then
+                owner.components.talker:Say(STRINGS.TANK_FALLEN_DATA_PICKED_BY_OTHERS)
+            end
+            --解锁（防止短时间重复触发）
+            owner:DoTaskInTime(0.2, function()
+                owner._tank_fallen_lock = nil
+            end)
+        end)
+    end
+end)
 
     inst.components.inventoryitem:SetOnDroppedFn(function(inst,owner)
         local Periodic = inst:DoPeriodicTask(4,function()
