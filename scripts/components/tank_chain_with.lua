@@ -5,7 +5,7 @@ end
 local function MakeChain(inst)
     -- 死亡后生成锁链
 	local x,y,z = inst.Transform:GetWorldPosition() 
-	SpawnPrefab("tank_chain_noactived").Transform:SetPosition(x, y, z)
+	SpawnPrefab("tank_chain_noactivated").Transform:SetPosition(x, y, z)
 	--删除生成的骷髅
 	local ents = TheSim:FindEntities(x,y,z, 1)--检索距离为1
 	for k,v in pairs(ents) do

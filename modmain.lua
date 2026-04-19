@@ -43,8 +43,8 @@ Assets = {
 	Asset( "IMAGE", "images/names_gold_tank.tex" ),
     Asset( "ATLAS", "images/names_gold_tank.xml" ),
 
-	Asset("ATLAS", "images/items/tank_chain_noactived.xml"),
-	Asset("IMAGE", "images/items/tank_chain_noactived.tex"),
+	Asset("ATLAS", "images/items/tank_chain_noactivated.xml"),
+	Asset("IMAGE", "images/items/tank_chain_noactivated.tex"),
 }
 AddMinimapAtlas("images/map_icons/tank.xml")
 
@@ -93,17 +93,17 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_fallen_data"] = {
 }
 
 --未激活的锁链
-TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_noactived"] = {
-	name = STRINGS.NAMES.TANK_CHAIN_NOACTIVED,
-	atlas = "images/items/tank_chain_noactived.xml",
-	image = "tank_chain_noactived.tex",
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_noactivated"] = {
+	name = STRINGS.NAMES.TANK_CHAIN_NOACTIVATED,
+	atlas = "images/items/tank_chain_noactivated.xml",
+	image = "tank_chain_noactivated.tex",
 }
 
 --激活的锁链
-TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_actived"] = {
-	name = STRINGS.NAMES.TANK_CHAIN_ACTIVED,
-	atlas = "images/items/tank_chain_actived.xml",
-	image = "tank_chain_actived.tex",
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_activated"] = {
+	name = STRINGS.NAMES.TANK_CHAIN_ACTIVATED,
+	atlas = "images/items/tank_chain_activated.xml",
+	image = "tank_chain_activated.tex",
 }
 
 --数据GUI

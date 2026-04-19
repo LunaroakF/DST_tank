@@ -5,13 +5,13 @@ local assets =
     Asset("IMAGE", "images/items/tank_luxury_sandwich.tex"),
 }
 
-SetSharedLootTable('chain_actived',--掉落物组"chain"
+SetSharedLootTable('chain_activated',--掉落物组"chain"
 {
     {'tank_useless_scarf',   1.00},
     --{'tank_fallen_data',   3.00},
 })
 
-SetSharedLootTable('chain_noactived',--掉落物组"chain"
+SetSharedLootTable('chain_noactivated',--掉落物组"chain"
 {
     {'tank_useless_scarf',   1.00},
 })
@@ -24,35 +24,37 @@ local function onhammered(inst)--被挖了后
     inst:Remove()
 end
 
-local function BeActived(inst,haunter)
+local function BeActivated(inst,haunter)
     local x,y,z = inst.Transform:GetWorldPosition() 
-    local older = SpawnPrefab("tank_chain_actived")
+    local older = SpawnPrefab("tank_chain_activated")
     older.Transform:SetPosition(x, y, z)
+    older.AnimState:PlayAnimation("activating")--激活闪烁动画
     haunter.SoundEmitter:PlaySound("dontstarve/common/fireAddFuel")
     local fx = SpawnPrefab("alterguardian_lasertrail")
     fx.entity:SetParent(older.entity)
     inst:Remove()
+    older.AnimState:PushAnimation("idle", true)
 end
 
 local function OnHaunt(inst, haunter)--作祟后
     if haunter:HasTag("tank") then
-        if inst:HasTag("tank_chain_actived")then
+        if inst:HasTag("tank_chain_activated")then
             haunter:PushEvent("respawnfromghost", { source = inst })
             onhammered(inst)
             return true
         end
-        if inst:HasTag("tank_chain_noactived") and haunter.components.tank_data.current>=45 then
+        if inst:HasTag("tank_chain_noactivated") and haunter.components.tank_data.current>=45 then
             haunter.components.tank_data:DoDelta(-45)
-            BeActived(inst,haunter)
+            BeActivated(inst,haunter)
         end
     end
 end
 
 local function OnActivate(inst,doer)
-    if inst:HasTag("tank_chain_noactived") and doer.components.tank_data.current>=45 then
+    if inst:HasTag("tank_chain_noactivated") and doer.components.tank_data.current>=45 then
         doer.components.tank_data:DoDelta(-45)
         inst.components.activatable.inactive = false
-        BeActived(inst,doer)
+        BeActivated(inst,doer)
     else
         inst.components.activatable.inactive = true
         doer.components.talker:Say(STRINGS.TANK_NOT_ENOUGH_DATA)
@@ -65,7 +67,7 @@ local function HasPhysics(obj)
     return obj.Physics ~= nil
 end
 
-local function fn_noactived()
+local function fn_noactivated()
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -82,7 +84,7 @@ local function fn_noactived()
     inst.Physics:CollidesWith(COLLISION.CHARACTERS)
 
 
-    inst.AnimState:SetBank("tank_chain_noactived")  --地上动画
+    inst.AnimState:SetBank("tank_chain_noactivated")  --地上动画
     inst.AnimState:SetBuild("tank_chain")
     inst.AnimState:PlayAnimation("idle")
 
@@ -93,11 +95,12 @@ local function fn_noactived()
     end
 
     inst:AddTag("tank_chain")
-    inst:AddTag("tank_chain_noactived")
+    inst:AddTag("tank_chain_noactivated")
     
     inst:AddComponent("inspectable") --可检查组件
     inst:AddComponent("lootdropper")--有掉落物
-    inst.components.lootdropper:SetChanceLootTable('chain_noactived')--掉落物组:chain
+    inst:AddComponent("heavyobstaclephysics")
+    inst.components.lootdropper:SetChanceLootTable('chain_noactivated')--掉落物组:chain
     inst:AddComponent("workable")--可破坏
     inst:AddComponent("hauntable")--可作祟
     inst:AddComponent("activatable")--可以激活
@@ -114,7 +117,7 @@ local function fn_noactived()
     return inst
 end
 
-local function fn_actived()
+local function fn_activated()
     local inst = CreateEntity()
 
     inst.entity:AddTransform()
@@ -131,7 +134,7 @@ local function fn_actived()
     inst.Physics:CollidesWith(COLLISION.CHARACTERS)
 
 
-    inst.AnimState:SetBank("tank_chain_actived")  --地上动画
+    inst.AnimState:SetBank("tank_chain_activated")  --地上动画
     inst.AnimState:SetBuild("tank_chain")
     inst.AnimState:PlayAnimation("idle")
 
@@ -142,10 +145,11 @@ local function fn_actived()
     end
 
     inst:AddTag("tank_chain")
-    inst:AddTag("tank_chain_actived")
+    inst:AddTag("tank_chain_activated")
     inst:AddComponent("inspectable") --可检查组件
     inst:AddComponent("lootdropper")--有掉落物
-    inst.components.lootdropper:SetChanceLootTable('chain_actived')--掉落物组:chain
+    inst:AddComponent("heavyobstaclephysics")
+    inst.components.lootdropper:SetChanceLootTable('chain_activated')--掉落物组:chain
     inst:AddComponent("workable")--可破坏
     inst:AddComponent("hauntable")--可作祟
     inst.components.hauntable:SetHauntValue(TUNING.HAUNT_INSTANT_REZ)
@@ -160,11 +164,11 @@ local function fn_actived()
     return inst
 end
 
-return Prefab("tank_chain_noactived", fn_noactived, assets),
-       Prefab("tank_chain_actived", fn_actived, assets),
+return Prefab("tank_chain_noactivated", fn_noactivated, assets),
+       Prefab("tank_chain_activated", fn_activated, assets),
        MakePlacer(
-           "tank_chain_noactived_placer",
-           "tank_chain_noactived",
-           "tank_chain_noactived",
+           "tank_chain_noactivated_placer",
+           "tank_chain_noactivated",
+           "tank_chain_noactivated",
            "idle"
        )
