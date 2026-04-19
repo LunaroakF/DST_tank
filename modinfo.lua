@@ -5,7 +5,7 @@ author = "陌呰Moozi & 狐冥栎LunaroakF & 何狐"
 version = "1.0.2.0418"
 
 --Mod链接
-forumthread = ""
+forumthread = "https://steamcommunity.com/sharedfiles/filedetails/?id=3358244598"
 
 --Mod API版本
 api_version = 10

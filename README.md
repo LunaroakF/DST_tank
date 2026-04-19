@@ -1,6 +1,6 @@
 # 铽安克 - 破鳞
 Tank The Don't Starve Together Mod
-![alt text](https://i.imgur.com/7L48l6y.png)
+![alt text](/preview.jpg)
 陌呰Moozi & 狐冥栎LunaroakF & 何狐
 破碎 不安 恐惧 畏惧 真实？ ░ ░▓░ ░▓░ ▓▓▓ ░▓░
 

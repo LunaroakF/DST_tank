@@ -75,13 +75,13 @@ local master_postinit = function(inst)
 	
 	local IsAxeCanShoot = false
 	local Axex,Axey,Axez = nil
-	inst:ListenForEvent("TargetRan", function(inst,data)--不允许玩家继续传送
-		inst.IsAxeCanShoot = false
-	end)
+	-- inst:ListenForEvent("TargetRan", function(inst,data)--不允许玩家继续传送
+	-- 	inst.IsAxeCanShoot = false
+	-- end)
 
-	inst:ListenForEvent("AxeThrown", function(inst,data)--允许玩家传送
-		inst.IsAxeCanShoot = true
-	end)
+	-- inst:ListenForEvent("AxeThrown", function(inst,data)--允许玩家传送
+	-- 	inst.IsAxeCanShoot = true
+	-- end)
 
 	--人物的声音
 	inst.soundsname = "willow"

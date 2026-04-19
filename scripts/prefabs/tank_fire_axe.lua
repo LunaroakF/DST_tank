@@ -10,6 +10,7 @@ local assets =
 
 local function OnDropped(inst, owner)
     inst.AnimState:PlayAnimation("idle")
+    inst.Physics:Stop()
     inst.components.inventoryitem.pushlandedevents = true
     if owner:HasTag("tank") then
         owner.IsAxeCanShoot = true
@@ -43,7 +44,7 @@ end
 local function OnThrown(inst, owner, target)
     if target ~= owner then
         owner.SoundEmitter:PlaySound("dontstarve/wilson/boomerang_throw")
-        owner.PushEvent("AxeThrown")
+        owner:PushEvent("AxeThrown")
     end
     inst.AnimState:PlayAnimation("spin_loop", true)
     inst.components.inventoryitem.pushlandedevents = false
@@ -51,7 +52,6 @@ end
 
 local function OnHit(inst, owner, target)
     OnDropped(inst, owner)
-    owner.PushEvent("TargetRan")
     if target ~= nil and target:IsValid() and target.components.combat then
         local impactfx = SpawnPrefab("impact")
         if impactfx ~= nil then
@@ -63,11 +63,8 @@ local function OnHit(inst, owner, target)
 end
 
 local function OnMiss(inst, owner, target)
-    if owner == target then
-        owner.PushEvent("TargetRan")
-        
-        OnDropped(inst, owner)
-    end
+    owner:PushEvent("TargetRan")
+    OnDropped(inst, owner)
 end
 
 local function OnCaught(inst, catcher)
@@ -121,14 +118,16 @@ local function fn1()
     inst.components.tool:SetAction(ACTIONS.CHOP)--允许砍树
 
     inst:AddTag("thrown")
-        inst:AddTag("projectile")
-        inst:AddComponent("projectile")
-        inst.components.projectile:SetSpeed(15)
-        inst.components.projectile:SetCanCatch(true)
-        inst.components.projectile:SetOnThrownFn(OnThrown)
-        inst.components.projectile:SetOnHitFn(OnHit)
-        inst.components.projectile:SetOnMissFn(OnMiss)
-        inst.components.projectile:SetOnCaughtFn(OnCaught)
+    inst:AddTag("projectile")
+    inst:AddComponent("projectile")
+    inst.components.projectile:SetSpeed(15)
+    inst.components.projectile:SetRange(17)
+    inst.components.projectile:SetHoming(false)
+    inst.components.projectile:SetCanCatch(true)
+    inst.components.projectile:SetOnThrownFn(OnThrown)
+    inst.components.projectile:SetOnHitFn(OnHit)
+    inst.components.projectile:SetOnMissFn(OnMiss)
+    inst.components.projectile:SetOnCaughtFn(OnCaught)
  
     -------
     
@@ -143,9 +142,6 @@ local function fn1()
     inst:AddComponent("equippable") --可装备组件
     inst.components.equippable:SetOnEquip(onequip)
     inst.components.equippable:SetOnUnequip(onunequip)
-
-
-
 
     MakeHauntableLaunch(inst)
 
