@@ -11,8 +11,8 @@ Tank The Don't Starve Together Mod
 曾经的折磨……
 数据化的锁链……？
 
-## 初始三维:
-![alt text](https://i.imgur.com/gkIS0Mi.png)
+## 初始三维:  
+![alt text](https://i.imgur.com/gkIS0Mi.png)  
 数据(Data) 60
 生命(Health) 300
 饥饿(Hunger) 190
@@ -39,8 +39,8 @@ Tank The Don't Starve Together Mod
 蝴蝶: 当背包有一只蝴蝶尸体每天回复 0.5 精神值（效果无法叠加）
 玫瑰: 当被玫瑰刺伤时损失 1 精神值并恢复 10 饥饿值
 兔耳罩: 当铽安克攻击携带兔耳罩的生物, 铽安克就每秒回复 1 点血（持续五秒）
-蛙腿三明治: 铽安克可以在生存一栏制作特殊的蛙腿三明治（豪华三明治套餐）
-![alt text](https://i.imgur.com/1JUtpWP.png)
+蛙腿三明治: 铽安克可以在生存一栏制作特殊的蛙腿三明治（豪华三明治套餐）  
+![alt text](https://i.imgur.com/1JUtpWP.png)  
 蛙腿三明治(1个) 合成表：
 腐烂食物x4 蜂针x1 多汁浆果x1
 效果:
@@ -71,8 +71,8 @@ Tank The Don't Starve Together Mod
 左胳膊右腿 也可以附着在上面进行攻击
 掉落物：甜蜜窒息之心（现暂无用处）
 
-## 「数据化的锁链……」
-![alt text](https://i.imgur.com/as1d8Ex.png)
+## 「数据化的锁链……」  
+![alt text](https://i.imgur.com/as1d8Ex.png)  
 - 数据化：
 铽安克 增加数据值最高 60 点 初始为 0
 铽安克 受伤时会掉落数据块 数据块只会在地上存留 4 秒
@@ -95,16 +95,16 @@ Tank The Don't Starve Together Mod
 无用围巾
 
 
-### 「制 0-2型消防斧」
-![alt text](https://i.imgur.com/XCbMly9.png)
+### 「制 0-2型消防斧」  
+![alt text](https://i.imgur.com/XCbMly9.png)  
 - 伤害 46 攻击速度 1.5
 - 键盘z键 切换成 飞斧模式 在 飞斧模式 会增加2%移速
 - 在飞斧模式下 鼠标左键 投出飞斧 触碰到实体造成伤害然后掉落在地上，这时候 左键 可以收回
 - 飞斧射程为一个屏幕 (半径20m)
 - 飞斧在飞的过程中可以在按下z键，铽安克会 变成锁链 飞向飞斧所在地
 
-### 「无用围巾」
-![alt text](https://i.imgur.com/EABJ08l.png)
+### 「无用围巾」  
+![alt text](https://i.imgur.com/EABJ08l.png)  
 防御 10% 无限耐久 保暖 10%
 铽安克 携带额外增加一天恢复 0.5 精神值效果
 
