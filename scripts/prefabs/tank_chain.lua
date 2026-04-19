@@ -1,14 +1,14 @@
 local assets =
 {
     Asset("ANIM", "anim/tank_chain.zip"),  --地上的动画
-    Asset("ATLAS", "images/items/tank_luxury_sandwich.xml"), --加载物品栏贴图
-    Asset("IMAGE", "images/items/tank_luxury_sandwich.tex"),
+    Asset("ATLAS", "images/items/tank_chain_armor.xml"), --加载物品栏贴图
+    Asset("IMAGE", "images/items/tank_chain_armor.tex"),
 }
 
 SetSharedLootTable('chain_activated',--掉落物组"chain"
 {
-    {'tank_useless_scarf',   1.00},
-    --{'tank_fallen_data',   3.00},
+    --{'tank_useless_scarf',   1.00},
+    {'tank_chain_armor',   1.00},
 })
 
 SetSharedLootTable('chain_noactivated',--掉落物组"chain"
@@ -61,7 +61,16 @@ local function OnActivate(inst,doer)
     end
 end
 
+local function onequip(inst, owner) --装备
+	owner.AnimState:OverrideSymbol("swap_body", "tank_chain_armor", "swap_body")
+    --三个参数分别是替换的贴图是swap_body  使用的动画是yifu  第三个这个注意 这个swap_body是你的动画里装图片的文件夹的名字
+    --inst:ListenForEvent("blocked", OnBlocked, owner)
+end
 
+local function onunequip(inst, owner)  --脱下
+    owner.AnimState:ClearOverrideSymbol("swap_body")
+    --inst:RemoveEventCallback("blocked", OnBlocked, owner)
+end
 
 local function HasPhysics(obj)
     return obj.Physics ~= nil
@@ -83,9 +92,8 @@ local function fn_noactivated()
     inst.Physics:CollidesWith(COLLISION.ITEMS)
     inst.Physics:CollidesWith(COLLISION.CHARACTERS)
 
-
-    inst.AnimState:SetBank("tank_chain_noactivated")  --地上动画
     inst.AnimState:SetBuild("tank_chain")
+    inst.AnimState:SetBank("tank_chain_noactivated")  --地上动画
     inst.AnimState:PlayAnimation("idle")
 
     inst.entity:SetPristine()
@@ -133,9 +141,8 @@ local function fn_activated()
     inst.Physics:CollidesWith(COLLISION.ITEMS)
     inst.Physics:CollidesWith(COLLISION.CHARACTERS)
 
-
-    inst.AnimState:SetBank("tank_chain_activated")  --地上动画
     inst.AnimState:SetBuild("tank_chain")
+    inst.AnimState:SetBank("tank_chain_activated")  --地上动画
     inst.AnimState:PlayAnimation("idle")
 
     inst.entity:SetPristine()
@@ -164,7 +171,48 @@ local function fn_activated()
     return inst
 end
 
-return Prefab("tank_chain_noactivated", fn_noactivated, assets),
+local function fn_armor()
+    local inst = CreateEntity()
+
+    inst.entity:AddTransform()
+    inst.entity:AddAnimState()
+    inst.entity:AddNetwork()
+
+    MakeInventoryPhysics(inst)
+    inst.AnimState:SetBuild("tank_chain")--smcl文件的名字
+    inst.AnimState:SetBank("tank_chain_armor")  --动画 --SP软件里面动画的总名字
+    inst.AnimState:PlayAnimation("idle")
+
+    inst.entity:SetPristine()
+
+    if not TheWorld.ismastersim then
+        return inst
+    end
+
+    inst:AddComponent("inspectable") --可检查组件
+    inst:AddComponent("inventoryitem") --物品组件
+	inst.components.inventoryitem.atlasname = "images/items/tank_chain_armor.xml" --物品贴图
+
+    -- inst:AddComponent("insulator")--隔热
+    -- inst.components.insulator:SetInsulation(TUNING.INSULATION_SMALL)--保暖60 每秒掉30/(30+60)℃
+    -- inst.components.insulator:SetWinter()
+
+    inst:AddComponent("armor")--护甲
+    inst.components.armor:InitIndestructible(0.1*TUNING.MULTIPLAYER_ARMOR_ABSORPTION_MODIFIER)--10%防护
+	
+    inst:AddComponent("equippable") --可装备组件
+    inst.components.equippable.dapperness = 0.5/TUNING.DAY_TIME_DEFAULT
+    inst.components.equippable.equipslot = EQUIPSLOTS.BODY
+    -- inst.components.equippable:SetOnEquip(onequip)
+    -- inst.components.equippable:SetOnUnequip(onunequip)
+
+    MakeHauntableLaunch(inst)
+
+    return inst
+end
+
+return Prefab("tank_chain_armor", fn_armor, assets),
+       Prefab("tank_chain_noactivated", fn_noactivated, assets),
        Prefab("tank_chain_activated", fn_activated, assets),
        MakePlacer(
            "tank_chain_noactivated_placer",

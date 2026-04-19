@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="b5">
-    <folder id="0" name="/image">
-        <file id="0" name="/image/image-2.png" width="512" height="512" pivot_x="0.5" pivot_y="0.5"/>
-        <file id="1" name="/image/image-1.png" width="500" height="500" pivot_x="0.5" pivot_y="0.5"/>
-        <file id="2" name="/image/image-0.png" width="500" height="500" pivot_x="0.5" pivot_y="0.5"/>
+    <folder id="0" name="image">
+        <file id="0" name="image/image-2.png" width="512" height="512" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="image/image-1.png" width="500" height="500" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="2" name="image/image-0.png" width="500" height="500" pivot_x="0.5" pivot_y="0.5"/>
+    </folder>
+    <folder id="1" name="swap_body">
+        <file id="0" name="swap_body/swap_body-13.png" width="512" height="512" pivot_x="0.5" pivot_y="0.5"/>
     </folder>
     <entity id="0" name="tank_chain_noactivated">
         <animation id="0" name="idle" length="1000">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="image-0" folder="0" file="2" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="0" name="image-0" folder="0" file="2" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="image-0">
                 <key id="0" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
             </timeline>
         </animation>
@@ -23,8 +26,8 @@
         <animation id="0" name="activating" length="1000">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="image-0" folder="0" file="2" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="0"/>
-                    <object_ref id="1" name="image-1" folder="0" file="1" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1"/>
+                    <object_ref id="0" name="image-0" folder="0" file="2" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" name="image-1" folder="0" file="1" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="1"/>
                 </key>
                 <key id="1" time="100">
                     <object_ref id="0" timeline="0" key="1" z_index="0"/>
@@ -49,54 +52,68 @@
             </mainline>
             <timeline id="0" name="image-1">
                 <key id="0" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="1" time="100" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="2" time="200" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="3" time="300" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="4" time="400" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="5" time="500" spin="0">
-                    <object folder="0" file="1" x="-20" y="100"/>
+                    <object folder="0" file="1" x="-20" y="100" angle="0"/>
                 </key>
             </timeline>
             <timeline id="1" name="image-0">
                 <key id="0" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="1" time="100" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="2" time="200" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="3" time="300" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="4" time="400" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
                 <key id="5" time="500" spin="0">
-                    <object folder="0" file="2" x="-20" y="100"/>
+                    <object folder="0" file="2" x="-20" y="100" angle="0"/>
                 </key>
             </timeline>
         </animation>
         <animation id="1" name="idle" length="1000">
             <mainline>
                 <key id="0">
-                    <object_ref id="0" name="image-2" folder="0" file="0" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="0" name="image-2" folder="0" file="0" abs_x="-20" abs_y="100" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="1" abs_scale_y="1" abs_a="1" timeline="0" key="0" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="image-2">
                 <key id="0" spin="0">
-                    <object folder="0" file="0" x="-20" y="100"/>
+                    <object folder="0" file="0" x="-20" y="100" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+    <entity id="2" name="tank_chain_armor">
+        <animation id="0" name="idle" length="1000">
+            <mainline>
+                <key id="0" time="831">
+                    <object_ref id="0" name="swap_body-13" folder="1" file="0" abs_x="0" abs_y="90" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="0.5" abs_scale_y="0.5" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="swap_body-13">
+                <key id="0" time="831" spin="0">
+                    <object folder="1" file="0" y="90" scale_x="0.5" scale_y="0.5"/>
                 </key>
             </timeline>
         </animation>

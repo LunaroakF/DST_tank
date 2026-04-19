@@ -48,6 +48,7 @@ Assets = {
 }
 AddMinimapAtlas("images/map_icons/tank.xml")
 
+
 local require = GLOBAL.require
 local STRINGS = GLOBAL.STRINGS
 local Vector3 = GLOBAL.Vector3
@@ -104,6 +105,13 @@ TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_activated"] = {
 	name = STRINGS.NAMES.TANK_CHAIN_ACTIVATED,
 	atlas = "images/items/tank_chain_activated.xml",
 	image = "tank_chain_activated.tex",
+}
+
+--锁链胸甲
+TUNING.STARTING_ITEM_IMAGE_OVERRIDE["tank_chain_armor"] = {
+	name = STRINGS.NAMES.TANK_CHAIN_ARMOR,
+	atlas = "images/items/tank_chain_armor.xml",
+	image = "tank_chain_armor.tex",
 }
 
 --数据GUI

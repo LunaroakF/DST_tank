@@ -2,7 +2,7 @@
 name = "破鳞"
 description = "破碎 不安 恐惧 畏惧 真实？  ░ ░▓░ ░▓░ ▓▓▓ ░▓░\n              一块破碎的镜子等待着被缝补。【TESTING】" 
 author = "陌呰Moozi & 狐冥栎LunaroakF & 何狐"
-version = "1.0.2.0418"
+version = "1.0.2.0419"
 
 --Mod链接
 forumthread = "https://steamcommunity.com/sharedfiles/filedetails/?id=3358244598"
