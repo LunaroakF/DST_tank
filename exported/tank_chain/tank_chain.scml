@@ -107,13 +107,19 @@
     <entity id="2" name="tank_chain_armor">
         <animation id="0" name="idle" length="1000">
             <mainline>
-                <key id="0" time="831">
-                    <object_ref id="0" name="swap_body-13" folder="1" file="0" abs_x="0" abs_y="90" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="360" abs_scale_x="0.5" abs_scale_y="0.5" abs_a="1" timeline="0" key="0" z_index="0"/>
+                <key id="0">
+                    <object_ref id="0" name="swap_body-13" folder="1" file="0" abs_x="2" abs_y="45.402299" abs_pivot_x="0.5" abs_pivot_y="0.5" abs_angle="0" abs_scale_x="0.25" abs_scale_y="0.25" abs_a="1" timeline="0" key="0" z_index="0"/>
+                </key>
+                <key id="1" time="831">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
                 </key>
             </mainline>
             <timeline id="0" name="swap_body-13">
-                <key id="0" time="831" spin="0">
-                    <object folder="1" file="0" y="90" scale_x="0.5" scale_y="0.5"/>
+                <key id="0" spin="0">
+                    <object folder="1" file="0" x="2" y="45.402299" angle="0" scale_x="0.25" scale_y="0.25"/>
+                </key>
+                <key id="1" time="831" spin="0">
+                    <object folder="1" file="0" y="90" angle="0" scale_x="0.5" scale_y="0.5"/>
                 </key>
             </timeline>
         </animation>
