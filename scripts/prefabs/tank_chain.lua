@@ -51,13 +51,17 @@ local function OnHaunt(inst, haunter)--作祟后
 end
 
 local function OnActivate(inst,doer)
-    if inst:HasTag("tank_chain_noactivated") and doer.components.tank_data.current>=45 then
-        doer.components.tank_data:DoDelta(-45)
-        inst.components.activatable.inactive = false
-        BeActivated(inst,doer)
+    if doer:HasTag("tank") then
+        if inst:HasTag("tank_chain_noactivated") and doer.components.tank_data.current>=45 then
+            doer.components.tank_data:DoDelta(-45)
+            inst.components.activatable.inactive = false
+            BeActivated(inst,doer)
+        else
+            inst.components.activatable.inactive = true
+            doer.components.talker:Say(STRINGS.TANK_NOT_ENOUGH_DATA)
+        end
     else
-        inst.components.activatable.inactive = true
-        doer.components.talker:Say(STRINGS.TANK_NOT_ENOUGH_DATA)
+        doer.components.talker:Say(STRINGS.TANK_NOT_FOR_ME)
     end
 end
 
